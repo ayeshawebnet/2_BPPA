@@ -484,7 +484,7 @@
 
 
   <section class="google-map" id="contact">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.4386628442503!2d0.9984133!3d51.8529467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d90fd729980eb9%3A0xd436db173d887ac9!2s101%20Wivenhoe%20Rd%2C%20Alresford%2C%20Colchester%20CO7%208AG%2C%20UK!5e0!3m2!1sen!2s!4v1722939570907!5m2!1sen!2s" class="map-iframe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5987469243846!2d-0.09756052300464382!3d53.511362862363356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487883867739ed13%3A0x5e9566a5718951b2!2s91C%20Cheapside%2C%20Waltham%2C%20Grimsby%20DN37%200HP%2C%20UK!5e0!3m2!1sen!2s!4v1723067955322!5m2!1sen!2s"  width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
   <!-- </main> -->
@@ -496,12 +496,47 @@
         <div class="col-12">
           <h5 class="text-white">
             <i class="bi-geo-alt-fill me-2"></i>
-            101 Wivenhoe Road Alresford Colchester CO7 8 AG
+            BPPA 91C Main Road Cheapside Waltham DN37 0HP
           </h5>
 
           <a href="mailto:Britishpakistanipsychiatrists@gmail.com" class="custom-link mt-3 mb-5">
             Britishpakistanipsychiatrists@gmail.com
           </a>
+        </div>
+
+        <div class="col-12 d-flex footer-links">
+          <!-- <div class="col">
+            <h5>Contact Us</h5>
+            <ul class="footer-li">
+              <li>BPPA</li>
+              <li>91C Main Road</li>
+              <li>Cheapside</li>
+              <li>Waltham</li>
+              <li>DN37 0HP</li>
+            </ul>
+          </div> -->
+          <div class="col">
+            <h5>Links</h5>
+            <ul class="footer-li">
+              <li>Introduction</li>
+              <li>BPPA Nama</li>
+              <li>Constitution</li>
+              <li>Contact Us</li>
+              <li>Membership</li>
+              <li>List Of Members</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h5>Blogs</h5>
+            <ul class="footer-li">
+              <li>Educational</li>
+              <li>News and Events</li>
+              <li>Gallery</li>
+              <li>News</li>
+              <li>Archive</li>
+            </ul>
+          </div>
+         
         </div>
 
         <div class="col-6">

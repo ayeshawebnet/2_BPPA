@@ -623,7 +623,7 @@ body {
 
 .map-iframe {
   display: block;
-  filter: grayscale(100);
+  /* filter: grayscale(100); */
 }
 
 /*---------------------------------------
@@ -790,6 +790,21 @@ body {
   color: var(--p-color) !important;
 } */
 
-.top-header{
-  background-color: #000;
+/* footer */
+
+.footer-li li {
+  color: var(--p-color);
+  list-style-type: none;
+  text-align: left;
+}
+.footer-li li:hover {
+  color: var(--grey-color);
+  font-weight: none;
+  cursor: pointer;
+}
+.footer-links h5 {
+  color:var(--section-bg-color);
+  margin-left: 30px;
+  text-align: left;
+  font-weight: var(--font-weight-normal);
 }
