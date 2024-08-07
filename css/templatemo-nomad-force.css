@@ -397,7 +397,7 @@ margin-top: 50px;
 .team-image {
   width: 100%;
   height: 100%;
-  max-height: 675px;
+  max-height: 703px;
   min-height: 475px;
   object-fit: cover;
 }
@@ -408,7 +408,7 @@ margin-top: 50px;
   /* bottom: 0; */
   /* right: 0; */
   /* width: 65%; */
-  min-height: 200px; /* custom */
+  min-height: 228px; /* custom */
   padding: 22px 32px 32px 32px;
 }
 

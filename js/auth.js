@@ -1,28 +1,35 @@
-  const formOpenBtn = document.querySelector("#form-open"),
+
   home = document.querySelector(".home"),
-  formContainer = document.querySelector(".form_container"),
-  formCloseBtn = document.querySelector(".form_close"),
-  signupBtn = document.querySelector("#signup"),
-  loginBtn = document.querySelector("#login"),
+  formContainer = document.querySelector(".form_container")
   pwShowHide = document.querySelectorAll(".pw_hide");
 
-  const email=document.getElementById("email");
-  const password=document.getElementById("password");
 
-  const default_email="ayesha@webnet.com.pk";
-  const default_password="123456";
+//variables for form open and close
+  const formCloseBtn = document.querySelector(".form_close")
+  const formOpenBtn = document.querySelector("#form-open")
+//variable to switch between login and signup form
+signupLink = document.querySelector("#signup")
+loginLink = document.querySelector("#login")
 
-  formOpenBtn.addEventListener("click", () => {
+//variables for signup form
+const signBtn = document.getElementById("signBtn");
+const signupPasswordInput = document.getElementById("signup-password");
+const signupEmailInput = document.getElementById("signup-email");
+
+//variables for login form
+const loginBtn = document.getElementById("loginBtn");
+const loginPasswordInput = document.getElementById("login-password");
+const loginEmailInput = document.getElementById("login-email");
+
+const default_email = "ayesha@webnet.com.pk";
+const default_password = "123456";
+
+formOpenBtn.addEventListener("click", () => {
   document.body.style.overflow = "hidden";
   home.classList.add("show");
 });
 
-  formCloseBtn.addEventListener("click", () => {
-  document.body.style.overflow = "visible";
-  home.classList.remove("show");
-});
-
-  pwShowHide.forEach((icon) => {
+pwShowHide.forEach((icon) => {
   icon.addEventListener("click", () => {
     let getPwInput = icon.parentElement.querySelector("input");
     if (getPwInput.type === "password") {
@@ -36,21 +43,97 @@
   });
 });
 
-  signupBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+goToSignup = () => {
+
   formContainer.classList.add("active");
-});
+};
+goToLogin = () => {
 
-  loginBtn.addEventListener("click", (e) => {
-  // e.preventDefault();
   formContainer.classList.remove("active");
-  debugger
-  if(email.value==default_email && password.value==default_password){
-    alert("Login Successful");
-    formCloseBtn.click();
-  }
+}
+// signupLink.addEventListener("click", (e) => {
   
+//   formContainer.classList.add("active");
+//   // to go to signup form
+// });
 
+// loginLink.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   formContainer.classList.remove("active");
+//   // to go to login form
+// });
 
+function formClose() {
+  document.body.style.overflow = "visible";
+  home.classList.remove("show");
+}
 
+function saveCredentials(email, password) {
+  localStorage.setItem("email", email);
+  localStorage.setItem("password", password);
+}
+
+function getCredentials() {
+  return {
+    email: localStorage.getItem("email"),
+    password: localStorage.getItem("password"),
+  };
+}
+
+function showUserDetails() {
+  const { email } = getCredentials();
+  if (email) {
+    document.getElementById("user").innerHTML = email;
+    document.getElementById("form-open").style.display = "none";
+    document.getElementById("signout").classList.remove("d-none");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const { email, password } = getCredentials();
+  if (email && password) {
+    loginEmailInput.value = email;
+    loginPasswordInput.value = password;
+  }
 });
+
+loginBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const email = loginEmailInput.value;
+  const password = loginPasswordInput.value;
+
+  const { email: storedEmail, password: storedPassword } = getCredentials();
+  console.log("storedEmail===>",storedEmail,getCredentials());
+  if (email === storedEmail && password === storedPassword) {
+      alert('Login Successful');
+      formClose();
+      showUserDetails();
+     
+  } else {
+      alert('Login Failed');
+  }
+});
+
+signupBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const email = signupEmailInput.value;
+  const password = signupPasswordInput.value;
+
+  if (email && password) {
+      saveCredentials(email, password);
+      alert('Signup Successful, Please Login');
+      loginEmailInput.value = email;
+      loginPasswordInput.value = password;
+      goToLogin();
+  } else {
+      alert('Signup Failed');
+  }
+});
+
+
+
+
+formCloseBtn.addEventListener("click", formClose);
+signupLink.addEventListener("click", goToSignup);
+loginLink.addEventListener("click", goToLogin);
