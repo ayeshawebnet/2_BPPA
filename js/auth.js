@@ -69,8 +69,10 @@ function saveCredentials(email, password) {
 
 function getCredentials() {
   return {
-    email: localStorage.getItem("email"),
-    password: localStorage.getItem("password"),
+    // email: localStorage.getItem("email"),
+    // password: localStorage.getItem("password"),
+    email: default_email,
+    password: default_password
   };
 }
 
@@ -94,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (email && password) {
     loginEmailInput.value = email;
     loginPasswordInput.value = password;
-    isUserExist() 
+    // isUserExist() 
   }
   
 });

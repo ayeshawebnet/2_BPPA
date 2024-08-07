@@ -583,8 +583,8 @@ body {
   SECTION               
 -----------------------------------------*/
 .section-padding {
-  padding-top: 5rem;
-  padding-bottom: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 /*---------------------------------------
@@ -719,7 +719,7 @@ body {
 
   .section-padding {
     padding-top: 4rem;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
   }
 
   .team-thumb {

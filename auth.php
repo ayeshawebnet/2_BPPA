@@ -34,7 +34,7 @@
 
           <button class="auth-button" id="loginBtn">Login Now</button>
 
-          <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          <!-- <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div> -->
         </form>
       </div>
 

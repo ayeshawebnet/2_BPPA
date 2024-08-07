@@ -38,7 +38,7 @@
     <?php include 'header.php'; ?>
 
     <!-- login -->
-    <?php include 'auth.php'; ?>    
+    <?php include 'auth.php'; ?>
 
     <!-- banner -->
     <?php include 'banner.php'; ?>
@@ -107,8 +107,8 @@
 
             <div class="mt-3 custom-links">
               <a href="#news" class="text-white custom-link" data-aos="zoom-in" data-aos-delay="100">Read News & Events</a>
-
-              <a href="#contact" class="text-white custom-link" data-aos="zoom-in" data-aos-delay="300">Work with Us</a>
+              <br>
+              <a href="#portfolio" class="text-white custom-link" data-aos="zoom-in" data-aos-delay="300">Join us</a>
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@
     </div>
   </section>
 
-  <section class="section-padding" id="portfolio">
+  <section class="section-padding  pb-0" id="portfolio">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -506,7 +506,7 @@
 
         <div class="col-6">
           <p class="copyright-text mb-0">Copyright © 2024 British Pakistan Psychiatrists Association
-<!-- 
+            <!-- 
             <br><br>Design: <a href="https://templatemo.com/page/1" target="_parent">TemplateMo</a><br><br>
 
             Distributed By: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> -->
