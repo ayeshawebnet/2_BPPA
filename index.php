@@ -33,7 +33,7 @@
 <body>
 
   <!-- <main> -->
-  <div class="home">
+  <div class="home ">
 
     <?php include 'header.php'; ?>
 
@@ -227,7 +227,7 @@
         <div class="col-lg-6 col-12 mb-5 mb-lg-0">
           <div class="news-thumb" data-aos="fade-up">
             <a href="news-detail.html" class="news-image-hover news-image-hover-warning">
-              <img src="images/news/caroline-lm-uqveD8dYPUM-unsplash.jpg" class="img-fluid large-news-image news-image" alt="" />
+              <img src="../2_BPPA/images/event-banner-one.jpg" class="img-fluid large-news-image news-image" alt="" />
             </a>
 
             <div class="news-category bg-warning text-white">News</div>
@@ -246,7 +246,7 @@
           <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
             <div class="news-top w-100">
               <a href="news-detail.html" class="news-image-hover news-image-hover-primary">
-                <img src="images/news/jean-philippe-delberghe-MmanXAs1sKw-unsplash.jpeg" class="img-fluid news-image" alt="" />
+                <img src="../2_BPPA/images/event-banner-3.jpg" class="img-fluid news-image" alt="" />
               </a>
 
               <div class="news-category bg-primary text-white">Events</div>
@@ -273,7 +273,7 @@
           <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
             <div class="news-top w-100" data-aos="fade-up">
               <a href="news-detail.html" class="news-image-hover news-image-hover-success">
-                <img src="images/news/maria-stewart-p4tj0g-_aMM-unsplash.jpeg" class="img-fluid news-image" alt="" />
+                <img src="../2_BPPA/images/event-banner-2.jpg" class="img-fluid news-image" alt="" />
               </a>
 
               <div class="news-category bg-success text-white">News</div>
@@ -483,19 +483,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  <section class="google-map">
+  <section class="google-map" id="contact">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.4386628442503!2d0.9984133!3d51.8529467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d90fd729980eb9%3A0xd436db173d887ac9!2s101%20Wivenhoe%20Rd%2C%20Alresford%2C%20Colchester%20CO7%208AG%2C%20UK!5e0!3m2!1sen!2s!4v1722939570907!5m2!1sen!2s" class="map-iframe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
@@ -518,10 +506,10 @@
 
         <div class="col-6">
           <p class="copyright-text mb-0">Copyright © 2024 British Pakistan Psychiatrists Association
-
+<!-- 
             <br><br>Design: <a href="https://templatemo.com/page/1" target="_parent">TemplateMo</a><br><br>
 
-            Distributed By: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>
+            Distributed By: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> -->
           </p>
 
         </div>

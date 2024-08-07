@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg bg-light shadow-lg">
+<div class="top-header"></div>
+<nav class="navbar navbar-expand-lg shadow-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
                         <strong>BPPA</strong>
@@ -18,9 +19,9 @@
                                 <a class="nav-link" href="#about">Our Studio</a>
                             </li>
             
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link" href="#portfolio">Portfolio</a>
-                            </li>
+                            </li> -->
             
                             <li class="nav-item">
                                 <a class="nav-link" href="#news">News & Events</a>
@@ -33,7 +34,7 @@
                                 <a class="nav-link" href="#" id="form-open">Login</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link d-none" href="membership.html" id="member-ship">Membership</a>
+                              <a class="nav-link d-none" href="membership.php" target="_blank" id="member-ship">Membership</a>
                             </li>
                            
                         </ul>
@@ -51,12 +52,12 @@
                     </ul>
                   </li>
                 </ul> -->
-                <div class="nav-item ">                               
+                <!-- <div class="nav-item ">                               
                   <a class="" id="user" href="#" ></a>
                 </div>
                 <div class="nav-item">
                   <a class="nav-link d-none" href="#" id="signout" >Signout</a>
-                </div>
+                </div> -->
                 <!-- <button id="signout" class="d-none" href="#" >Sign out</button> -->
             </nav>
   

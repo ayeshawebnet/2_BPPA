@@ -77,13 +77,13 @@ function getCredentials() {
 function isUserExist() {
   const { email } = getCredentials();
   if (email) {
-    document.getElementById("user").innerHTML = email;
+    // document.getElementById("user").innerHTML = email;
     formOpenBtn.style.display = "none";
-    document.getElementById("signout").classList.remove("d-none");
+    // document.getElementById("signout").classList.remove("d-none");
     document.getElementById("member-ship").classList.remove("d-none");
   }
   else {
-    signOut()
+    // signOut()
   }
 }
 
@@ -136,9 +136,9 @@ signupBtn.addEventListener('click', (e) => {
 });
 
 function signOut() {
-  document.getElementById("user").innerHTML = "";
+  // document.getElementById("user").innerHTML = "";
     formOpenBtn.style.display = "block";
-    document.getElementById("signout").classList.add("d-none");
+    // document.getElementById("signout").classList.add("d-none");
     document.getElementById("member-ship").classList.add("d-none");
 
   
@@ -148,6 +148,6 @@ function signOut() {
 formCloseBtn.addEventListener("click", formClose);
 signupLink.addEventListener("click", goToSignup);
 loginLink.addEventListener("click", goToLogin);
-signout.addEventListener("click", signOut)
+// signout.addEventListener("click", signOut)
 
  

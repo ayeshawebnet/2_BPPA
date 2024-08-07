@@ -25,7 +25,7 @@ https://templatemo.com/tm-567-nomad-force
   --h2-font-size: 42px;
   --h3-font-size: 36px;
   --h4-font-size: 32px;
-  --h5-font-size: 24px;
+  --h5-font-size: 24px; 
   --h6-font-size: 22px;
   --p-font-size: 20px;
   --copyright-text-font-size: 14px;
@@ -138,16 +138,19 @@ a:hover {
 }
 
 .videoWrapper {
-  /* background-image: url("https://thebppa.org.uk/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-04-at-10.57.35-PM.jpeg") !important; */
-  background-size: cover !important;
+  /* background: url("../images/Portfolio-pathway-banner.jpg") !important;
+  background-size: contain !important;
   background-attachment: fixed !important;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  
   height: 100vh;
   z-index: -100;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important; */
 }
-
+.banner-img{
+  width:100%;
+  /* height: 100vh; */
+}
 .custom-video {
   position: absolute;
   top: 0;
@@ -213,14 +216,22 @@ strong {
   NAVIGATION               
 -----------------------------------------*/
 
+body {
+  scroll-behavior: smooth !important;
+}
 .navbar {
-  display: flex;
+  background-color: rgba(68, 31, 31) ;
+  /* display: flex; */
   width: 100% !important;
   z-index: 9;
-  /* right: 0;
-  left: 0; */
   padding-top: 15px;
   padding-bottom: 15px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
 }
 
 
@@ -233,6 +244,7 @@ strong {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 15px;
   padding-left: 15px;
+  
 }
 
 .navbar-nav .nav-link::after {
@@ -248,6 +260,7 @@ strong {
   -webkit-transform: translateY(10px);
   -moz-transform: translateY(10px);
   transform: translateY(10px);
+ 
 }
 
 .navbar-nav .nav-link:hover::after {
@@ -255,10 +268,15 @@ strong {
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   transform: translateY(0px);
+ 
 }
 
+/* nav-btn */
 .navbar-nav .nav-link {
-  color: var(--p-color);
+  padding-top:15px ;
+  padding-bottom: 15px;
+
+  color:white;
   font-size: 18px;
   font-weight: var(--font-weight-bold);
   position: relative;
@@ -266,21 +284,26 @@ strong {
 
 .navbar-nav .nav-link:hover::after,
 .navbar-nav .nav-item.active .nav-link::after {
+  /* color:white; */
   color: var(--primary-color);
   opacity: 1;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   transform: translateY(0px);
+
 }
 
 .navbar-nav .nav-item.active .nav-link,
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--dark-color);
+  color: white;
+ 
+  /* background-color: var(--primary-color); */
 }
 
 .nav-link:focus {
-  color: var(--p-color);
+  /* color: var(--p-color); */
+  color: var(--primary-color);
 }
 
 .navbar-toggler {
@@ -320,7 +343,7 @@ strong {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--dark-color);
+  background: white;
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -337,7 +360,7 @@ strong {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--dark-color);
+  background: white ;
   width: 30px;
   height: 2px;
   content: "";
@@ -361,7 +384,7 @@ strong {
 
 @media screen and (min-width: 992px) {
   .hero {
-    height: 100vh;
+    /* height: 100vh; */
   }
 
   .custom-video,
@@ -390,9 +413,7 @@ strong {
 /*---------------------------------------
   ABOUT & TEAM MEMBERS               
 -----------------------------------------*/
-#about{
-margin-top: 50px;
-}
+
 .about-image,
 .team-image {
   width: 100%;
@@ -691,10 +712,10 @@ margin-top: 50px;
     font-size: 18px;
   }
 
-  .navbar {
+  /* .navbar {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+  } */
 
   .section-padding {
     padding-top: 4rem;
@@ -765,6 +786,10 @@ margin-top: 50px;
   justify-content: center !important;
 }
 
-#user{
+/* #user{
   color: var(--p-color) !important;
+} */
+
+.top-header{
+  background-color: #000;
 }
