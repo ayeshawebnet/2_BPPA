@@ -7,7 +7,8 @@
 //variables for form open and close
   const formCloseBtn = document.querySelector(".form_close")
   const formOpenBtn = document.querySelector("#form-open")
-//variable to switch between login and signup form
+
+  //variable to switch between login and signup form
 signupLink = document.querySelector("#signup")
 loginLink = document.querySelector("#login")
 
@@ -20,6 +21,9 @@ const signupEmailInput = document.getElementById("signup-email");
 const loginBtn = document.getElementById("loginBtn");
 const loginPasswordInput = document.getElementById("login-password");
 const loginEmailInput = document.getElementById("login-email");
+
+//variable for signout
+const signout = document.getElementById("signout");
 
 const default_email = "ayesha@webnet.com.pk";
 const default_password = "123456";
@@ -51,17 +55,7 @@ goToLogin = () => {
 
   formContainer.classList.remove("active");
 }
-// signupLink.addEventListener("click", (e) => {
-  
-//   formContainer.classList.add("active");
-//   // to go to signup form
-// });
 
-// loginLink.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   formContainer.classList.remove("active");
-//   // to go to login form
-// });
 
 function formClose() {
   document.body.style.overflow = "visible";
@@ -80,22 +74,32 @@ function getCredentials() {
   };
 }
 
-function showUserDetails() {
+function isUserExist() {
   const { email } = getCredentials();
   if (email) {
     document.getElementById("user").innerHTML = email;
-    document.getElementById("form-open").style.display = "none";
+    formOpenBtn.style.display = "none";
     document.getElementById("signout").classList.remove("d-none");
+    document.getElementById("member-ship").classList.remove("d-none");
+  }
+  else {
+    signOut()
   }
 }
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const { email, password } = getCredentials();
   if (email && password) {
     loginEmailInput.value = email;
     loginPasswordInput.value = password;
+    isUserExist() 
   }
+  
 });
+
+
 
 loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -108,7 +112,7 @@ loginBtn.addEventListener('click', (e) => {
   if (email === storedEmail && password === storedPassword) {
       alert('Login Successful');
       formClose();
-      showUserDetails();
+      isUserExist();
      
   } else {
       alert('Login Failed');
@@ -131,9 +135,19 @@ signupBtn.addEventListener('click', (e) => {
   }
 });
 
+function signOut() {
+  document.getElementById("user").innerHTML = "";
+    formOpenBtn.style.display = "block";
+    document.getElementById("signout").classList.add("d-none");
+    document.getElementById("member-ship").classList.add("d-none");
 
+  
+};
 
 
 formCloseBtn.addEventListener("click", formClose);
 signupLink.addEventListener("click", goToSignup);
 loginLink.addEventListener("click", goToLogin);
+signout.addEventListener("click", signOut)
+
+ 
