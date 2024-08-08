@@ -51,8 +51,8 @@
   <section class="section-padding pb-0" id="about">
     <div class="container mb-5 pb-lg-5">
       <div class="row">
-        <div class="col-12">
-          <h2 class="mb-3" data-aos="fade-up">Executive Officers</h2>
+        <div class="col-12 text-center">
+          <h2 class="mb-5" data-aos="fade-up">About us</h2>
         </div>
         <div class="about-cards-container">
           <div class="col-lg-6 col-12  mb-lg-3 about-cards">
@@ -75,14 +75,14 @@
 
           <div class="col-lg-6 col-12 mb-lg-3 about-cards">
             <p class="me-4" data-aos="fade-up" data-aos-delay="300">
-              <a rel="nofollow" href="https://thebppa.org.uk/educational" target="_blank" class="text-color">Educational</a>
+              <a rel="nofollow" href="https://thebppa.org.uk/educational" target="_blank" class="text-color">Educational:</a>
               Education is Key. We educate and share knowledge within our community.
             </p>
           </div>
 
           <div class="col-lg-6 col-12 mb-lg-3 about-cards">
             <p data-aos="fade-up" data-aos-delay="500">
-              <a rel="nofollow" href="https://thebppa.org.uk/photogallery" target="_blank" class="text-color">Gallery</a>
+              <a rel="nofollow" href="https://thebppa.org.uk/photogallery" target="_blank" class="text-color">Gallery:</a>
               View Our Gallery of previous Images.
             </p>
           </div>
