@@ -54,37 +54,38 @@
         <div class="col-12">
           <h2 class="mb-3" data-aos="fade-up">Executive Officers</h2>
         </div>
+        <div class="about-cards-container">
+          <div class="col-lg-6 col-12  mb-lg-3 about-cards">
+            <p class="me-4" data-aos="fade-up" data-aos-delay="300">
+              <a rel="nofollow" href="https://thebppa.org.uk/conferences" target="_blank" class="text-color">Conferences:</a>
+              We Host of our large community of British Pakistan Psychiatrists
+              annually.
+              <a rel="nofollow" href="https://thebppa.org.uk/conferences" target="_blank">Conferences</a>
+              of our large community of British Pakistan Psychiatrists annually.
+            </p>
+          </div>
 
-        <div class="col-lg-6 col-12 mt-3 mb-lg-3">
-          <p class="me-4" data-aos="fade-up" data-aos-delay="300">
-            <a rel="nofollow" href="https://thebppa.org.uk/conferences" target="_blank" class="text-color">Conferences:</a>
-            We Host of our large community of British Pakistan Psychiatrists
-            annually.
-            <a rel="nofollow" href="https://thebppa.org.uk/conferences" target="_blank">Conferences</a>
-            of our large community of British Pakistan Psychiatrists annually.
-          </p>
-        </div>
+          <div class="col-lg-6 col-12 mb-lg-3  about-cards">
+            <p data-aos="fade-up" data-aos-delay="500">
+              <a rel="nofollow" href="https://thebppa.org.uk/join-us" target="_blank" class="text-color">Membership:</a>
+              Get our Membership to join our community, support us, learn with us
+              and meet fellow psychiatrists.
+            </p>
+          </div>
 
-        <div class="col-lg-6 col-12 mt-lg-3 mb-lg-3">
-          <p data-aos="fade-up" data-aos-delay="500">
-            <a rel="nofollow" href="https://thebppa.org.uk/join-us" target="_blank" class="text-color">Membership:</a>
-            Get our Membership to join our community, support us, learn with us
-            and meet fellow psychiatrists.
-          </p>
-        </div>
+          <div class="col-lg-6 col-12 mb-lg-3 about-cards">
+            <p class="me-4" data-aos="fade-up" data-aos-delay="300">
+              <a rel="nofollow" href="https://thebppa.org.uk/educational" target="_blank" class="text-color">Educational</a>
+              Education is Key. We educate and share knowledge within our community.
+            </p>
+          </div>
 
-        <div class="col-lg-6 col-12 mb-lg-5">
-          <p class="me-4" data-aos="fade-up" data-aos-delay="300">
-            <a rel="nofollow" href="https://thebppa.org.uk/educational" target="_blank" class="text-color">Educational</a>
-            Education is Key. We educate and share knowledge within our community.
-          </p>
-        </div>
-
-        <div class="col-lg-6 col-12 mb-lg-5">
-          <p data-aos="fade-up" data-aos-delay="500">
-            <a rel="nofollow" href="https://thebppa.org.uk/photogallery" target="_blank" class="text-color">Gallery</a>
-            View Our Gallery of previous Images.
-          </p>
+          <div class="col-lg-6 col-12 mb-lg-3 about-cards">
+            <p data-aos="fade-up" data-aos-delay="500">
+              <a rel="nofollow" href="https://thebppa.org.uk/photogallery" target="_blank" class="text-color">Gallery</a>
+              View Our Gallery of previous Images.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -484,7 +485,7 @@
 
 
   <section class="google-map" id="contact">
-    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5987469243846!2d-0.09756052300464382!3d53.511362862363356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487883867739ed13%3A0x5e9566a5718951b2!2s91C%20Cheapside%2C%20Waltham%2C%20Grimsby%20DN37%200HP%2C%20UK!5e0!3m2!1sen!2s!4v1723067955322!5m2!1sen!2s"  width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5987469243846!2d-0.09756052300464382!3d53.511362862363356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487883867739ed13%3A0x5e9566a5718951b2!2s91C%20Cheapside%2C%20Waltham%2C%20Grimsby%20DN37%200HP%2C%20UK!5e0!3m2!1sen!2s!4v1723067955322!5m2!1sen!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
   <!-- </main> -->
@@ -536,7 +537,7 @@
               <li>Archive</li>
             </ul>
           </div>
-         
+
         </div>
 
         <div class="col-6">
