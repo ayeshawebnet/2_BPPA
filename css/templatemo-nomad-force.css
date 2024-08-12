@@ -218,7 +218,7 @@ strong {
 -----------------------------------------*/
 
 body {
-  scroll-behavior: smooth !important;
+  /* scroll-behavior: smooth !important; */
 }
 .navbar {
   padding: 0px;
@@ -232,7 +232,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   margin: 0;
 }
 
@@ -1072,5 +1071,5 @@ body {
 }
 
 .logo-container{
-  width: 350px;
+  width: 235px;
 }
