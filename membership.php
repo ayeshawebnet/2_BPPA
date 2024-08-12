@@ -100,40 +100,21 @@
                         <div class="container">
                             <!-- <h4 class="py-4 text-center">Pricing Table</h4> -->
                             <div class="row">
+
                                 <div class="col-md-2 col-sm-6">
                                     <div class="pricingTable10">
                                         <div class="pricingTable-header">
-                                            <h3 class="heading">5-Year</h3>
+                                            <h3 class="heading">Early Career</h3>
                                             <span class="price-value">
-                                                <span class="currency">£</span>250
+                                                <span class="currency">£</span> 10
                                                 <span class="month">/mo</span>
                                             </span>
                                         </div>
                                         <div class="pricing-content">
                                             <ul>
-                                                <li>Long-term commitment & savings</li>
-                                                <li>Priority access to events & content</li>
-                                                <li>Exclusive benefits & resources</li>
-                                              
-                                            </ul>
-                                            <a href="#" class="read">sign up</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-sm-6">
-                                    <div class="pricingTable10">
-                                        <div class="pricingTable-header">
-                                            <h3 class="heading">Affiliate</h3>
-                                            <span class="price-value">
-                                                <span class="currency">£</span> 30
-                                                <span class="month">/mo</span>
-                                            </span>
-                                        </div>
-                                        <div class="pricing-content">
-                                            <ul>
-                                                <li>50GB Disk Space</li>
-                                                <li>50 Email Accounts</li>
-                                                <li>50GB Monthly Bandwidth</li>
+                                                <li>Affordable access to the network</li>
+                                                <li>Support for career development</li>
+                                                <!-- <li>Access to educational materials</li> -->
                                                 <li>10 Subdomains</li>
                                                 <li>15 Domains</li>
                                             </ul>
@@ -152,9 +133,31 @@
                                         </div>
                                         <div class="pricing-content">
                                             <ul>
-                                                <li>Access to resources & mentorship</li>
+                                                <!-- <li>Access to resources & mentorship</li> -->
                                                 <li>Networking with professionals</li>
                                                 <li>Educational events & workshops</li>
+                                                <li>25 Subdomains</li>
+                                                <li>30 Domains</li>
+                                            </ul>
+                                            <a href="#" class="read">sign up</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="pricingTable10">
+                                        <div class="pricingTable-header">
+                                            <h3 class="heading">Affiliate</h3>
+                                            <span class="price-value">
+                                                <span class="currency">£</span> 30
+                                                <span class="month">/mo</span>
+                                            </span>
+                                        </div>
+                                        <div class="pricing-content">
+                                            <ul>
+                                                <li>Networking with professionals</li>
+                                                <li>Educational events & workshops</li>
+                                                <!-- <li>50GB Monthly Bandwidth</li> -->
                                                 <li>10 Subdomains</li>
                                                 <li>15 Domains</li>
                                             </ul>
@@ -162,6 +165,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-md-2 col-sm-6">
                                     <div class="pricingTable10">
                                         <div class="pricingTable-header">
@@ -174,7 +178,7 @@
                                         <div class="pricing-content">
                                             <ul>
                                                 <li>Stay connected with the community</li>
-                                                <li>Contribute experience & knowledge</li>
+                                                <!-- <li>Contribute experience & knowledge</li> -->
                                                 <li>Participate in events & discussions</li>
                                                 <li>15 Subdomains</li>
                                                 <li>20 Domains</li>
@@ -196,7 +200,7 @@
                                             <ul>
                                                 <li>Full access to all resources</li>
                                                 <li>Attend conferences & seminars</li>
-                                                <li>Engage with the psychiatric community</li>
+                                                <!-- <li>Engage with the psychiatric community</li> -->
                                                 <li>20 Subdomains</li>
                                                 <li>25 Domains</li>
                                             </ul>
@@ -207,19 +211,18 @@
                                 <div class="col-md-2 col-sm-6">
                                     <div class="pricingTable10">
                                         <div class="pricingTable-header">
-                                            <h3 class="heading">Early Career</h3>
+                                            <h3 class="heading">5-Year</h3>
                                             <span class="price-value">
-                                                <span class="currency">£</span> 10
+                                                <span class="currency">£</span>250
                                                 <span class="month">/mo</span>
                                             </span>
                                         </div>
                                         <div class="pricing-content">
                                             <ul>
-                                                <li>Affordable access to the network</li>
-                                                <li>Support for career development</li>
-                                                <li>Access to educational materials</li>
-                                                <li>25 Subdomains</li>
-                                                <li>30 Domains</li>
+                                                <li>Long-term commitment & savings</li>
+                                                <li>Priority access to events & content</li>
+                                                <li>Exclusive benefits & resources</li>
+
                                             </ul>
                                             <a href="#" class="read">sign up</a>
                                         </div>

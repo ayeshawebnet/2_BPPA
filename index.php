@@ -51,68 +51,174 @@
   <?php include 'join-us.php'; ?>
 
   <section class="section-padding news" id="portfolio">
-                <div class="container">
-                    <div class="row">
+    <div class="container">
+      <div class="row">
 
-                        <div class="col-12">
-                            <h2 class="mb-5 text-center" data-aos="fade-up">Gallery</h2>
-                        </div>
+        <div class="col-12">
+          <h2 class="mb-5 text-center" data-aos="fade-up">Our Visual Story</h2>
+        </div>
 
-                        <div class="col-lg-6 col-12">
-                            <div class="portfolio-thumb mb-5" data-aos="fade-up">
-                                <a href="images/portfolio/visuals-Y4qzW3AsvqI-unsplash.jpeg" class="image-popup">
-                                    <img src="images/portfolio/visuals-Y4qzW3AsvqI-unsplash.jpeg" class="img-fluid portfolio-image" alt="">
-                                </a>
+        <div class="col-lg-6 col-12">
 
-                                <div class="portfolio-info">                     
-                                    <h4 class="portfolio-title mb-0">Annual Conference Highlights</h4>
-
-                                    <p class="text-danger">A Glimpse into Our Annual Gatherings
-                                    </p>
-                                </div>
-                            </div> 
-
-                            <div class="portfolio-thumb" data-aos="fade-up">
-                                <a href="images/portfolio/severin-candrian-nn3uIZqmUtE-unsplash.jpeg" class="image-popup">
-                                    <img src="images/portfolio/severin-candrian-nn3uIZqmUtE-unsplash.jpeg" class="img-fluid portfolio-image" alt="">
-                                </a>
-
-                                <div class="portfolio-info">                     
-                                    <h4 class="portfolio-title mb-0">Community Events and Workshops</h4>
-
-                                    <p class="text-success">Learning and Growing Together</p>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <div class="col-lg-6 col-12">
-                            <div class="portfolio-thumb mt-5 mt-lg-0 mb-5" data-aos="fade-up">
-                                <a href="images/portfolio/tyler-nix-Y1drF0Y3Oe0-unsplash.jpeg" class="image-popup">
-                                    <img src="images/portfolio/tyler-nix-Y1drF0Y3Oe0-unsplash.jpeg" class="img-fluid portfolio-image" alt="">
-                                </a>
-
-                                <div class="portfolio-info">                     
-                                    <h4 class="portfolio-title mb-0">Member Spotlights</h4>
-                                    <p class="text-warning">Celebrating Excellence in Psychiatry</p>
-                                </div>
-                            </div> 
-
-                            <div class="portfolio-thumb" data-aos="fade-up">
-                                <a href="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg" class="image-popup">
-                                    <img src="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg" class="img-fluid portfolio-image" alt="">
-                                </a>
-
-                                <div class="portfolio-info">                     
-                                    <h4 class="portfolio-title mb-0">Educational Initiatives</h4>
-
-                                    <p class="text-info">Empowering Minds Through Education</p>
-                                </div>
-                            </div> 
-                        </div>
-
-                    </div>
+          <div data-aos="fade-up" class="mb-5">
+            <div class="portfolio-thumb">
+              <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-item active">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1590-scaled-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1590-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
                 </div>
-            </section>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5671-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5671-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1608-scaled-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1608-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4 class="portfolio-title mb-0">Annual Conference Highlights</h4>
+
+              <p class="text-danger">A Glimpse into Our Annual Gatherings
+              </p>
+
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="mb-5">
+            <div class="portfolio-thumb">
+              <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-item active">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5726-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5726-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5664-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5664-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5660-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5660-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5658-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5658-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5732-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5732-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/dbe08f50-b266-4760-8e69-fe0d6c13fccf-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/dbe08f50-b266-4760-8e69-fe0d6c13fccf-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4 class="portfolio-title mb-0">Community Events and Workshops</h4>
+
+              <p class="text-success">Learning and Growing Together</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-12">
+          <div data-aos="fade-up" class="mb-5">
+            <div class="portfolio-thumb">
+              <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-item active">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5707-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5707-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1582-scaled-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1582-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5737-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5737-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5715-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5715-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5710-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5710-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5708-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5708-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1570-scaled-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1570-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+               
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4 class="portfolio-title mb-0">Member Spotlights</h4>
+
+              <p class="text-warning">Celebrating Excellence in Psychiatry
+              </p>
+
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="mb-5">
+            <div class="portfolio-thumb">
+              <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-item active">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1572-scaled-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1572-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+              <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5701-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5701-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1597-scaled-1190x530.jpg" class="image-popup">
+                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1597-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4 class="portfolio-title mb-0">Educational Initiatives</h4>
+
+              <p class="text-info">Empowering Minds Through Education
+              </p>
+
+            </div>
+          </div>
+
+         
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!-- <section class="section-padding  pb-0" id="portfolio">
     <div class="container-fluid">
       <div class="row">

@@ -2,7 +2,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h2 class="mb-5 text-center" data-aos="fade-up">Join us</h2>
+          <h2 class="mb-5 text-center" data-aos="fade-up">Join the Leading Psychiatric Network</h2>
         </div>
         <div class="col-10 abt-card">
           <p class="me-4" data-aos="fade-up" data-aos-delay="300">
@@ -38,7 +38,7 @@
             <div class="description">
               <h1>Trainee Membership</h1>
               <h2>£30.00 GBP</h2>
-              <p> Ideal for those in training, this membership provides access to our extensive resources, mentorship opportunities, and the chance to connect with experienced professionals.</p>
+              <p> For those in training, this membership provides access to our extensive resources, mentorship opportunities, and the chance to connect with experienced professionals.</p>
               <p class="read-more">
                 <a href="#">Join us</a>
               </p>
