@@ -34,7 +34,7 @@
                                 <a class="nav-link  d-none" href="#" id="form-open">Login</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="membership.php" target="_blank" id="member-ship">Membership</a>
+                              <a class="nav-link"  target="_blank" id="member-ship">Membership</a>
                             </li>
                            
                         </ul>

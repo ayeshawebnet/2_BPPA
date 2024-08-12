@@ -11,7 +11,7 @@
             <br>
             <a rel="nofollow" href="membership.php" target="_blank" class="text-color">Membership</a> also offers the chance to contribute to the growth and development of our community, whether through mentorship, volunteering, or participating in our annual conferences. By joining, you’re not just enhancing your own career—you’re helping to shape the future of mental health care within our community.
             <br>
-            <br>
+            
             With a range of <a rel="nofollow" href="membership.php" target="_blank" class="text-color">Membership plan</a>, we welcome everyone from trainees to retired professionals. Each membership tier is designed to offer maximum value, ensuring that you get the most out of your involvement with our community. Join us today and take the next step in your professional journey while making a lasting impact on the field of psychiatry.
 
 
@@ -26,7 +26,7 @@
               <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
               <ul class="details">
                 <li class="author"><a href="#">Membership</a></li>
-                <li class="date">Aug. 24, 2015</li>
+                <!-- <li class="date">Aug. 24, 2015</li> -->
                 <li class="tags">
                   <ul>
                     <li><a href="#">https://thebppa.org.uk/</a></li>
@@ -49,7 +49,7 @@
               <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
               <ul class="details">
                 <li class="author"><a href="#">Membership</a></li>
-                <li class="date">July. 15, 2015</li>
+                <!-- <li class="date">July. 15, 2015</li> -->
                 <li class="tags">
                   <ul>
                     <li><a href="#">https://thebppa.org.uk/</a></li>
@@ -71,7 +71,7 @@
               <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
               <ul class="details">
                 <li class="author"><a href="#">Membership</a></li>
-                <li class="date">Aug. 24, 2015</li>
+                <!-- <li class="date">Aug. 24, 2015</li> -->
                 <li class="tags">
                   <ul>
                     <li><a href="#">https://thebppa.org.uk/</a></li>
@@ -94,7 +94,7 @@
               <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
               <ul class="details">
                 <li class="author"><a href="#">Membership</a></li>
-                <li class="date">July. 15, 2015</li>
+                <!-- <li class="date">July. 15, 2015</li> -->
                 <li class="tags">
                   <ul>
                     <li><a href="#">https://thebppa.org.uk/</a></li>
