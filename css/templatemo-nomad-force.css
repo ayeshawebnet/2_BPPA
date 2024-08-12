@@ -20,7 +20,8 @@ https://templatemo.com/tm-567-nomad-force
   --title-color: #565758;
   --p-color: #717275;
 
-  --body-font-family: "Noto Sans JP", sans-serif;
+  --body-font-family: "Galano Grotesque Medium";
+  /* --body-font-family: "Noto Sans JP", sans-serif; "*/
 
   --h1-font-size: 72px;
   --h2-font-size: 42px;
@@ -862,7 +863,7 @@ body {
   margin-bottom: 1.6%;
   background: #ffffff; /* Replace $color_white with the actual color code */
   line-height: 1.4;
-  font-family: sans-serif;
+  font-family: var(--body-font-family);
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
@@ -962,7 +963,7 @@ body {
 
 .blog-card .description h1,
 .blog-card .description h2 {
-  font-family: Poppins, sans-serif;
+  font-family: var(--body-font-family);
 }
 
 .blog-card .description h1 {
