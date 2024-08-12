@@ -221,12 +221,13 @@ body {
   scroll-behavior: smooth !important;
 }
 .navbar {
+  padding: 0px;
   background-color: rgba(68, 31, 31);
   /* display: flex; */
   width: 100% !important;
   z-index: 9;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* padding-top: 15px; */
+  /* padding-bottom: 15px; */
   color: white;
   position: fixed;
   top: 0;
@@ -1068,4 +1069,8 @@ body {
   .blog-card.alt .details {
     padding-left: 25px;
   }
+}
+
+.logo-container{
+  width: 350px;
 }

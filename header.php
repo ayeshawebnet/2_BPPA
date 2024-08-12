@@ -1,8 +1,8 @@
 <div class="top-header"></div>
 <nav class="navbar navbar-expand-lg shadow-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <strong>BPPA</strong>
+                    <a class="navbar-brand logo-container" href="#">
+                      <img src="../2_BPPA/images/logo/White logo.png" alt="logo" class="img-fluid" style="width: 100%;">
                     </a>
             
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
