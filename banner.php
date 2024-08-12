@@ -13,7 +13,7 @@
       </div> -->
 
       <div class="videoWrapper">
-        <img class="banner-img"  src="../2_BPPA/images/Portfolio-pathway-banner.jpg" alt="">
+        <img class="banner-img"  src="../2_BPPA/images/Portfolio-pathway-banner1.jpg" alt="">
       
       </div>
 
