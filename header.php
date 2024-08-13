@@ -16,7 +16,7 @@
                             </li>
             
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">Our Studio</a>
+                                <a class="nav-link" href="#about">About us</a>
                             </li>
             
                             <!-- <li class="nav-item">
