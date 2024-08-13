@@ -1,4 +1,4 @@
-<section class="section-padding  " id="portfolio">
+<section class="section-padding  news" id="portfolio">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">

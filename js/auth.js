@@ -148,7 +148,7 @@ function signOut() {
 
 
 formCloseBtn.addEventListener("click", formClose);
-signupLink.addEventListener("click", goToSignup);
+// signupLink.addEventListener("click", goToSignup);
 loginLink.addEventListener("click", goToLogin);
 // signout.addEventListener("click", signOut)
 

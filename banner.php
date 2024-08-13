@@ -14,8 +14,6 @@
 
       <div class="videoWrapper">
         <img class="banner-img"  src="../2_BPPA/images/Portfolio-pathway-banner1.jpg" alt="">
-      
       </div>
-
       <!-- <div class="overlay"></div> -->
     </section>

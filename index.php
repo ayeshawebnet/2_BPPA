@@ -30,6 +30,7 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
+  
 </head>
 
 <body>
@@ -49,10 +50,26 @@
 
   <?php include 'about.php'; ?>
 
+  <section class="section-padding pb-5" id="video">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center ">
+        <div class="col-12">
+          <h2 class="mb-5 text-center" data-aos="fade-up">One in 4 of you are affected. Why do we look away?</h2>
+        </div>
+
+
+
+
+        <div class="col-sm-12 col-md-12 col-12 videoWrapper pb-5">
+        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/biLdKre2HO4" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <?php include 'join-us.php'; ?>
 
-  <section class="section-padding news" id="portfolio">
+  <section class="section-padding " id="portfolio">
     <div class="container">
       <div class="row">
 
@@ -174,7 +191,7 @@
                     <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1570-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
-               
+
               </div>
             </div>
             <div class="portfolio-info">
@@ -189,12 +206,12 @@
           <div data-aos="fade-up" class="mb-5">
             <div class="portfolio-thumb">
               <div class="carousel slide carousel-fade" data-bs-ride="carousel">
-              <div class="carousel-item active">
+                <div class="carousel-item active">
                   <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1572-scaled-1190x530.jpg" class="image-popup">
                     <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1572-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
-              <div class="carousel-item">
+                <div class="carousel-item">
                   <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5701-1190x530.jpg" class="image-popup">
                     <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5701-1190x530.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
@@ -215,58 +232,16 @@
             </div>
           </div>
 
-         
+
         </div>
 
       </div>
     </div>
   </section>
-  <!-- <section class="section-padding  pb-0" id="portfolio">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="mb-5 text-center" data-aos="fade-up">Join us</h2>
-        </div>
 
-
-  
-
-        <div class="col-lg-6 col-12">
-          <div class="portfolio-thumb mb-5" data-aos="fade-up">
-            <a href="images/portfolio/visuals-Y4qzW3AsvqI-unsplash.jpeg" class="image-popup">
-              <img src="images/portfolio/visuals-Y4qzW3AsvqI-unsplash.jpeg" class="img-fluid portfolio-image" alt="" />
-            </a>
-
-            <div class="portfolio-info">
-              <h4 class="portfolio-title mb-0">Annual €45.00 GBP</h4>
-
-              <p class="text-danger">Join now</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-12">
-          <div class="portfolio-thumb" data-aos="fade-up">
-            <a href="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg" class="image-popup">
-              <img src="images/portfolio/thought-catalog-gv-T-OjLe4c-unsplash.jpeg" class="img-fluid portfolio-image" alt="" />
-            </a>
-
-            <div class="portfolio-info">
-              <h4 class="portfolio-title mb-0">Trainee €25.00 GBP</h4>
-
-              <p class="text-info">Join now</p>
-            </div>
-          </div>
-        </div>
- 
-
-
-      </div>
-    </div>
-  </section> -->
 
   <!-- news and events -->
-  <section class="section-padding" id="news">
+  <section class="section-padding news" id="news">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -345,7 +320,7 @@
 
   <!-- Regional Executives -->
 
-  <section class="news container-fluid section-padding grey-bg">
+  <section class=" container-fluid section-padding grey-bg">
     <div class="row">
       <div class="col-12">
         <h2 class="mb-5 text-center" data-aos="fade-up">Regional Executives</h2>
@@ -433,7 +408,7 @@
 
   <!-- Co-opted Executives -->
 
-  <section class="container-fluid section-padding grey-bg">
+  <section class="news container-fluid section-padding grey-bg">
     <div class="row">
       <div class="col-12">
         <h2 class="mb-5 text-center" data-aos="fade-up">Co-opted Executives</h2>
@@ -627,6 +602,7 @@
   <script src="js/scrollspy.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/auth.js"></script>
+
 
 </body>
 
