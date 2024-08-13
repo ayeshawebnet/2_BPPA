@@ -56,11 +56,7 @@
         <div class="col-12">
           <h2 class="mb-5 text-center" data-aos="fade-up">One in 4 of you are affected. Why do we look away?</h2>
         </div>
-
-
-
-
-        <div class="col-sm-12 col-md-12 col-12 videoWrapper pb-5">
+        <div class="col-sm-12 col-md-8 col-12 videoWrapper pb-5">
         <iframe width="100%" height="600px" src="https://www.youtube.com/embed/biLdKre2HO4" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
