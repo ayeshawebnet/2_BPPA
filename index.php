@@ -26,7 +26,7 @@
 
   <link href="css/templatemo-nomad-force.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/auth.css">
+
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
@@ -40,8 +40,6 @@
 
     <?php include 'header.php'; ?>
 
-    <!-- login -->
-    <?php include 'auth.php'; ?>
 
     <!-- banner -->
     <?php include 'banner.php'; ?>

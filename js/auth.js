@@ -1,16 +1,17 @@
 
-  home = document.querySelector(".home"),
+  home = document.querySelector("body"),
   formContainer = document.querySelector(".form_container")
   pwShowHide = document.querySelectorAll(".pw_hide");
 
 
 //variables for form open and close
   const formCloseBtn = document.querySelector(".form_close")
-  const formOpenBtn = document.querySelector("#form-open")
-
+  // const formOpenBtn = document.querySelector("#form-open")
+  const formOpenBtn = document.getElementById("auth-body")
+  console.log(formOpenBtn)
   //variable to switch between login and signup form
-signupLink = document.querySelector("#signup")
-loginLink = document.querySelector("#login")
+let signupLink = document.querySelector("#signup")
+let loginLink = document.querySelector("#login")
 
 //variables for signup form
 const signBtn = document.getElementById("signBtn");
@@ -28,11 +29,14 @@ const signout = document.getElementById("signout");
 const default_email = "ayesha@webnet.com.pk";
 const default_password = "123456";
 
-formOpenBtn.addEventListener("click", () => {
+// formOpenBtn.addEventListener("click", () => {
+//   document.body.style.overflow = "hidden";
+//   home.classList.add("show");
+// });
+function formOpen(){
   document.body.style.overflow = "hidden";
   home.classList.add("show");
-});
-
+}
 pwShowHide.forEach((icon) => {
   icon.addEventListener("click", () => {
     let getPwInput = icon.parentElement.querySelector("input");
@@ -47,11 +51,10 @@ pwShowHide.forEach((icon) => {
   });
 });
 
-goToSignup = () => {
-
+function goToSignup(){
   formContainer.classList.add("active");
 };
-goToLogin = () => {
+function goToLogin(){
 
   formContainer.classList.remove("active");
 }
@@ -92,13 +95,8 @@ function isUserExist() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const { email, password } = getCredentials();
-  if (email && password) {
-    loginEmailInput.value = email;
-    loginPasswordInput.value = password;
-    // isUserExist() 
-  }
-  
+  formOpen();
+
 });
 
 
@@ -142,13 +140,11 @@ function signOut() {
     formOpenBtn.style.display = "block";
     // document.getElementById("signout").classList.add("d-none");
     document.getElementById("member-ship").classList.add("d-none");
-
-  
 };
 
 
 formCloseBtn.addEventListener("click", formClose);
-// signupLink.addEventListener("click", goToSignup);
+signupLink.addEventListener("click", goToSignup);
 loginLink.addEventListener("click", goToLogin);
 // signout.addEventListener("click", signOut)
 
