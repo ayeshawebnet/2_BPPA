@@ -656,7 +656,7 @@ body {
 .site-footer {
   background: var(--dark-color);
   padding-top: 4.5rem;
-  padding-bottom: 2.5rem;
+  /* padding-bottom: 2.5rem; */
 }
 
 .site-footer .custom-link {

@@ -30,7 +30,7 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 
-  
+
 </head>
 
 <body>
@@ -38,17 +38,21 @@
   <!-- <main> -->
   <div class="home ">
 
-    <?php include 'header.php'; ?>
+    <?php include './include/header.php'; ?>
 
     <!-- login -->
     <?php include 'auth.php'; ?>
 
     <!-- banner -->
-    <?php include 'banner.php'; ?>
+    <section id="hero">
+      <div class="videoWrapper">
+        <img class="banner-img" src="images/logoBanner/Portfolio-pathway-banner1.jpg" alt="">
+      </div>
+    </section>
 
   </div>
 
-  <?php include 'about.php'; ?>
+  <?php include './component/about.php'; ?>
 
   <section class="section-padding pb-5" id="video">
     <div class="container-fluid">
@@ -57,13 +61,13 @@
           <h2 class="mb-5 text-center" data-aos="fade-up">One in 4 of you are affected. Why do we look away?</h2>
         </div>
         <div class="col-sm-12 col-md-8 col-12 videoWrapper pb-5">
-        <iframe width="100%" height="600px" src="https://www.youtube.com/embed/biLdKre2HO4" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/biLdKre2HO4" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <?php include 'join-us.php'; ?>
+  <?php include './component/join-us.php'; ?>
 
   <section class="section-padding " id="portfolio">
     <div class="container">
@@ -79,18 +83,18 @@
             <div class="portfolio-thumb">
               <div class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-item active">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1590-scaled-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1590-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/conference/conf1.jpg" class="image-popup">
+                    <img src="images/conference/conf1.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5671-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5671-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/conference/conf2.jpg" class="image-popup">
+                    <img src="images/conference/conf2.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1608-scaled-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1608-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/conference/conf3.jpg" class="image-popup">
+                    <img src="images/conference/conf3.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
               </div>
@@ -108,33 +112,33 @@
             <div class="portfolio-thumb">
               <div class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-item active">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5726-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5726-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/events/event1.jpg" class="image-popup">
+                    <img src="images/events/event1.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5664-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5664-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/events/event2.jpg" class="image-popup">
+                    <img src="images/events/event2.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5660-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5660-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/events/event3.jpg" class="image-popup">
+                    <img src="images/events/event3.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5658-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5658-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/events/event4.jpg" class="image-popup">
+                    <img src="images/events/event4.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5732-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5732-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/events/event5.jpg" class="image-popup">
+                    <img src="images/events/event5.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/dbe08f50-b266-4760-8e69-fe0d6c13fccf-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/dbe08f50-b266-4760-8e69-fe0d6c13fccf-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/events/event6.jpg" class="image-popup">
+                    <img src="images/events/event6.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
               </div>
@@ -153,38 +157,38 @@
             <div class="portfolio-thumb">
               <div class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-item active">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5707-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5707-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/spotlights/spot1.jpg" class="image-popup">
+                    <img src="images/spotlights/spot1.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1582-scaled-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1582-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/spotlights/spot2.jpg" class="image-popup">
+                    <img src="images/spotlights/spot2.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5737-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5737-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/spotlights/spot3.jpg" class="image-popup">
+                    <img src="images/spotlights/spot3.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5715-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5715-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/spotlights/spot4.jpg" class="image-popup">
+                    <img src="images/spotlights/spot4.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5710-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5710-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/spotlights/spot5.jpg" class="image-popup">
+                    <img src="images/spotlights/spot5.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5708-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5708-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/spotlights/spot6.jpg" class="image-popup">
+                    <img src="images/spotlights/spot6.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1570-scaled-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1570-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/spotlights/spot7.jpg" class="image-popup">
+                    <img src="images/spotlights/spot7.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
 
@@ -203,18 +207,18 @@
             <div class="portfolio-thumb">
               <div class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-item active">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1572-scaled-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1572-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/education/edu1.jpg" class="image-popup">
+                    <img src="images/education/edu1.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5701-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5701-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/education/edu2.jpg" class="image-popup">
+                    <img src="images/education/edu2.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
                 <div class="carousel-item">
-                  <a href="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1597-scaled-1190x530.jpg" class="image-popup">
-                    <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1597-scaled-1190x530.jpg" class="img-fluid portfolio-image" alt="">
+                  <a href="images/education/edu3.jpg" class="image-popup">
+                    <img src="images/education/edu3.jpg" class="img-fluid portfolio-image" alt="">
                   </a>
                 </div>
               </div>
@@ -247,7 +251,7 @@
         <div class="col-lg-6 col-12 mb-5 mb-lg-0">
           <div class="news-thumb" data-aos="fade-up">
             <a href="#" class="news-image-hover news-image-hover-warning">
-              <img src="../2_BPPA/images/event-banner-one.jpg" class="img-fluid large-news-image news-image" alt="" />
+              <img src="images/news/event-banner-1.jpg" class="img-fluid large-news-image news-image" alt="" />
             </a>
 
             <div class="news-category bg-warning text-white">News</div>
@@ -266,7 +270,7 @@
           <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
             <div class="news-top w-100">
               <a href="#" class="news-image-hover news-image-hover-primary">
-                <img src="../2_BPPA/images/event-banner-3.jpg" class="img-fluid news-image" alt="" />
+                <img src="images/news/event-banner-3.jpg" class="img-fluid news-image" alt="" />
               </a>
 
               <div class="news-category bg-primary text-white">Events</div>
@@ -293,9 +297,8 @@
           <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
             <div class="news-top w-100" data-aos="fade-up">
               <a href="#" class="news-image-hover news-image-hover-success">
-                <img src="../2_BPPA/images/event-banner-2.jpg" class="img-fluid news-image" alt="" />
+                <img src="images/news/event-banner-2.jpg" class="img-fluid news-image" alt="" />
               </a>
-
               <div class="news-category bg-success text-white">News</div>
             </div>
 
@@ -509,83 +512,7 @@
 
   <!-- </main> -->
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-12">
-          <h5 class="text-white">
-            <i class="bi-geo-alt-fill me-2"></i>
-            BPPA 91C Main Road Cheapside Waltham DN37 0HP
-          </h5>
-
-          <a href="mailto:Britishpakistanipsychiatrists@gmail.com" class="custom-link mt-3 mb-5">
-            Britishpakistanipsychiatrists@gmail.com
-          </a>
-        </div>
-
-        <div class="col-12 d-flex footer-links">
-          <!-- <div class="col">
-            <h5>Contact Us</h5>
-            <ul class="footer-li">
-              <li>BPPA</li>
-              <li>91C Main Road</li>
-              <li>Cheapside</li>
-              <li>Waltham</li>
-              <li>DN37 0HP</li>
-            </ul>
-          </div> -->
-          <div class="col">
-            <h5>Links</h5>
-            <ul class="footer-li">
-              <li>Introduction</li>
-              <li>BPPA Nama</li>
-              <li>Constitution</li>
-              <li>Contact Us</li>
-              <li>Membership</li>
-              <li>List Of Members</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5>Blogs</h5>
-            <ul class="footer-li">
-              <li>Educational</li>
-              <li>News and Events</li>
-              <li>Gallery</li>
-              <li>News</li>
-              <li>Archive</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="col-6">
-          <p class="copyright-text mb-0">Copyright © 2024 British Pakistan Psychiatrists Association
-            <!-- 
-            <br><br>Design: <a href="https://templatemo.com/page/1" target="_parent">TemplateMo</a><br><br>
-
-            Distributed By: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> -->
-          </p>
-
-        </div>
-
-        <div class="col-lg-3 col-5 ms-auto">
-          <ul class="social-icon">
-            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-
-            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
-
-            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-          </ul>
-        </div>
-
-      </div>
-      </section>
-  </footer>
+  <?php include './include/footer.php'; ?>
 
 
   <!-- JAVASCRIPT FILES -->

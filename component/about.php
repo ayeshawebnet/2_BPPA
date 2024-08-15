@@ -35,7 +35,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3 col-12 p-0">
-        <img src="https://thebppa.org.uk/wp-content/uploads/2022/09/IMG_1588-scaled-1190x530.jpg" class="img-fluid about-image" alt="" />
+        <img src="images/spotlights/spot2.jpg" class="img-fluid about-image" alt="" />
       </div>
 
       <div class="col-lg-3 col-12 bg-dark">
@@ -60,7 +60,7 @@
         <section id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5684-1190x530-1-1024x456.jpg" class="img-fluid team-image" alt="" />
+              <img src="images/education/edu4.jpg" class="img-fluid team-image" alt="" />
 
               <div class="team-thumb bg-warning">
                 <h3 class="text-white mb-0">About BPPA</h3>
@@ -75,7 +75,7 @@
             </div>
 
             <div class="carousel-item">
-              <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5730-1190x530-1-1024x456.jpg" class="img-fluid team-image" alt="" />
+              <img src="images/education/edu5.jpg" class="img-fluid team-image" alt="" />
 
               <div class="team-thumb bg-primary">
                 <h3 class="text-white mb-0">Educational</h3>
@@ -90,7 +90,7 @@
             </div>
 
             <div class="carousel-item">
-              <img src="https://thebppa.org.uk/wp-content/uploads/2021/06/IMG_5714-1190x530-1-1024x456.jpg" class="img-fluid team-image" alt="" />
+              <img src="images/education/edu6.jpg" class="img-fluid team-image" alt="" />
 
               <div class="team-thumb bg-success">
                 <h3 class="text-white mb-0">Members</h3>
