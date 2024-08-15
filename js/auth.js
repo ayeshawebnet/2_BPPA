@@ -1,16 +1,17 @@
 
-  home = document.querySelector(".home"),
+  home = document.querySelector("body"),
   formContainer = document.querySelector(".form_container")
   pwShowHide = document.querySelectorAll(".pw_hide");
 
 
 //variables for form open and close
   const formCloseBtn = document.querySelector(".form_close")
-  const formOpenBtn = document.querySelector("#form-open")
-
+  // const formOpenBtn = document.querySelector("#form-open")
+  // const formOpenBtn = document.getElementById("auth-body")
+  // console.log(formOpenBtn)
   //variable to switch between login and signup form
-signupLink = document.querySelector("#signup")
-loginLink = document.querySelector("#login")
+let signupLink = document.querySelector("#signup")
+let loginLink = document.querySelector("#login")
 
 //variables for signup form
 const signBtn = document.getElementById("signBtn");
@@ -28,30 +29,32 @@ const signout = document.getElementById("signout");
 const default_email = "ayesha@webnet.com.pk";
 const default_password = "123456";
 
-formOpenBtn.addEventListener("click", () => {
+// formOpenBtn.addEventListener("click", () => {
+//   document.body.style.overflow = "hidden";
+//   home.classList.add("show");
+// });
+function formOpen(){
   document.body.style.overflow = "hidden";
   home.classList.add("show");
-});
+}
+// pwShowHide.forEach((icon) => {
+//   icon.addEventListener("click", () => {
+//     let getPwInput = icon.parentElement.querySelector("input");
+//     if (getPwInput.type === "password") {
+//       getPwInput.type = "text";
+//       icon.classList.replace("uil-eye-slash", "d-none");
+//       icon.classList.replace("uil-eye-slash", "d-none");
+//     } else {
+//       getPwInput.type = "password";
+//       icon.classList.replace("uil-eye", "uil-eye-slash");
+//     }
+//   });
+// });
 
-pwShowHide.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    let getPwInput = icon.parentElement.querySelector("input");
-    if (getPwInput.type === "password") {
-      getPwInput.type = "text";
-      icon.classList.replace("uil-eye-slash", "d-none");
-      icon.classList.replace("uil-eye-slash", "d-none");
-    } else {
-      getPwInput.type = "password";
-      icon.classList.replace("uil-eye", "uil-eye-slash");
-    }
-  });
-});
-
-goToSignup = () => {
-
+function goToSignup(){
   formContainer.classList.add("active");
 };
-goToLogin = () => {
+function goToLogin(){
 
   formContainer.classList.remove("active");
 }
@@ -91,65 +94,75 @@ function isUserExist() {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const { email, password } = getCredentials();
-  if (email && password) {
-    loginEmailInput.value = email;
-    loginPasswordInput.value = password;
-    // isUserExist() 
-  }
-  
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   formOpen();
+
+// });
 
 
 
-loginBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+// loginBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
 
-  const email = loginEmailInput.value;
-  const password = loginPasswordInput.value;
+//   const email = loginEmailInput.value;
+//   const password = loginPasswordInput.value;
 
-  const { email: storedEmail, password: storedPassword } = getCredentials();
-  console.log("storedEmail===>",storedEmail,getCredentials());
-  if (email === storedEmail && password === storedPassword) {
-      alert('Login Successful');
-      formClose();
-      isUserExist();
+//   const { email: storedEmail, password: storedPassword } = getCredentials();
+//   console.log("storedEmail===>",storedEmail,getCredentials());
+//   if (email === storedEmail && password === storedPassword) {
+//       alert('Login Successful');
+//       formClose();
+//       isUserExist();
      
-  } else {
-      alert('Login Failed');
-  }
-});
+//   } else {
+//       alert('Login Failed');
+//   }
+// });
 
-signupBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  const email = signupEmailInput.value;
-  const password = signupPasswordInput.value;
+// signupBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   const email = signupEmailInput.value;
+//   const password = signupPasswordInput.value;
 
-  if (email && password) {
-      saveCredentials(email, password);
-      alert('Signup Successful, Please Login');
-      loginEmailInput.value = email;
-      loginPasswordInput.value = password;
-      goToLogin();
-  } else {
-      alert('Signup Failed');
-  }
-});
+//   if (email && password) {
+//       saveCredentials(email, password);
+//       alert('Signup Successful, Please Login');
+//       loginEmailInput.value = email;
+//       loginPasswordInput.value = password;
+//       goToLogin();
+//   } else {
+//       alert('Signup Failed');
+//   }
+// });
 
 function signOut() {
   // document.getElementById("user").innerHTML = "";
     formOpenBtn.style.display = "block";
     // document.getElementById("signout").classList.add("d-none");
     document.getElementById("member-ship").classList.add("d-none");
-
-  
 };
 
 
-formCloseBtn.addEventListener("click", formClose);
+// formCloseBtn.addEventListener("click", formClose);
 // signupLink.addEventListener("click", goToSignup);
-loginLink.addEventListener("click", goToLogin);
+// loginLink.addEventListener("click", goToLogin);
 // signout.addEventListener("click", signOut)
 
  
+
+
+
+$(document).ready(function(){
+  $(".register-form").hide();
+  $(".formbold-main-wrapper").css("height", "100vh");
+  $(".go-to-signup").click(function(){
+    $(".register-form").show();
+    $(".login-form").hide();
+    $(".formbold-main-wrapper").css("height", "auto");
+  });
+  $(".go-to-login").click(function(){
+    $(".register-form").hide();
+    $(".login-form").show(); 
+    $(".formbold-main-wrapper").css("height", "100vh");
+  });
+});
