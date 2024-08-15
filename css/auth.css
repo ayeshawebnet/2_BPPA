@@ -109,6 +109,7 @@ body {
 .green-link {
   margin-left: 5px;
   color: #2d8643;
+  cursor: pointer;
 }
 
 .formbold-input-checkbox {
@@ -147,8 +148,4 @@ body {
 }
 .formbold-btn:hover {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-}
-
-.d-none {
-  display: none !important;
 }
