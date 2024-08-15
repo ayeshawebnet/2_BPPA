@@ -7,8 +7,8 @@
 //variables for form open and close
   const formCloseBtn = document.querySelector(".form_close")
   // const formOpenBtn = document.querySelector("#form-open")
-  const formOpenBtn = document.getElementById("auth-body")
-  console.log(formOpenBtn)
+  // const formOpenBtn = document.getElementById("auth-body")
+  // console.log(formOpenBtn)
   //variable to switch between login and signup form
 let signupLink = document.querySelector("#signup")
 let loginLink = document.querySelector("#login")
@@ -37,19 +37,19 @@ function formOpen(){
   document.body.style.overflow = "hidden";
   home.classList.add("show");
 }
-pwShowHide.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    let getPwInput = icon.parentElement.querySelector("input");
-    if (getPwInput.type === "password") {
-      getPwInput.type = "text";
-      icon.classList.replace("uil-eye-slash", "d-none");
-      icon.classList.replace("uil-eye-slash", "d-none");
-    } else {
-      getPwInput.type = "password";
-      icon.classList.replace("uil-eye", "uil-eye-slash");
-    }
-  });
-});
+// pwShowHide.forEach((icon) => {
+//   icon.addEventListener("click", () => {
+//     let getPwInput = icon.parentElement.querySelector("input");
+//     if (getPwInput.type === "password") {
+//       getPwInput.type = "text";
+//       icon.classList.replace("uil-eye-slash", "d-none");
+//       icon.classList.replace("uil-eye-slash", "d-none");
+//     } else {
+//       getPwInput.type = "password";
+//       icon.classList.replace("uil-eye", "uil-eye-slash");
+//     }
+//   });
+// });
 
 function goToSignup(){
   formContainer.classList.add("active");
@@ -94,46 +94,46 @@ function isUserExist() {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  formOpen();
+// document.addEventListener("DOMContentLoaded", () => {
+//   formOpen();
 
-});
+// });
 
 
 
-loginBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+// loginBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
 
-  const email = loginEmailInput.value;
-  const password = loginPasswordInput.value;
+//   const email = loginEmailInput.value;
+//   const password = loginPasswordInput.value;
 
-  const { email: storedEmail, password: storedPassword } = getCredentials();
-  console.log("storedEmail===>",storedEmail,getCredentials());
-  if (email === storedEmail && password === storedPassword) {
-      alert('Login Successful');
-      formClose();
-      isUserExist();
+//   const { email: storedEmail, password: storedPassword } = getCredentials();
+//   console.log("storedEmail===>",storedEmail,getCredentials());
+//   if (email === storedEmail && password === storedPassword) {
+//       alert('Login Successful');
+//       formClose();
+//       isUserExist();
      
-  } else {
-      alert('Login Failed');
-  }
-});
+//   } else {
+//       alert('Login Failed');
+//   }
+// });
 
-signupBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  const email = signupEmailInput.value;
-  const password = signupPasswordInput.value;
+// signupBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   const email = signupEmailInput.value;
+//   const password = signupPasswordInput.value;
 
-  if (email && password) {
-      saveCredentials(email, password);
-      alert('Signup Successful, Please Login');
-      loginEmailInput.value = email;
-      loginPasswordInput.value = password;
-      goToLogin();
-  } else {
-      alert('Signup Failed');
-  }
-});
+//   if (email && password) {
+//       saveCredentials(email, password);
+//       alert('Signup Successful, Please Login');
+//       loginEmailInput.value = email;
+//       loginPasswordInput.value = password;
+//       goToLogin();
+//   } else {
+//       alert('Signup Failed');
+//   }
+// });
 
 function signOut() {
   // document.getElementById("user").innerHTML = "";
@@ -143,9 +143,26 @@ function signOut() {
 };
 
 
-formCloseBtn.addEventListener("click", formClose);
-signupLink.addEventListener("click", goToSignup);
-loginLink.addEventListener("click", goToLogin);
+// formCloseBtn.addEventListener("click", formClose);
+// signupLink.addEventListener("click", goToSignup);
+// loginLink.addEventListener("click", goToLogin);
 // signout.addEventListener("click", signOut)
 
  
+
+
+
+$(document).ready(function(){
+  $(".register-form").hide();
+  $(".formbold-main-wrapper").css("height", "100vh");
+  $(".go-to-signup").click(function(){
+    $(".register-form").show();
+    $(".login-form").hide();
+    $(".formbold-main-wrapper").css("height", "auto");
+  });
+  $(".go-to-login").click(function(){
+    $(".register-form").hide();
+    $(".login-form").show(); 
+    $(".formbold-main-wrapper").css("height", "100vh");
+  });
+});

@@ -3,25 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BPPA</title>
     <link rel="stylesheet" href="css/auth.css" />
   </head>
   <body>
     <div class="formbold-main-wrapper">
-      <!-- Author: FormBold Team -->
-      <!-- Learn More: https://formbold.com -->
       <div class="formbold-form-wrapper">
-		<div class="formbold-img">
-          <img src="images/logo/BPPA.png" />
-		</div>
-        <form action="https://formbold.com/s/FORM_ID" method="POST">
-          <div class="formbold-form-title">
-            <h2 class="">Register Today</h2>
-            <p>
-				Join Our Community 
-            </p>
-          </div>
+        <!-- Register Form -->
 
+        <form
+          action="https://formbold.com/s/FORM_ID"
+          method="POST"
+          class="register-form"
+        >
+          <div class="formbold-input-flex">
+            <div class="formbold-img">
+              <img src="images/logo/BPPA.png" width="250px" />
+            </div>
+            <div class="formbold-form-title">
+              <h2 class="">Register Today</h2>
+              <p>Join Our Community</p>
+            </div>
+          </div>
           <div class="formbold-input-flex">
             <div>
               <label for="firstname" class="formbold-form-label">
@@ -140,7 +143,44 @@
             </div>
           </div>
 
-          <div class="formbold-checkbox-wrapper">
+          <div class="formbold-mb-3">
+            <label for="profession" class="formbold-form-label">
+              Professional Category
+            </label>
+            <input
+              type="text"
+              name="profession"
+              id="profession"
+              class="formbold-form-input"
+            />
+          </div>
+
+          <div class="formbold-input-flex">
+            <div>
+              <label for="password" class="formbold-form-label">
+                Password
+              </label>
+              <input
+                type="text"
+                name="password"
+                id="password"
+                class="formbold-form-input"
+              />
+            </div>
+            <div>
+              <label for="cpassword" class="formbold-form-label">
+                Confirm Password
+              </label>
+              <input
+                type="text"
+                name="cpassword"
+                id="cpassword"
+                class="formbold-form-input"
+              />
+            </div>
+          </div>
+
+          <!-- <div class="formbold-checkbox-wrapper">
             <label for="supportCheckbox" class="formbold-checkbox-label">
               <div class="formbold-relative">
                 <input
@@ -168,11 +208,85 @@
               I agree to the defined
               <a href="#"> terms, conditions, and policies</a>
             </label>
+          </div> -->
+        
+          <button class="formbold-btn">Register Now</button>
+          <br>
+          <br>
+         
+            <span class="green-link go-to-login"> Already have an account? </span>
+         
+        </form>
+        <!-- Login Form -->
+        <form
+          action="https://formbold.com/s/FORM_ID"
+          method="POST"
+          class="login-form"
+        >
+          <div class="formbold-input-flex">
+            <div class="formbold-img">
+              <img src="images/logo/BPPA.png" width="250px" />
+            </div>
+            <div class="formbold-form-title">
+              <h2 class="">Welcome Back!</h2>
+              <p>Login Below</p>
+            </div>
           </div>
 
-          <button class="formbold-btn">Register Now</button>
+          <div class="formbold-mb-3 formbold-form-label" data-aos="fade-left">
+            <span class="formbold-form-label">
+              Log in using your registered email address and password. If you've
+              forgotten your password, simply click the "Forgot Your Password?"
+              link below, and follow the instructions to reset it. You'll
+              receive an email with a link to create a new password, allowing
+              you to regain access to your account quickly. For any issues or if
+              you've forgotten your login details, please reach out to BPPA
+              Support at
+            </span>
+            <a
+              class="green-link"
+              href="mailto:Britishpakistanipsychiatrists@gmail.com"
+              >Britishpakistanipsychiatrists@gmail.com</a
+            >
+            for assistance.
+          </div>
+
+          <div class="formbold-mb-3">
+            <label for="email" class="formbold-form-label"> Email </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="formbold-form-input"
+            />
+          </div>
+
+          <div class="formbold-mb-3">
+            <label for="password" class="formbold-form-label"> Password </label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              class="formbold-form-input"
+            />
+          </div>
+
+          <div class="formbold-checkbox-wrapper">
+            <label class="formbold-checkbox-label">
+              <a class="go-to-signup green-link">New User?</a>
+              <span>&nbsp;or&nbsp;</span>
+              <a href="#" class="forgot-pass"> Forgot your Password?</a>
+            </label>
+          </div>
+
+          <button class="formbold-btn log-in">Login</button>
         </form>
       </div>
     </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/aos.js"></script>
   </body>
 </html>
