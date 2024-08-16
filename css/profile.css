@@ -1018,10 +1018,9 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    border: 1px solid rgba(0, 0, 0, .05);
-    border-radius: .375rem;
+    
     background-color: #fff;
-    background-clip: border-box;
+    
   }
   
   .card>hr {
@@ -1386,13 +1385,13 @@
   }
   
   .bg-gradient-default {
-    background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
+    background: linear-gradient(87deg, #1a174d 0, #004b29 100%) !important;
   }
   
-  .bg-gradient-default {
+  /* .bg-gradient-default {
     background: linear-gradient(87deg, #172b4d 0, #1a174d 100%) !important;
   }
-  
+   */
   @keyframes floating-lg {
     0% {
       transform: translateY(0px);
@@ -2032,3 +2031,68 @@
     margin-bottom: 20px;
   }
   
+
+  /* tab panel */
+  .tab-panel{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-clip: border-box;
+    /* background:#ddd; */
+  }
+  .tab-panel__header{
+    border-top-left-radius: .375rem;
+    border-top-right-radius: .375rem;
+    background: #673AB7;
+    /* background: #325d4d; */
+    position:relative;
+  }
+  .tab-panel__header ul li{
+    display:inline-block;
+  }
+  .tab-panel__header ul{
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  .tab-panel__header a{
+    text-decoration:none;
+    display:block;
+    padding:20px;
+    font-size:18px;
+    color: #fff;
+    border-right:solid 1px #fff;
+    min-width:150px;
+    text-align:center;
+  }
+  
+  .tab-panel__arrow{
+    position:absolute;
+    border-width:20px;
+    border-style:solid;
+    border-color:#673AB7 transparent transparent transparent;
+    transition:transform 0.5s;
+    z-index:1;
+  }
+  
+  /*Tab Panel Content area*/
+  .tab-panel__content{
+    border: 1px solid rgba(0, 0, 0, .05);
+    overflow:hidden;
+  }
+  .tab-panel__content-area{
+    min-height:250px;
+    display:flex;
+    flex-wrap:nowrap;
+    width:100%;
+    transition:transform 0.5s;
+  }
+  .tab-panel__item{
+    flex:100% 1 0;
+  }
+  .tab-panel__item__content{
+     /* padding: 50px; */
+     padding: 10px;
+  }
+  .tab-panel__item--active{
+    display:block;
+  }
+  /* tab panel */

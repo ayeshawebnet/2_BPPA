@@ -52,25 +52,32 @@
 
           <div class="formbold-input-flex">
             <div>
-              <label for="email" class="formbold-form-label"> Email </label>
+              <label for="email" class="formbold-form-label"> Email <span class="required-asterisk">*</span></label>
               <input
                 type="email"
                 name="email"
                 id="email"
                 class="formbold-form-input"
+                required
               />
             </div>
             <div>
-              <label for="phone" class="formbold-form-label">
-                Phone number
-              </label>
-              <input
-                type="text"
+              <label for="phone" class="formbold-form-label"> Phone Number <span class="required-asterisk">*</span></label>
+              <div class="phone-input-wrapper">
+                <span class="country-code">+44</span>
+                <input
+                type="tel"
                 name="phone"
                 id="phone"
-                class="formbold-form-input"
+                class="formbold-form-num-input formbold-form-input"
+                placeholder="0207 1234567"
+                pattern="^\d{4}\s\d{7}$"
+                title="Please enter a valid UK phone number (e.g., 0207 1234567)"
+                required
               />
+              </div>
             </div>
+           
           </div>
 
           <div class="formbold-mb-3">
@@ -99,20 +106,21 @@
 
           <div class="formbold-input-flex">
             <div>
-              <label for="state" class="formbold-form-label">
-                State/Province
-              </label>
+              <label for="state" class="formbold-form-label"> City/Town <span class="required-asterisk">*</span></label>
               <input
                 type="text"
                 name="state"
                 id="state"
                 class="formbold-form-input"
+                required
               />
             </div>
             <div>
-              <label for="country" class="formbold-form-label"> Country </label>
+              <label for="country" class="formbold-form-label"> Country <span class="required-asterisk">*</span></label>
               <input
+                disabled
                 type="text"
+                value="United Kingdom"
                 name="country"
                 id="country"
                 class="formbold-form-input"
@@ -122,17 +130,19 @@
 
           <div class="formbold-input-flex">
             <div>
-              <label for="post" class="formbold-form-label">
-                Post/Zip code
-              </label>
+              <label for="postcode" class="formbold-form-label"> Postcode <span class="required-asterisk">*</span></label>
               <input
                 type="text"
-                name="post"
-                id="post"
+                name="postcode"
+                id="postcode"
                 class="formbold-form-input"
+                placeholder="e.g., SW1A 1AA"
+                pattern="^[A-Z]{1,2}[0-9][0-9A-Z]?\s?[0-9][A-Z]{2}$"
+                title="Please enter a valid UK postcode (e.g., SW1A 1AA)"
+                required
               />
             </div>
-            <div>
+            <!-- <div>
               <label for="area" class="formbold-form-label"> Area Code </label>
               <input
                 type="text"
@@ -140,42 +150,45 @@
                 id="area"
                 class="formbold-form-input"
               />
-            </div>
+            </div> -->
           </div>
 
           <div class="formbold-mb-3">
             <label for="profession" class="formbold-form-label">
-              Professional Category
+              Professional Category <span class="required-asterisk">*</span>
             </label>
             <input
               type="text"
               name="profession"
               id="profession"
               class="formbold-form-input"
+              required
             />
           </div>
 
           <div class="formbold-input-flex">
             <div>
               <label for="password" class="formbold-form-label">
-                Password
+                Password <span class="required-asterisk">*</span>
               </label>
               <input
                 type="text"
                 name="password"
                 id="password"
                 class="formbold-form-input"
+                required
               />
             </div>
             <div>
               <label for="cpassword" class="formbold-form-label">
-                Confirm Password
+                Confirm Password <span class="required-asterisk">*</span>
               </label>
               <input
                 type="text"
                 name="cpassword"
                 id="cpassword"
                 class="formbold-form-input"
+                required
               />
             </div>
           </div>
@@ -209,13 +222,12 @@
               <a href="#"> terms, conditions, and policies</a>
             </label>
           </div> -->
-        
+
           <button class="formbold-btn">Register Now</button>
-          <br>
-          <br>
-         
-            <span class="green-link go-to-login"> Already have an account? </span>
-         
+          <br />
+          <br />
+
+          <span class="green-link go-to-login"> Already have an account? </span>
         </form>
         <!-- Login Form -->
         <form
@@ -252,22 +264,24 @@
           </div>
 
           <div class="formbold-mb-3">
-            <label for="email" class="formbold-form-label"> Email </label>
+            <label for="email" class="formbold-form-label"> Email <span class="required-asterisk">*</span> </label>
             <input
               type="email"
               name="email"
               id="email"
               class="formbold-form-input"
+              required
             />
           </div>
 
           <div class="formbold-mb-3">
-            <label for="password" class="formbold-form-label"> Password </label>
+            <label for="password" class="formbold-form-label"> Password <span class="required-asterisk">*</span></label>
             <input
               type="text"
               name="password"
               id="password"
               class="formbold-form-input"
+              required
             />
           </div>
 

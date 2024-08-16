@@ -36,12 +36,11 @@
 <body>
 
   <!-- <main> -->
-  <div class="home ">
+  <div class="home">
 
     <?php include './include/header.php'; ?>
 
-    <!-- login -->
-    <?php include 'auth.php'; ?>
+
 
     <!-- banner -->
     <section id="hero">
