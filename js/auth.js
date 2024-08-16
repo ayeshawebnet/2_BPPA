@@ -165,4 +165,7 @@ $(document).ready(function(){
     $(".login-form").show(); 
     $(".formbold-main-wrapper").css("height", "100vh");
   });
+  // $("verify-email").click(function(){
+  //   window.location.href = 'verify-template.html';
+  // })
 });
