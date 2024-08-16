@@ -278,7 +278,7 @@
             <div class="news-bottom w-100">
               <div class="news-text-info">
                 <h5 class="news-title">
-                  <a href="#" class="news-title-link">2nd Annual Event – Live Performance by Tanya Wells</a>
+                  <a href="#" class="news-title-link">2nd Annual Event - Live Performance by Tanya Wells</a>
                 </h5>
 
                 <div class="d-flex flex-wrap">
@@ -286,7 +286,6 @@
                     <i class="bi-geo-alt-fill me-1 mb-2 mb-lg-0"></i>
                     Alaska,
                   </span>
-
                   <span class="text-muted">01/10/2021</span>
                 </div>
               </div>
@@ -295,7 +294,7 @@
 
           <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
             <div class="news-top w-100" data-aos="fade-up">
-              <a href="#" class="news-image-hover news-image-hover-success">
+              <a href="pages/news-detail.html" class="news-image-hover news-image-hover-success">
                 <img src="images/news/event-banner-2.jpg" class="img-fluid news-image" alt="" />
               </a>
               <div class="news-category bg-success text-white">News</div>
