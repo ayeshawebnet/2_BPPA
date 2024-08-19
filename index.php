@@ -253,7 +253,7 @@
 
         <div class="col-lg-6 col-12 mb-5 mb-lg-0">
           <div class="news-thumb" data-aos="fade-up">
-            <a href="#" class="news-image-hover news-image-hover-warning">
+            <a href="pages/news-detail.php" class="news-image-hover news-image-hover-warning">
               <img src="images/news/event-banner-1.jpg" class="img-fluid large-news-image news-image" alt="" />
             </a>
 
@@ -261,7 +261,7 @@
 
             <div class="news-text-info">
               <h5 class="news-title">
-                <a href="#" class="news-title-link">East Midlands Regional CPD Event on Wellbeing</a>
+                <a href="pages/news-detail.php" class="news-title-link">East Midlands Regional CPD Event on Wellbeing</a>
               </h5>
 
               <span class="text-muted">01/02/2022</span>
@@ -272,7 +272,7 @@
         <div class="col-lg-6 col-12">
           <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
             <div class="news-top w-100">
-              <a href="#" class="news-image-hover news-image-hover-primary">
+              <a href="pages/news-detail.php" class="news-image-hover news-image-hover-primary">
                 <img src="images/news/event-banner-3.jpg" class="img-fluid news-image" alt="" />
               </a>
 
@@ -282,7 +282,7 @@
             <div class="news-bottom w-100">
               <div class="news-text-info">
                 <h5 class="news-title">
-                  <a href="#" class="news-title-link">2nd Annual Event - Live Performance by Tanya Wells</a>
+                  <a href="pages/news-detail.php" class="news-title-link">2nd Annual Event - Live Performance by Tanya Wells</a>
                 </h5>
 
                 <div class="d-flex flex-wrap">
@@ -298,7 +298,7 @@
 
           <div class="news-thumb news-two-column d-flex flex-column flex-lg-row" data-aos="fade-up">
             <div class="news-top w-100" data-aos="fade-up">
-              <a href="pages/news-detail.html" class="news-image-hover news-image-hover-success">
+              <a href="pages/news-detail.php" class="news-image-hover news-image-hover-success">
                 <img src="images/news/event-banner-2.jpg" class="img-fluid news-image" alt="" />
               </a>
               <div class="news-category bg-success text-white">News</div>
@@ -307,7 +307,7 @@
             <div class="news-bottom w-100">
               <div class="news-text-info">
                 <h5 class="news-title">
-                  <a href="#" class="news-title-link">BPPA Call for Posters-images</a>
+                  <a href="pages/news-detail.php" class="news-title-link">BPPA Call for Posters-images</a>
                 </h5>
 
                 <span class="text-muted">27/10/2021</span>
