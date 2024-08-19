@@ -12,11 +12,11 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#hero">Home</a>
+          <a class="nav-link" href="index.php#hero">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#about">About us</a>
+          <a class="nav-link" href="index.php#about">About us</a>
         </li>
 
         <!-- <li class="nav-item">
@@ -24,14 +24,14 @@
                             </li> -->
 
         <li class="nav-item">
-          <a class="nav-link" href="#news">News & Events</a>
+          <a class="nav-link" href="index.php#news">News & Events</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Us</a>
+          <a class="nav-link" href="index.php#contact">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  d-none" href="#" id="form-open">Login</a>
+          <a class="nav-link  d-none" href="index.php#" id="form-open">Login</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pages/membership.html" target="_blank" id="member-ship">Membership</a>

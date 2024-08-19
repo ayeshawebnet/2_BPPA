@@ -20,8 +20,8 @@ https://templatemo.com/tm-567-nomad-force
   --title-color: #565758;
   --p-color: #717275;
 
-  --body-font-family: "Galano Grotesque Medium";
-  /* --body-font-family: "Noto Sans JP", sans-serif; "*/
+  /* --body-font-family: "Galano Grotesque Medium"; */
+  --body-font-family: "Noto Sans JP", sans-serif; 
 
   --h1-font-size: 72px;
   --h2-font-size: 42px;
@@ -46,7 +46,7 @@ html {
 
 body {
   background: var(--white-color);
-  font-family: var(--body-font-family);
+  font-family: var(--body-font-family)!important;
   position: relative;
 }
 
@@ -170,6 +170,7 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 
 /*---------------------------------------
@@ -377,6 +378,9 @@ body {
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
+.news-detail a{
+  color: var(--primary-color);
+}
 .hero {
   position: relative;
   overflow: hidden;
@@ -389,6 +393,7 @@ body {
 
   .custom-video,
   .news-detail-image {
+    
     object-fit: cover;
     width: 100vw;
     height: 100vh;
@@ -402,7 +407,7 @@ body {
 
 .heroText {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -484,6 +489,9 @@ body {
 /*---------------------------------------
   PORTFOLIO               
 -----------------------------------------*/
+.conference-banner{
+  /* background-attachment: fixed !important; */
+}
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
@@ -866,7 +874,7 @@ body {
   margin-bottom: 1.6%;
   background: #ffffff; /* Replace $color_white with the actual color code */
   line-height: 1.4;
-  font-family: var(--body-font-family);
+  font-family: var(--body-font-family)!important;
   border-radius: 5px;
   overflow: hidden;
   z-index: 0;
@@ -966,7 +974,7 @@ body {
 
 .blog-card .description h1,
 .blog-card .description h2 {
-  font-family: var(--body-font-family);
+  font-family: var(--body-font-family)!important;
 }
 
 .blog-card .description h1 {

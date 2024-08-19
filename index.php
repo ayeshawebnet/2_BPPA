@@ -98,6 +98,7 @@
                 </div>
               </div>
             </div>
+            <a href="pages/conference.php">
             <div class="portfolio-info">
               <h4 class="portfolio-title mb-0">Annual Conference Highlights</h4>
 
@@ -105,6 +106,7 @@
               </p>
 
             </div>
+            </a>
           </div>
 
           <div data-aos="fade-up" class="mb-5">
@@ -223,10 +225,12 @@
               </div>
             </div>
             <div class="portfolio-info">
-              <h4 class="portfolio-title mb-0">Educational Initiatives</h4>
+              <a href="pages/education.php">
+                <h4 class="portfolio-title mb-0">Educational Initiatives</h4>
 
-              <p class="text-info">Empowering Minds Through Education
-              </p>
+                <p class="text-info">Empowering Minds Through Education
+                </p>
+              </a>
 
             </div>
           </div>
