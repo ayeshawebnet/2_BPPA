@@ -1113,11 +1113,13 @@ body {
   text-align: center;
   padding: 10px;
   margin: 15px;
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
+  background-image: radial-gradient(#ffadb1, #ffebbe);
   color: #666;
   min-height: 246px !important;
   /* width: 170px; */
   border-radius: 10px;
+
 }
 .MultiCarousel .leftLst,
 .MultiCarousel .rightLst {
