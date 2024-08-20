@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg shadow-lg">
   <div class="container">
-    <a class="navbar-brand logo-container" href="#">
+    <a class="navbar-brand logo-container" href="index.php#hero">
       <img src="images/logoBanner/BPPA-white.png" alt="logo" class="img-fluid" style="width: 100%;">
     </a>
 
@@ -19,9 +19,7 @@
           <a class="nav-link" href="index.php#about">About us</a>
         </li>
 
-        <!-- <li class="nav-item">
-                                <a class="nav-link" href="#portfolio">Portfolio</a>
-                            </li> -->
+    
 
         <li class="nav-item">
           <a class="nav-link" href="index.php#news">News & Events</a>
@@ -31,10 +29,10 @@
           <a class="nav-link" href="index.php#contact">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  d-none" href="index.php#" id="form-open">Login</a>
+          <a class="nav-link  d-none" href="index.php" id="form-open">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/membership.html" target="_blank" id="member-ship">Membership</a>
+          <a class="nav-link" href="membership.html" target="_blank" id="member-ship">Membership</a>
         </li>
 
       </ul>

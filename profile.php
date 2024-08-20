@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../css/profile.css" />
+<link rel="stylesheet" href="css/profile.css" />
 
 <body>
   <div class="main-content">
@@ -27,7 +27,7 @@
           class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"
           href="index.php"
           target="_blank">
-          <img src="../images/logoBanner/BPPA-white.png" width="200px" alt="logo">
+          <img src="images/logoBanner/BPPA-white.png" width="200px" alt="logo">
         </a>
 
         <!-- Form -->
@@ -56,7 +56,7 @@
                 <span class="avatar avatar-sm rounded-circle">
                   <img
                     alt="Image placeholder"
-                    src="../images/people/dp2.png" />
+                    src="images/people/dp2.png" />
                 </span>
                 <div class="media-body ml-2 d-none d-lg-block">
                   <span class="mb-0 text-sm font-weight-bold">Ayesha Khalid</span>
@@ -68,24 +68,24 @@
               <div class="dropdown-header noti-title">
                 <h6 class="text-overflow m-0">Welcome!</h6>
               </div>
-              <a href="../examples/profile.html" class="dropdown-item">
+              <a href="examples/profile.html" class="dropdown-item">
                 <i class="ni ni-single-02"></i>
                 <span>My profile</span>
               </a>
-              <a href="../examples/profile.html" class="dropdown-item">
+              <a href="examples/profile.html" class="dropdown-item">
                 <i class="ni ni-settings-gear-65"></i>
                 <span>Settings</span>
               </a>
-              <a href="../examples/profile.html" class="dropdown-item">
+              <a href="examples/profile.html" class="dropdown-item">
                 <i class="ni ni-calendar-grid-58"></i>
                 <span>Activity</span>
               </a>
-              <a href="../examples/profile.html" class="dropdown-item">
+              <a href="examples/profile.html" class="dropdown-item">
                 <i class="ni ni-support-16"></i>
                 <span>Support</span>
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#!" class="dropdown-item">
+              <a href="#" class="dropdown-item">
                 <i class="ni ni-user-run"></i>
                 <span>Logout</span>
               </a>
@@ -135,7 +135,7 @@
                 <div class="card-profile-image">
                   <a href="#">
                     <img
-                      src="../images/people/dp2.png"
+                      src="images/people/dp2.png"
                       class="rounded-circle" />
                   </a>
                 </div>
@@ -399,7 +399,7 @@
                   <div class="tab-panel__item__content">
                     <div class="card bg-secondary ">
                       <div class="card-body">
-                        <?php include '../component/tbl-education.php'; ?>
+                        <?php include 'component/tbl-education.php'; ?>
 
                       </div>
                     </div>
@@ -421,9 +421,9 @@
     </div>
   </div>
 
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/tab-panel.js"></script>
-  <script src="../js/table.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tab-panel.js"></script>
+  <script src="js/table.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
   <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>

@@ -17,14 +17,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <link href="../css/aos.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
 
-    <link href="../css/templatemo-nomad-force.css" rel="stylesheet">
+    <link href="css/templatemo-nomad-force.css" rel="stylesheet">
     <!--
 
 TemplateMo 567 Nomad Force
@@ -61,18 +61,18 @@ https://templatemo.com/tm-567-nomad-force
                 <div class="portfolio-thumb ">
                     <div class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-item active">
-                            <a href="../images/conference/conf1.jpg" class="image-popup">
-                                <img src="../images/conference/conf1.jpg" class="img-fluid portfolio-image news-detail-image" alt="">
+                            <a href="images/conference/conf1.jpg" class="image-popup">
+                                <img src="images/conference/conf1.jpg" class="img-fluid portfolio-image news-detail-image" alt="">
                             </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="../images/conference/conf2.jpg" class="image-popup">
-                                <img src="../images/conference/conf2.jpg" class="img-fluid portfolio-image news-detail-image" alt="">
+                            <a href="images/conference/conf2.jpg" class="image-popup">
+                                <img src="images/conference/conf2.jpg" class="img-fluid portfolio-image news-detail-image" alt="">
                             </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="../images/conference/conf3.jpg" class="image-popup">
-                                <img src="../images/conference/conf3.jpg" class="img-fluid portfolio-image news-detail-image" alt="">
+                            <a href="images/conference/conf3.jpg" class="image-popup">
+                                <img src="images/conference/conf3.jpg" class="img-fluid portfolio-image news-detail-image" alt="">
                             </a>
                         </div>
                     </div>
@@ -81,7 +81,7 @@ https://templatemo.com/tm-567-nomad-force
 
             <div class="overlay"></div>
         </section>
-        <?php include '../include/header.php'; ?>
+        <?php include 'include/header.php'; ?>
 
 
         <section class="news-detail section-padding">
@@ -294,14 +294,14 @@ https://templatemo.com/tm-567-nomad-force
     </footer>
 
     <!-- JAVASCRIPT FILES -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/jquery.sticky.js"></script>
-    <script src="../js/aos.js"></script>
-    <script src="../js/jquery.magnific-popup.min.js"></script>
-    <script src="../js/magnific-popup-options.js"></script>
-    <script src="../js/scrollspy.min.js"></script>
-    <script src="../js/custom.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
