@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg shadow-lg">
   <div class="container">
     <a class="navbar-brand logo-container" href="index.php#hero">
@@ -16,10 +15,22 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="index.php#about">About us</a>
+          <label class="about-dropdown">
+
+            <div class="dd-button nav-link">
+            About
+            </div>         
+            <input type="checkbox" class="dd-input" id="test">
+            <ul class="dd-menu">
+              <li><a href="constitution.php" target="_blank">Constitution</a></li>
+              <li>Another action</li>
+              <li>Something else here</li>
+              <li class="divider"></li>
+            </ul>
+          </label>
         </li>
 
-    
+
 
         <li class="nav-item">
           <a class="nav-link" href="index.php#news">News & Events</a>

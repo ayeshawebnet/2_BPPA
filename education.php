@@ -37,10 +37,10 @@ https://templatemo.com/tm-567-nomad-force
 <body>
     <div class="context">
         <main>
-
+            <?php include 'include/header.php'; ?>
             <section class="hero" id="hero">
                 <div class="heroText">
-                    <h2 class="news-detail-title mt-lg-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <h2 class="news-detail-title mt-lg-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
                         Education Initiative: Event Programmes and Resources
                     </h2>
                     <hr class="mb-5 mx-auto">
@@ -56,12 +56,8 @@ https://templatemo.com/tm-567-nomad-force
                 </div> -->
                 </div>
 
-                <div class="videoWrapper">
-                </div>
-
                 <div class="overlay"></div>
             </section>
-            <?php include 'include/header.php'; ?>
 
 
             <section class="news-detail section-padding">

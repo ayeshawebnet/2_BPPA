@@ -326,7 +326,7 @@
       </div>
     </div>
     <div class="regional-executive">
-      <div class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -335,20 +335,20 @@
           <h5>Dr. Kamila Haider</h5>
           <span class="f-16">East Midlands</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
         </svg>
-        <div class="mx-4">
+        <diav class="mx-4">
           <h5>Dr. Muhammad Gul</h5>
           <span class="f-16">West Midlands</span>
-        </div>
-      </div>
+        </diav>
+      </a>
 
-      <div class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -357,9 +357,9 @@
           <h5>Dr. Ali Mesam Mehdi</h5>
           <span class="f-16">South East</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -368,9 +368,9 @@
           <h5>Dr. Adnan Hafeez</h5>
           <span class="f-16">North West</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -379,9 +379,9 @@
           <h5>Dr. Saman Khan</h5>
           <span class="f-16">Scotland</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -390,9 +390,9 @@
           <h5>Dr. Saima Niaz</h5>
           <span class="f-16">London</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -401,7 +401,7 @@
           <h5>Dr. Raja Adnan Ahmed</h5>
           <span class="f-16">Wales</span>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -414,7 +414,7 @@
       </div>
     </div>
     <div class="regional-executive">
-      <div class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -423,9 +423,9 @@
           <h5>Dr. Saadia Muzaffar</h5>
           <span class="f-16">Medical Psychotherapy</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -434,9 +434,9 @@
           <h5>Dr. Rahat Ghafoor</h5>
           <span class="f-16">Liaison</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -445,9 +445,9 @@
           <h5>Dr. Hisham Ul Haq</h5>
           <span class="f-16">GP</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -456,9 +456,9 @@
           <h5>Prof. Parveen Ali</h5>
           <span class="f-16">Nursing</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -467,9 +467,9 @@
           <h5>Prof. Zaffer Iqbal</h5>
           <span class="f-16">Psychology</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -478,9 +478,9 @@
           <h5>Dr. Sanaa Moledina</h5>
           <span class="f-16">SAS Doctors Rep</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -489,9 +489,9 @@
           <h5>Dr. Anum Farooqui</h5>
           <span class="f-16">Trainee Rep</span>
         </div>
-      </div>
+      </a>
 
-      <div class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
+      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
           <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
@@ -500,7 +500,7 @@
           <h5>Miss Noor Awan</h5>
           <span class="f-16">Medical Students Rep</span>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 

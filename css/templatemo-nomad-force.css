@@ -140,7 +140,7 @@ a:hover {
 }
 
 .videoWrapper {
-  height: 50vh;
+  /* height: 50vh; */
 }
 .banner-img {
   width: 100%;
@@ -362,11 +362,14 @@ body {
 /*---------------------------------------
   HERO              
 -----------------------------------------*/
+.hero{
+  padding: 60px 0px 199px;
+}
 .new-heading {
   color: #441f1f;
 }
-.news-detail-title{
-  color: #441f1f;
+.news-detail-title {
+  color: #f2f2f2;
 }
 
 .news-detail a {
@@ -1293,6 +1296,82 @@ body {
 }
 
 /* Accordian */
-.accordion-header h6{
+.accordion-header h6 {
   font-size: 17px;
+}
+.profile-acc-btn::after {
+  content: none; /* Removes the content from the ::after pseudo-element */
+}
+
+/* profile pic */
+.profile-container {
+  text-align: center;
+  margin-top: -50px;
+  z-index: 1;
+  position: sticky;
+  margin-bottom: 30px;
+}
+
+.profile-container-img {
+  border-radius: 50%;
+    border: 5px solid #441f1f;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* dropdowns */
+
+/* about dropdown */
+
+.about-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+ .dd-button {
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border-radius: 4px;
+  padding: 0;
+  margin: 3px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: rgba(68, 31, 31, 0.7);
+  list-style-type: none;
+  display: none;/* Hide menu by default */
+}
+.about-dropdown:hover .dd-menu {
+  display: block; /* Show menu on hover */
+}
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: var(--primary-color);
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
 }
