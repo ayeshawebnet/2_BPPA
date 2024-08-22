@@ -42,7 +42,7 @@
 
     <!-- banner -->
     <section id="hero">
-        <img class="banner-img" src="images/logoBanner/Portfolio-pathway-banner1.jpg" alt="">
+      <img class="banner-img" src="images/logoBanner/Portfolio-pathway-banner1.jpg" alt="">
     </section>
 
   </div>
@@ -95,13 +95,13 @@
               </div>
             </div>
             <a href="conference.php" target="_blank">
-            <div class="portfolio-info">
-              <h4 class="portfolio-title mb-0">Annual Conference Highlights</h4>
+              <div class="portfolio-info">
+                <h4 class="portfolio-title mb-0">Annual Conference Highlights</h4>
 
-              <p class="text-danger">A Glimpse into Our Annual Gatherings
-              </p>
+                <p class="text-danger">A Glimpse into Our Annual Gatherings
+                </p>
 
-            </div>
+              </div>
             </a>
           </div>
 
@@ -315,9 +315,59 @@
     </div>
   </section>
 
+  <!-- Founder Members -->
+  <section class=" container-fluid section-padding grey-bg">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="mb-5 text-center" data-aos="fade-up">Founder Members</h2>
+      </div>
+    </div>
+    <!-- First Slider (Left to Right) -->
+    <div class="founder-slider">
+      <div class="slide-track">
+        <?php $var = 'hello'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+
+        <!-- Duplicates for smooth looping -->
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+      </div>
+    </div>
+
+    <!-- Second Slider (Right to Left) -->
+    <div class="founder-slider reverse-slider mt-5">
+      <div class="slide-track">
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+
+        <!-- Duplicates for smooth looping -->
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+        <?php include './component/founder-card.php'; ?>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Regional Executives -->
 
-  <section class=" container-fluid section-padding grey-bg">
+  <section class="news container-fluid section-padding grey-bg">
     <div class="row">
       <div class="col-12">
         <h2 class="mb-5 text-center" data-aos="fade-up">Regional Executives</h2>
@@ -405,7 +455,7 @@
 
   <!-- Co-opted Executives -->
 
-  <section class="news container-fluid section-padding grey-bg">
+  <section class="container-fluid section-padding grey-bg">
     <div class="row">
       <div class="col-12">
         <h2 class="mb-5 text-center" data-aos="fade-up">Co-opted Executives</h2>

@@ -210,7 +210,7 @@ body {
 }
 .navbar {
   padding: 0px;
-  background-color: #441f1f;
+  background-color: black;
   /* display: flex; */
   width: 100% !important;
   z-index: 9;
@@ -1344,8 +1344,8 @@ body {
   border-radius: 4px;
   padding: 0;
   margin: 3px 0 0 0;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-  background-color: rgba(68, 31, 31, 0.7);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
   list-style-type: none;
   display: none;/* Hide menu by default */
 }
@@ -1527,3 +1527,161 @@ body {
 }
 
 /* end constitution page css */
+
+/* start - Home page founder member section css */
+
+
+@keyframes scroll-right-to-left {
+  100% { transform: translateX(0); }
+  0% { transform: translateX(calc(-250px * 7)); }
+}
+@keyframes scroll-left-to-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+.founder-slider {
+  background: white;
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+  /* height: 100px; */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  /* width: 960px; */
+}
+
+.founder-slider::before,
+.founder-slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.founder-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.founder-slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 14);
+}
+.founder-slider .slide-track {
+  animation: scroll-left-to-right 40s linear infinite;
+}
+
+.founder-slider.reverse-slider .slide-track {
+  justify-content: end;
+  animation: scroll-right-to-left 40s linear infinite;
+}
+
+.founder-slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.founder-slider .slide-track:hover,
+.founder-slider.reverse-slider .slide-track:hover {
+  animation-play-state: paused; /* Pauses the slider on hover */
+}
+/* end - Home page founder member section css */
+
+/* start - Home page founder member card css */
+
+.founder-card {
+  margin: 0px 15px;
+  max-width: 320px;
+  border-radius: 1rem;
+  background-color: rgba(31, 41, 55, 1);
+  padding: 1rem;
+}
+
+.founder-card .infos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.founder-card .image {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(118, 36, 194);
+  background: linear-gradient(to bottom right, rgb(53 194 36), rgb(23 111 21));
+}
+.founder-card .image img{
+  object-fit: cover;
+}
+.founder-card .info {
+  height: 5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.founder-card .name {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+
+.founder-card .function {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+.founder-card .stats {
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(0, 0, 0, 1);
+}
+
+.founder-card .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.founder-card .state-value {
+  font-weight: 700;
+  color: rgb(118, 36, 194);
+}
+
+.founder-card .request {
+  margin-top: 1.5rem;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  transition: all .3s ease;
+}
+
+.founder-card .request:hover {
+  background-color: rgb(118, 36, 194);
+  color: #fff;
+}
+
+/* end - Home page founder member card css */
