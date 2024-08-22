@@ -1161,7 +1161,7 @@ body {
   background: none;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   width: 100%;
-  min-height: 150vh;
+  /* min-height: 100%; */
 }
 
 .circles {
@@ -1288,7 +1288,6 @@ body {
 .news-body {
   min-height: 100%;
   height: 100%;
-  /* background-image:url(http://theartmad.com/wp-content/uploads/Dark-Grey-Texture-Wallpaper-5.jpg); */
   background-size: cover;
   background-position: top center;
   font-family: helvetica neue, helvetica, arial, sans-serif;
@@ -1375,3 +1374,156 @@ body {
   padding: 0;
   border-bottom: 1px solid #cccccc;
 }
+
+@media (max-width: 767.98px) { /* Adjust the max-width as per your breakpoint */
+  .reverse-md {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+}
+
+
+/* start - constitution page css  */
+.bg-pink {
+  background-color: #ffcbcb;
+}
+
+.bg-redshad {
+  background-color: #441f1f;
+}
+
+.border-bottom-pink {
+  border-bottom: 2px solid #ffcbcb;
+  color: white !important;
+}
+
+.border-bottom-redShade {
+  border-bottom: 2px solid #441f1f;
+  color: black !important;
+}
+
+.constitution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cons-box {
+  background-color: #ffcbcb;
+  padding: 20px 30px;
+  margin: 20px;
+  border-radius: 5px;
+  color: #441f1f !important;
+  height: 160px;
+  overflow: hidden;
+}
+
+.cons-box:hover {
+  height: auto;
+}
+
+.cons-box p {
+  font-size: 15px;
+  color: black;
+  text-align: justify;
+}
+
+#conteneur {
+  width: 90%;
+  margin: 30px auto;
+  height: 80vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.accordeon {
+  border-radius: 20px;
+  box-shadow: 1px 1px 13px black;
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+}
+
+.accordeon:hover .link {
+  height: 5%;
+}
+
+.accordeon .link {
+  position: relative;
+  color: black;
+  width: 100%;
+  height: 24%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s ease-out;
+}
+
+.accordeon .link:last-child {
+  border-bottom: 0;
+}
+
+.accordeon .link:hover {
+  height: 85%;
+}
+
+.accordeon .link:hover img {
+  filter: brightness(0%);
+}
+
+
+.accordeon .link .small img {
+  transition: .5s ease-out;
+  width: 30px;
+}
+
+.accordeon .link .full {
+  padding: 30px 35px;
+  text-align: justify;
+}
+
+.accordeon .link .full .f1 {
+  text-transform: uppercase;
+}
+
+.accordeon .link .full .f1,
+.accordeon .link .full .f2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.accordeon .link .full .f2 {
+  margin-top: 8px;
+}
+
+.accordeon .link .prev {
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  font-size: 12px;
+  line-height: 78px;
+  transition: .5s opacity;
+  opacity: 0;
+}
+
+.accordeon .link .prev img {
+  width: 30px;
+}
+
+.accordeon .link:hover .prev {
+  opacity: 0;
+}
+
+.accordeon:hover .prev {
+  opacity: 1;
+}
+
+.cons-about ul li {
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.acc-row {
+  position: relative;
+  z-index: 1;
+}
+
+/* end constitution page css */

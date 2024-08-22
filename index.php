@@ -40,8 +40,6 @@
 
     <?php include './include/header.php'; ?>
 
-
-
     <!-- banner -->
     <section id="hero">
         <img class="banner-img" src="images/logoBanner/Portfolio-pathway-banner1.jpg" alt="">
