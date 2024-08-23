@@ -40,16 +40,18 @@
                     <hr class="mb-5 mx-auto">
 
                 </div>
-                <div class="overlay"></div>
+                <div class="overlay">
+                    <img src="images/logoBanner/profile-banner.png" alt="">
+                </div>
             </section>
 
 
 
-            <section class="news-detail mb-5">
-
+            <section class="news-detail profile-body">
+                <img src="images/logoBanner/texture1.png" alt="" class="texture-image">
                 <div class="container">
                     <div class="profile-container">
-                            <img class="profile-container-img" src="images/people/profile1.jpg" width="200px" alt="">
+                            <img class="profile-container-img" src="images/people/dp5.jpg" width="200px" alt="">
                     </div>
                     <h3 class="mb-3 text-center" data-aos="fade-up">
                         Dr. Kamila Haider</h3>

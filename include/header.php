@@ -14,15 +14,15 @@
           <a class="nav-link" href="index.php#hero">Home</a>
         </li>
 
-        <li class="nav-item ">
+        <li class="nav-item">
           <label class="about-dropdown">
 
-            <div class="dd-button nav-link " >
-            About
-            </div>         
+            <div class="dd-button nav-link">
+              About
+            </div>
             <input type="checkbox" class="dd-input" id="test">
             <ul class="dd-menu dropdown-menu" aria-labelledby="aboutDropdown">
-              <li><a class="dropdown-item" href="constitution.php" target="_blank">Constitution</a></li>
+              <li><a href="constitution.php" target="_blank">Constitution</a></li>
               <li class="divider"></li>
             </ul>
           </label>

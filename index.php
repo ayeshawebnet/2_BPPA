@@ -42,7 +42,7 @@
 
     <!-- banner -->
     <section id="hero">
-      <img class="banner-img" src="images/logoBanner/Portfolio-pathway-banner1.jpg" alt="">
+      <img class="banner-img" src="images/logoBanner/Portfolio-pathway-banner.jpg" alt="">
     </section>
 
   </div>
@@ -319,47 +319,66 @@
   <section class=" container-fluid section-padding grey-bg">
     <div class="row">
       <div class="col-12">
-        <h2 class="mb-5 text-center" data-aos="fade-up">Founder Members</h2>
+        <h2 class="mb-5 text-center" data-aos="fade-up">Meet the Visionaries: BPPA Founder Members</h2>
       </div>
     </div>
     <!-- First Slider (Left to Right) -->
     <div class="founder-slider">
       <div class="slide-track">
-        <?php $var = 'hello'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
+        <?php $founder_members = [
+          [
+            'name' => 'Dr. Ahmed Khan',
+            'years_of_service' => '25+ years',
+            'photo' => 'images/people/dp3.jpg',
+            'location' => 'Sheffield, UK',
+          ],
+          [
+            'name' => 'Dr. Sarah Ali',
+            'years_of_service' => '20+ years',
+            'photo' => 'images/people/dp4.jpg',
+            'location' => 'London, UK',
+          ],
+          [
+            'name' => 'Dr. Muhammad Iqbal',
+            'years_of_service' => '15+ years',
+            'photo' => 'images/people/dp5.jpg',
+            'location' => 'Edinburgh, UK',
+          ],
+          [
+            'name' => 'Dr. Ayesha Rehman',
+            'years_of_service' => '30+ years',
+            'photo' => 'images/people/dp6.jpg',
+            'location' => 'Birmingham, UK',
+          ],
+          [
+            'name' => 'Dr. Ali Ahmed',
+            'years_of_service' => '29+ years',
+            'photo' => 'images/people/dp7.jpg',
+            'location' => 'Preston, UK',
+          ],
+        ]; ?>
+         <?php foreach ($founder_members as $member) : ?>
+            <?php include './component/founder-card.php'; ?>
+        <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
+        <?php foreach ($founder_members as $member) : ?>
+            <?php include './component/founder-card.php'; ?>
+        <?php endforeach; ?>
       </div>
     </div>
 
     <!-- Second Slider (Right to Left) -->
-    <div class="founder-slider reverse-slider mt-5">
+    <div class="founder-slider reverse-slider mt-3">
       <div class="slide-track">
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
+      <?php foreach ($founder_members as $member) : ?>
+            <?php include './component/founder-card.php'; ?>
+        <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
-        <?php include './component/founder-card.php'; ?>
+        <?php foreach ($founder_members as $member) : ?>
+            <?php include './component/founder-card.php'; ?>
+        <?php endforeach; ?>
 
       </div>
     </div>
