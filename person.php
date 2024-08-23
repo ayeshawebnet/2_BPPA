@@ -47,7 +47,7 @@
 
 
 
-            <section class="news-detail profile-body">
+            <section class="news-detail page-body">
                 <img src="images/logoBanner/texture1.png" alt="" class="texture-image">
                 <div class="container">
                     <div class="profile-container">

@@ -61,11 +61,12 @@
         <main>
             <?php include 'include/header.php'; ?>
 
-            <section class="news-detail section-padding">
+            <section class="news-detail section-padding page-body">
+            <img src="images/logoBanner/texture1.png" alt="" class="texture-image texture-opacity">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-10 mx-auto">
-                            <h2 class=" text-center new-heading" data-aos="fade-up">Latest News and Updates</h2>
+                            <h2 class="text-center" data-aos="fade-up">Latest News and Updates</h2>
                             <hr class="mb-5 mx-auto">
 
                             <p class="me-4" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
@@ -153,7 +154,7 @@
 
             <section class="related-news section-padding">
                 <div class="container">
-                    <h2 class="text-center new-heading" data-aos="fade-up">News Archives</h2>
+                    <h2 class="text-center" data-aos="fade-up">News Archives</h2>
                     <hr class="mb-5 mx-auto">
                     <div class="row">
                         <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
