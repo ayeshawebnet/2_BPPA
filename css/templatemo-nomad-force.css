@@ -214,18 +214,18 @@ body {
   /* scroll-behavior: smooth !important; */
 }
 .navbar {
-  padding: 0px;
+  /* padding: 0px; */
   background-color: black;
   /* display: flex; */
-  width: 100% !important;
+  width: 100%;
   z-index: 9;
   /* padding-top: 15px; */
   /* padding-bottom: 15px; */
   color: white;
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
-  margin: 0;
+  margin: 0; */
   /*background-size:100%;*/
 }
 
@@ -447,8 +447,8 @@ body {
 .team-image {
   width: 100%;
   height: 100%;
-  max-height: 703px;
-  min-height: 475px;
+  /* max-height: 703px; */
+  /* min-height: 475px; */
   object-fit: cover;
 }
 
@@ -1654,17 +1654,26 @@ body {
   max-width: 320px;
   border-radius: 0.8rem;
   /* background-color: rgba(31, 41, 55, 1); */
-  background-image: linear-gradient(#000000, #8f0000);
+  
   padding: 0.8rem;
   box-shadow: 1px 1px 3px black;
 }
-
+.founder-bg{
+  background-image: linear-gradient(#000000, #8f0000);
+}
+.regional-bg{
+  background-image: linear-gradient(#000000, #00028f);
+}
+.coopted-bg{
+  background-image: linear-gradient(#000000, #008f26);
+}
 .founder-card .infos {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   grid-gap: 1rem;
   gap: 1rem;
+  
 }
 
 .founder-card .image {
@@ -1673,19 +1682,22 @@ body {
   border-radius: 0.5rem;
   background-color: rgb(118, 36, 194);
   background: linear-gradient(to bottom right, rgb(53 194 36), rgb(23 111 21));
+  margin: auto;
 }
 .founder-card .image img {
   border-radius: 0.5rem;
   object-fit: cover;
 }
 .founder-card .info {
-  height: 4.5rem;
+  /* height: 4.5rem; */
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
+.founder-card .info1{
+  line-height: 1.1;
+}
 .founder-card .name {
   font-size: 1rem;
   /* line-height: 1.75rem; */

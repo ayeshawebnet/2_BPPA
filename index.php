@@ -358,12 +358,12 @@
           ],
         ]; ?>
          <?php foreach ($founder_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
         <?php foreach ($founder_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
       </div>
     </div>
@@ -372,12 +372,12 @@
     <div class="founder-slider reverse-slider mt-3">
       <div class="slide-track">
       <?php foreach ($founder_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
         <?php foreach ($founder_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
 
       </div>
@@ -440,12 +440,12 @@
           ],
         ]; ?>
          <?php foreach ($regional_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'regional-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
         <?php foreach ($regional_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'regional-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
       </div>
     </div>
@@ -477,7 +477,7 @@
             'years_of_service' => '20+ years',
             'photo' => 'images/people/dp4.jpg',
             'location' => 'West Midlands, UK',
-            'title' => 'liaison',
+            'title' => 'Consultant Psychiatrist',
           ],
           [
             'name' => 'Dr. Hisham Ul Haq',
@@ -523,12 +523,12 @@
           ]
         ]; ?>
          <?php foreach ($coopted_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'coopted-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
         <?php foreach ($coopted_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'coopted-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
       </div>
     </div>
