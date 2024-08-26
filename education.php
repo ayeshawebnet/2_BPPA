@@ -44,27 +44,17 @@ https://templatemo.com/tm-567-nomad-force
                         Education Initiative: Event Programmes and Resources
                     </h2>
                     <hr class="mb-5 mx-auto">
-                    <!-- <div class="d-flex justify-content-center align-items-center">
-                    <a href="#" class="text-secondary-white-color social-share-link">
-                        <i class="bi-chat-square-fill me-1"></i>
-                        128
-                    </a>
-
-                    <a href="#" class="social-share-link bi-bookmark-fill ms-3 me-4"></a>
-
-                    <span>21 hours ago</span>
-                </div> -->
                 </div>
 
-                <div class="overlay"></div>
+                <div class="overlay"><img src="images/logoBanner/profile-banner.png" alt=""></div>
             </section>
 
 
-            <section class="news-detail section-padding">
+            <section class="news-detail page-body section-padding ">
                 <div class="container">
-                    <h2 class="mb-3" data-aos="fade-up">
+                    <h2  class="mb-3" data-aos="fade-up">
                         Event Programmes and Educational Resources</h2>
-                    <hr class="mb-5 mx-auto">
+                    <hr class="mb-5 ">
                     <div class="row">
                         <div data-aos="fade-up" class="col-lg-6 col-12 my-auto">
                             <div class="portfolio-thumb ">
@@ -102,7 +92,7 @@ https://templatemo.com/tm-567-nomad-force
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <h6 class="me-4" data-aos="fade-up">BPPA Annual Meeting 9th and 10th November 2019: Programme Details</h6>
+                                            <h6 class="me-4">BPPA Annual Meeting 9th and 10th November 2019: Programme Details</h6>
                                         </button>
                                     </div>
                                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -114,7 +104,7 @@ https://templatemo.com/tm-567-nomad-force
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <h6 class="me-4" data-aos="fade-up">BPPA – BAPA Joint Conference 2018: Explore the Programme</h6>
+                                            <h6 class="me-4">BPPA – BAPA Joint Conference 2018: Explore the Programme</h6>
                                         </button>
                                     </div>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -126,7 +116,7 @@ https://templatemo.com/tm-567-nomad-force
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <h6 class="me-4" data-aos="fade-up">BPPA Annual Conference 2017: Complete Programme Access</h6>
+                                            <h6 class="me-4">BPPA Annual Conference 2017: Complete Programme Access</h6>
                                         </button>
                                     </div>
                                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -138,7 +128,7 @@ https://templatemo.com/tm-567-nomad-force
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingFour">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            <h6 class="me-4" data-aos="fade-up">ADHD in Adults Workshop 2017: Event Flyer</h6>
+                                            <h6 class="me-4">ADHD in Adults Workshop 2017: Event Flyer</h6>
                                         </button>
                                     </div>
                                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -150,7 +140,7 @@ https://templatemo.com/tm-567-nomad-force
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingFive">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            <h6 class="me-4" data-aos="fade-up">BPPA 2016: Call for Abstracts</h6>
+                                            <h6 class="me-4">BPPA 2016: Call for Abstracts</h6>
                                         </button>
                                     </div>
                                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
@@ -162,7 +152,7 @@ https://templatemo.com/tm-567-nomad-force
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingSix">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                            <h6 class="me-4" data-aos="fade-up">BPPA 2016: Academic Programme Download</h6>
+                                            <h6 class="me-4">BPPA 2016: Academic Programme Download</h6>
                                         </button>
                                     </div>
                                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
@@ -174,7 +164,7 @@ https://templatemo.com/tm-567-nomad-force
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingSeven">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                            <h6 class="me-4" data-aos="fade-up">BPPA 2016 Flyer: Get Your Copy Here</h6>
+                                            <h6 class="me-4">BPPA 2016 Flyer: Get Your Copy Here</h6>
                                         </button>
                                     </div>
                                     <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">

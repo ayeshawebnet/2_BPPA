@@ -17,13 +17,20 @@
                     <span class="flex flex-col">
                         Service
                         <span class="state-value">
-                        <?php echo $member['years_of_service']; ?> 
+                            <?php echo $member['years_of_service']; ?>
                         </span>
                     </span>
                     <span class="flex">
-                    Location
+                        Location
                         <span class="state-value">
-                        <?php echo $member['location']; ?> 
+                            <?php
+                            $location = $member['location'];
+                            if (strlen($location) > 13) {
+                                echo substr($location, 0, 10) . '...';
+                            } else {
+                                echo $location;
+                            }
+                            ?>
                         </span>
                     </span>
 
