@@ -62,7 +62,7 @@
             <img src="images/logoBanner/texture1.png" alt="" class="texture-image texture-opacity">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-10 mx-auto">
+                        <div class="col-lg-8 col-10 mx-auto mb-5">
                             <h2 class="text-center" data-aos="fade-up">Latest News and Updates</h2>
                             <hr class="mb-5 mx-auto">
 
@@ -134,7 +134,7 @@
                                 </p>
                             </div>
 
-                            <div class="social-share d-flex mt-5">
+                            <!-- <div class="social-share d-flex mt-5">
                                 <span class="me-4" data-aos="zoom-in">Share this:</span>
 
                                 <a href="#" class="social-share-icon bi-facebook" data-aos="zoom-in"></a>
@@ -142,7 +142,7 @@
                                 <a href="#" class="social-share-icon bi-twitter mx-3" data-aos="zoom-in"></a>
 
                                 <a href="#" class="social-share-icon bi-envelope" data-aos="zoom-in"></a>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>

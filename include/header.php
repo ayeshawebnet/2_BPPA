@@ -22,7 +22,7 @@
             </div>
             <input type="checkbox" class="dd-input" id="test">
             <ul class="dd-menu dropdown-menu" aria-labelledby="aboutDropdown">
-              <li><a href="" target="_blank">Constitution</a></li>
+              <li><a href="constitution.php" target="_blank">Constitution</a></li>
               <li class="divider"></li>
             </ul>
           </label>
@@ -41,7 +41,7 @@
           <a class="nav-link  d-none" href="index.php" id="form-open">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="" target="_blank" id="member-ship">Membership</a>
+          <a class="nav-link" href="membership.php" target="_blank" id="member-ship">Membership</a>
         </li>
 
       </ul>

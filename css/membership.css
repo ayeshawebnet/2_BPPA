@@ -21,11 +21,11 @@
 .pricing-card {
   font-family: "Noto Sans JP", sans-serif;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, #370101 , #162d1b);
+  background: linear-gradient(to right, #8b0000, #06751e);
 }
 .main-heading {
   font-size: var(--h4-font-size);
@@ -40,28 +40,31 @@
   color: white;
   margin-bottom: 80px;
 }
-.member-hr{
+.member-hr {
   color: white;
 }
 /* pricing table */
 
 .demo10 {
-  background-color: rgb(40 26 157 / 28%);
+  background-color: rgb(10 0 91 / 59%);
   padding: 44px 40px;
   height: 100%;
-  width: 80%;
-  
+  width: 100%;
 }
 /* .demo10{background:#C0BFBF;padding:30px 0; height:100%;} */
 .pricingTable10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   text-align: center;
-  min-width: 196px;
+  min-height: 300px;
   margin-bottom: 20px;
 }
 .pricingTable10 .pricingTable-header {
   border-top-right-radius: 20px;
   padding: 30px 0;
-  background: #4d1e1e;
+  background: linear-gradient(to bottom, #8b0000, #06751e);
   position: relative;
   transition: all 0.3s ease 0s;
 }
@@ -121,6 +124,7 @@
   padding-top: 50px;
   background: #fff;
   position: relative;
+  min-height: 400px;
 }
 .pricingTable10 .pricing-content:after,
 .pricingTable10 .pricing-content:before {

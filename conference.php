@@ -104,7 +104,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-6 col-12 mx-auto">
+                        <div class="col-lg-6 col-12 mx-auto mb-5">
                             <div class="accordion" id="accordionExample" data-aos="fade-left">
                                 <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
@@ -231,7 +231,7 @@
                                 </div>
                             </div>
 
-                            <div class="social-share d-flex mt-5">
+                            <!-- <div class="social-share d-flex mt-5">
                                 <span class="me-4" data-aos="zoom-in">Share this</span>
 
                                 <a href="#" class="social-share-icon bi-facebook" data-aos="zoom-in"></a>
@@ -239,7 +239,7 @@
                                 <a href="#" class="social-share-icon bi-twitter mx-3" data-aos="zoom-in"></a>
 
                                 <a href="#" class="social-share-icon bi-envelope" data-aos="zoom-in"></a>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>

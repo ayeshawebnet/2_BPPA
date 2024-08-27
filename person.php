@@ -47,17 +47,17 @@
 
 
 
-            <section class="news-detail page-body">
+            <section class="news-detail page-body ">
                 <img src="images/logoBanner/texture1.png" alt="" class="texture-image">
-                <div class="container">
+                <div class="container ">
                     <div class="profile-container">
                             <img class="profile-container-img" src="images/people/dp5.jpg" width="200px" alt="">
                     </div>
                     <h3 class="mb-3 text-center" data-aos="fade-up">
                         Dr. Kamila Haider</h3>
                     <hr class="mb-5 mx-auto">
-                    <div class="row">
-                        <div class="col-lg-8 col-12 mx-auto">
+                    <div class="row ">
+                        <div class="col-lg-8 col-12 mx-auto mb-5">
                             <div class="accordion" id="accordionExample" data-aos="fade-left">
                                 <div class="accordion-item" data-aos="fade-up">
                                     <div class="accordion-header" id="headingOne">
@@ -113,7 +113,7 @@
 
                             </div>
 
-                            <div class="social-share d-flex mt-5">
+                            <!-- <div class="social-share d-flex mt-5">
                                 <span class="me-4" data-aos="zoom-in">Share this</span>
 
                                 <a href="#" class="social-share-icon bi-facebook" data-aos="zoom-in"></a>
@@ -121,7 +121,7 @@
                                 <a href="#" class="social-share-icon bi-twitter mx-3" data-aos="zoom-in"></a>
 
                                 <a href="#" class="social-share-icon bi-envelope" data-aos="zoom-in"></a>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>

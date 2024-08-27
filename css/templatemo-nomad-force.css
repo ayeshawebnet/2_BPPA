@@ -1175,7 +1175,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  /* z-index: 1; */
   overflow: hidden;
 }
 
@@ -1303,11 +1303,11 @@ body {
 /* start - person profile page */
 /* Accordian */
 
-.accordion{
+.accordion {
   position: relative;
   z-index: 2;
 }
- .accordion-header h6 {
+.accordion-header h6 {
   font-size: 17px;
 }
 
@@ -1324,8 +1324,8 @@ body {
 }
 .profile-acc-btn::after {
   content: none;
-} 
-  
+}
+
 /* profile pic */
 .profile-container {
   text-align: center;
@@ -1342,7 +1342,7 @@ body {
   height: 200px;
   object-fit: cover;
 }
-.page-body{
+.page-body {
   position: relative;
   background: #f3f3f3;
 }
@@ -1354,7 +1354,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.texture-opacity{
+.texture-opacity {
   opacity: 0.2;
 }
 /* end - person profile page */
@@ -1425,17 +1425,14 @@ body {
 }
 
 .bg-redshad {
-  background-color: #441f1f;
+  background-color: #0e2f13;
 }
 
-.border-bottom-pink {
-  border-bottom: 2px solid #ffcbcb;
+.border-bottom-white {
+  /* border-bottom: 2px solid white; */
+  border-bottom: 2px solid #e0e0e055;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
   color: white !important;
-}
-
-.border-bottom-redShade {
-  border-bottom: 2px solid #441f1f;
-  color: black !important;
 }
 
 .constitution {
@@ -1464,16 +1461,89 @@ body {
   text-align: justify;
 }
 
-#conteneur {
+.conteneur {
   width: 90%;
   margin: 30px auto;
   height: 80vh;
   font-family: "Montserrat", sans-serif;
 }
 
+/* start - light sweep effect */
+.nft {
+  user-select: none;
+  /* max-width: 300px; */
+  margin: 5rem auto;
+  border: 1px solid #ffffff22;
+  background-color: #282c34;
+  background: linear-gradient(0deg, rgb(55 75 51) 0%, rgb(203 38 38 / 94%) 100%);
+  /* background: linear-gradient(
+    0deg,
+    rgba(40, 44, 52, 1) 0%,
+    rgba(17, 0, 32, 0.5) 100%
+  ); */
+  box-shadow: 0 7px 20px 5px #00000088;
+  border-radius: 0.7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s all;
+}
+
+.nft hr {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #88888855;
+  margin-top: 5px;
+}
+
+.nft .main {
+  display: flex;
+  flex-direction: column;
+}
+
+.nft .main .description {
+  margin: 0.5rem 0;
+  color: #ffffff;
+}
+
+.nft::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5),
+    transparent 70%
+  );
+  transform: translate(-100%, -100%) rotate(-45deg);
+  transition: all 0.7s ease-in-out;
+}
+
+/* .nft:hover::before {
+  transform: translate(100%, 100%) rotate(-45deg);
+  background: radial-gradient(
+    circle,
+    rgba(173, 173, 173, 0.8),
+    transparent 70%
+  );
+} */
+
+.nft:hover {
+  border: 1px solid #e0e0e044;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  /* transform: scale(1.015); */
+  filter: brightness(1);
+}
+
+/* end - light sweep effect */
+
 .accordeon {
-  border-radius: 20px;
-  box-shadow: 1px 1px 13px black;
+  /* border-radius: 20px; */
+  /* box-shadow: 1px 1px 13px black; */
   width: 100%;
   height: 100%;
   transform: translateZ(0);
@@ -1511,23 +1581,25 @@ body {
 }
 
 .accordeon .link .full {
-  padding: 30px 35px;
   text-align: justify;
 }
 
 .accordeon .link .full .f1 {
   text-transform: uppercase;
+  padding: 13px 35px;
+  margin-top: 7px;
+  font-weight: 700;
 }
-
+.accordeon .link .full .f2 {
+  font-weight: 500;
+  padding: 0px 35px;
+}
 .accordeon .link .full .f1,
 .accordeon .link .full .f2 {
   font-size: 16px;
-  font-weight: 700;
 }
 
-.accordeon .link .full .f2 {
-  margin-top: 8px;
-}
+
 
 .accordeon .link .prev {
   position: absolute;
@@ -1559,6 +1631,14 @@ body {
 .acc-row {
   position: relative;
   z-index: 1;
+}
+
+.left-box {
+  margin-top: auto !important;
+    margin-bottom: auto !important;
+    background-color: #e9e9e9;
+    padding: 31px;
+    border-radius: 20px;
 }
 
 /* end constitution page css */
@@ -1654,17 +1734,17 @@ body {
   max-width: 320px;
   border-radius: 0.8rem;
   /* background-color: rgba(31, 41, 55, 1); */
-  
+
   padding: 0.8rem;
   box-shadow: 1px 1px 3px black;
 }
-.founder-bg{
+.founder-bg {
   background-image: linear-gradient(#000000, #8f0000);
 }
-.regional-bg{
+.regional-bg {
   background-image: linear-gradient(#000000, #00028f);
 }
-.coopted-bg{
+.coopted-bg {
   background-image: linear-gradient(#000000, #008f26);
 }
 .founder-card .infos {
@@ -1673,7 +1753,6 @@ body {
   align-items: flex-start;
   grid-gap: 1rem;
   gap: 1rem;
-  
 }
 
 .founder-card .image {
@@ -1695,7 +1774,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.founder-card .info1{
+.founder-card .info1 {
   line-height: 1.1;
 }
 .founder-card .name {
