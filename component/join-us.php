@@ -21,7 +21,7 @@
         <!-- plans -->
 
         <div class="blog-card-container">
-          <div class="blog-card" data-aos="fade-left">
+          <div class="blog-card" >
             <div class="meta">
               <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"></div>
               <ul class="details">
@@ -89,7 +89,7 @@
               </p>
             </div>
           </div>
-          <div class="blog-card alt" data-aos="fade-left">
+          <div class="blog-card alt" data-aos="fade-up">
             <div class="meta">
               <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
               <ul class="details">
@@ -111,7 +111,7 @@
               </p>
             </div>
           </div>
-          <div class="blog-card" data-aos="fade-left">
+          <div class="blog-card" data-aos="fade-up">
             <div class="meta">
               <div class="photo" style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"></div>
               <ul class="details">

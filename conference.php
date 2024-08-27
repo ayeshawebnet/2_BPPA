@@ -25,43 +25,50 @@
     <link href="css/aos.css" rel="stylesheet">
 
     <link href="css/templatemo-nomad-force.css" rel="stylesheet">
-    <!--
 
-TemplateMo 567 Nomad Force
-
-https://templatemo.com/tm-567-nomad-force
-
--->
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">BPPA Annual Conference Booklet – November 2021</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal ended -->
+
+
     <div class="context">
         <main>
             <?php include 'include/header.php'; ?>
             <section class="hero" id="hero">
                 <div class="heroText">
-                    <!-- text-white -->
                     <h2 class="news-detail-title  mt-lg-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
                         Annual Conferences: A Glimpse into Our Legacy
                     </h2>
                     <hr class="mb-5 mx-auto">
-                    <!-- <div class="d-flex justify-content-center align-items-center">
-                    <a href="#" class="text-secondary-white-color social-share-link">
-                        <i class="bi-chat-square-fill me-1"></i>
-                        128
-                    </a>
-
-                    <a href="#" class="social-share-link bi-bookmark-fill ms-3 me-4"></a>
-
-                    <span>21 hours ago</span>
-                </div> -->
                 </div>
-                <div class="overlay"></div>
+                <div class="overlay">
+                    <img src="images/logoBanner/profile-banner.png" alt="">
+                </div>
             </section>
 
 
 
-            <section class="news-detail section-padding">
+            <section class="news-detail page-body section-padding">
                 <div class="container">
                     <h2 class="mb-3 text-center" data-aos="fade-up">
                         Annual Conferences</h2>
@@ -99,7 +106,7 @@ https://templatemo.com/tm-567-nomad-force
                         </div>
                         <div class="col-lg-6 col-12 mx-auto">
                             <div class="accordion" id="accordionExample" data-aos="fade-left">
-                                <div class="accordion-item" data-aos="fade-up">
+                                <div class="accordion-item">
                                     <div class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             <h6 class="me-4">2018 - BPPA Annual Conference</h6>
@@ -115,7 +122,7 @@ https://templatemo.com/tm-567-nomad-force
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item" data-aos="fade-up">
+                                <div class="accordion-item">
                                     <div class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                             <h6 class="me-4">2017 - BPPA Annual Conference</h6>
@@ -130,7 +137,7 @@ https://templatemo.com/tm-567-nomad-force
 
                                     </div>
                                 </div>
-                                <div class="accordion-item" data-aos="fade-up">
+                                <div class="accordion-item">
                                     <div class="accordion-header" id="headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                             <h6 class="me-4">2016 - BPPA Annual Conference</h6>
@@ -146,7 +153,7 @@ https://templatemo.com/tm-567-nomad-force
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item" data-aos="fade-up">
+                                <div class="accordion-item">
                                     <div class="accordion-header" id="headingFour">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                             <h6 class="me-4">2015 - BPPA Annual Conference</h6>
@@ -168,7 +175,7 @@ https://templatemo.com/tm-567-nomad-force
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item" data-aos="fade-up">
+                                <div class="accordion-item">
                                     <div class="accordion-header" id="headingFive">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                             <h6 class="me-4">2014 - BPPA Annual Conference</h6>
@@ -192,7 +199,7 @@ https://templatemo.com/tm-567-nomad-force
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item" data-aos="fade-up">
+                                <div class="accordion-item">
                                     <div class="accordion-header" id="headingSix">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                             <h6 class="me-4">2013 - BPPA Annual Conference</h6>
@@ -204,12 +211,11 @@ https://templatemo.com/tm-567-nomad-force
                                                 <li><strong>2013 Servey Feedback</strong><a href="https://thebppa.org.uk/wp-content/uploads/2021/05/2013-British-Pakistani-Psychiatrists-Annual-Conference-2013-Survey.pdf"> Click Here to View 2013 survey Feedback</a></li>
                                                 <li><strong>Diaspora Conference 2013 Gallery
                                                     </strong><a href="https://thebppa.org.uk/diaspora-conference-2013-gallery"> Click Here to View Diaspora Conference 2013 Gallery</a></li>
-
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item" data-aos="fade-up">
+                                <div class="accordion-item">
                                     <div class="accordion-header" id="headingSeven">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                             <h6 class="me-4">2012 - BPPA Annual Conference</h6>
@@ -219,7 +225,6 @@ https://templatemo.com/tm-567-nomad-force
                                         <div class="accordion-body">
                                             <ul>
                                                 <li><strong>BPPA Annual Conference 2012</strong><a href="https://thebppa.org.uk/photogallery/bppa-conference-2012-new"> Click Here to view BPPA Annual Conference 2012</a></li>
-
                                             </ul>
                                         </div>
                                     </div>
@@ -241,21 +246,6 @@ https://templatemo.com/tm-567-nomad-force
                 </div>
             </section>
 
-            <!-- <section class="related-news section-padding">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-8 col-10 mx-auto text-center">
-                        <span class="d-block" data-aos="zoom-in">Next article</span>
-
-                        <h3 class="news-title" data-aos="fade-up">
-                            <a href="news-detail.html" class="news-title-link">Job Opportunities - Digital Marketing</a>
-                        </h3>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
             <?php include 'include/footer.php'; ?>
         </main>
     </div>
@@ -282,6 +272,9 @@ https://templatemo.com/tm-567-nomad-force
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/scrollspy.min.js"></script>
     <script src="js/custom.js"></script>
+    <!-- Modal Script -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </body>
 

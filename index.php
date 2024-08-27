@@ -358,12 +358,12 @@
           ],
         ]; ?>
          <?php foreach ($founder_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
         <?php foreach ($founder_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
       </div>
     </div>
@@ -372,12 +372,12 @@
     <div class="founder-slider reverse-slider mt-3">
       <div class="slide-track">
       <?php foreach ($founder_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
         <?php foreach ($founder_members as $member) : ?>
-            <?php include './component/founder-card.php'; ?>
+            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
         <?php endforeach; ?>
 
       </div>
@@ -393,82 +393,62 @@
       </div>
     </div>
     <div class="regional-executive">
-      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Kamila Haider</h5>
-          <span class="f-16">East Midlands</span>
-        </div>
-      </a>
+    <div class="founder-slider">
+      <div class="slide-track">
+        <?php $regional_members = [
+          [
+            'name' => 'Dr. Kamila Haider',
+            'years_of_service' => '25+ years',
+            'photo' => 'images/people/dp3.jpg',
+            'location' => 'East Midlands, UK',
+          ],
+          [
+            'name' => 'Dr. Muhammad Gul',
+            'years_of_service' => '20+ years',
+            'photo' => 'images/people/dp4.jpg',
+            'location' => 'West Midlands, UK',
+          ],
+          [
+            'name' => 'Dr. Ali Mesam Mehdi',
+            'years_of_service' => '15+ years',
+            'photo' => 'images/people/dp5.jpg',
+            'location' => 'South East, UK',
+          ],
+          [
+            'name' => 'Dr. Adnan Hafeez',
+            'years_of_service' => '30+ years',
+            'photo' => 'images/people/dp6.jpg',
+            'location' => 'North West, UK',
+          ],
+          [
+            'name' => 'Dr. Saman Khan',
+            'years_of_service' => '29+ years',
+            'photo' => 'images/people/dp7.jpg',
+            'location' => 'Scotland, UK',
+          ],
+          [
+            'name' => 'Dr. Saima Niaz',
+            'years_of_service' => '29+ years',
+            'photo' => 'images/people/dp7.jpg',
+            'location' => 'London, UK',
+          ],
+          [
+            'name' => 'Dr. Raja Adnan Ahmed',
+            'years_of_service' => '29+ years',
+            'photo' => 'images/people/dp7.jpg',
+            'location' => 'Wales, UK',
+          ],
+        ]; ?>
+         <?php foreach ($regional_members as $member) : ?>
+            <?php $background_class = 'regional-bg'; include './component/founder-card.php';?>
+        <?php endforeach; ?>
 
-      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <diav class="mx-4">
-          <h5>Dr. Muhammad Gul</h5>
-          <span class="f-16">West Midlands</span>
-        </diav>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Ali Mesam Mehdi</h5>
-          <span class="f-16">South East</span>
-        </div>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Adnan Hafeez</h5>
-          <span class="f-16">North West</span>
-        </div>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Saman Khan</h5>
-          <span class="f-16">Scotland</span>
-        </div>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Saima Niaz</h5>
-          <span class="f-16">London</span>
-        </div>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Raja Adnan Ahmed</h5>
-          <span class="f-16">Wales</span>
-        </div>
-      </a>
+        <!-- Duplicates for smooth looping -->
+        <?php foreach ($regional_members as $member) : ?>
+            <?php $background_class = 'regional-bg'; include './component/founder-card.php';?>
+        <?php endforeach; ?>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -481,94 +461,79 @@
       </div>
     </div>
     <div class="regional-executive">
-      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Saadia Muzaffar</h5>
-          <span class="f-16">Medical Psychotherapy</span>
-        </div>
-      </a>
 
-      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Rahat Ghafoor</h5>
-          <span class="f-16">Liaison</span>
-        </div>
-      </a>
+    <div class="founder-slider reverse-slider">
+      <div class="slide-track">
+        <?php $coopted_members = [
+          [
+            'name' => 'Dr. Saadia Muzaffar',
+            'years_of_service' => '25+ years',
+            'photo' => 'images/people/dp3.jpg',
+            'location' => 'East Midlands, UK',
+            'title' => 'Medical Psychotherapy',
+          ],
+          [
+            'name' => 'Dr. Rahat Ghafoor',
+            'years_of_service' => '20+ years',
+            'photo' => 'images/people/dp4.jpg',
+            'location' => 'West Midlands, UK',
+            'title' => 'Consultant Psychiatrist',
+          ],
+          [
+            'name' => 'Dr. Hisham Ul Haq',
+            'years_of_service' => '15+ years',
+            'photo' => 'images/people/dp5.jpg',
+            'location' => 'South East, UK',
+            'title' => 'GP',
+          ],
+          [
+            'name' => 'Prof. Parveen Ali',
+            'years_of_service' => '30+ years',
+            'photo' => 'images/people/dp6.jpg',
+            'location' => 'North West, UK',
+            'title' => 'Nursing',
+          ],
+          [
+            'name' => 'Prof. Zaffer Iqbal',
+            'years_of_service' => '29+ years',
+            'photo' => 'images/people/dp7.jpg',
+            'location' => 'Scotland, UK',
+            'title' => 'Psychology',
+          ],
+          [
+            'name' => 'Dr. Sanaa Moledina',
+            'years_of_service' => '29+ years',
+            'photo' => 'images/people/dp7.jpg',
+            'location' => 'London, UK',
+            'title' => 'SAS Doctors Rep',
+          ],
+          [
+            'name' => 'Dr. Anum Farooqui',
+            'years_of_service' => '29+ years',
+            'photo' => 'images/people/dp7.jpg',
+            'location' => 'Wales, UK',
+            'title' => 'Trainee Rep',
+          ],
+          [
+            'name' => 'Miss. Noor Awan',
+            'years_of_service' => '25+ years',
+            'photo' => 'images/people/dp3.jpg',
+            'location' => 'East Midlands, UK',
+            'title' => 'Medical Student Rep',
+          ]
+        ]; ?>
+         <?php foreach ($coopted_members as $member) : ?>
+            <?php $background_class = 'coopted-bg'; include './component/founder-card.php';?>
+        <?php endforeach; ?>
 
-      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Hisham Ul Haq</h5>
-          <span class="f-16">GP</span>
-        </div>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Prof. Parveen Ali</h5>
-          <span class="f-16">Nursing</span>
-        </div>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Prof. Zaffer Iqbal</h5>
-          <span class="f-16">Psychology</span>
-        </div>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Sanaa Moledina</h5>
-          <span class="f-16">SAS Doctors Rep</span>
-        </div>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border red-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Dr. Anum Farooqui</h5>
-          <span class="f-16">Trainee Rep</span>
-        </div>
-      </a>
-
-      <a href="person.php" target="_blank" class="committee-border officers-border green-color" data-aos="fade-up" data-aos-duration="3000">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-          <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
-        </svg>
-        <div class="mx-4">
-          <h5>Miss Noor Awan</h5>
-          <span class="f-16">Medical Students Rep</span>
-        </div>
-      </a>
+        <!-- Duplicates for smooth looping -->
+        <?php foreach ($coopted_members as $member) : ?>
+            <?php $background_class = 'coopted-bg'; include './component/founder-card.php';?>
+        <?php endforeach; ?>
+      </div>
     </div>
+    </div>
+ 
   </section>
 
 

@@ -1,31 +1,39 @@
-<section class="section-padding pb-0" id="about">
-  <div class="container mb-5 pb-lg-5">
+<section class="section-padding pb-0 page-body" id="about">
+<img src="images/logoBanner/texture1.png" alt="" class="texture-image texture-opacity">
+  <div class="container mb-5 pb-lg-5 ">
+  
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center ">
+      
         <h2 class="mb-5" data-aos="fade-up">Our Mission and Vision</h2>
       </div>
       <div class="about-cards-container">
+
         <div class="col-lg-6 col-12  mb-lg-3 abt-card">
           <p class="me-4" data-aos="fade-up" data-aos-delay="300">
-            We proudly host annual <a rel="nofollow" href="https://thebppa.org.uk/conferences" target="_blank" class="text-color">Conferences</a> that bring together our vibrant community of British Pakistan Psychiatrists. These events are more than just gatherings; they are opportunities for knowledge exchange, professional development, and networking with peers. Each year, our conferences feature experts, insightful discussions, and the latest advancements in psychiatry. These events foster collaboration, inspire innovation, and strengthen the bonds within our community, ensuring that every member leaves with new insights and a renewed passion for their work.
+            We proudly host annual <a rel="nofollow" href="https://thebppa.org.uk/conferences" target="_blank" class="text-color">Conferences</a> that bring together our vibrant community of British Pakistan Psychiatrists. These events are more than just gatherings; they are opportunities for knowledge exchange, professional development, and networking with peers. 
+            <!-- Each year, our conferences feature experts, insightful discussions, and the latest advancements in psychiatry. These events foster collaboration, inspire innovation, and strengthen the bonds within our community, ensuring that every member leaves with new insights and a renewed passion for their work. -->
           </p>
         </div>
 
         <div class="col-lg-6 col-12 mb-lg-3  abt-card">
           <p data-aos="fade-up" data-aos-delay="500">
-            Join our <a rel="nofollow" href="https://thebppa.org.uk/join-us" target="_blank" class="text-color">Membership</a> program to become an part of British Pakistan Psychiatrists. As a member, you'll gain access to exclusive resources, educational opportunities, and events to enhance your professional growth. Collaborate with professionals, share knowledge, and stay updated with the latest developments in psychiatry. Our membership offers you the chance to contribute to the field, connect with peers, and be part of a collective effort to advance mental health. Whether you're just starting or are an experienced practitioner, there's a place for you in our community. Together, we can make a meaningful impact.
+            Join our <a rel="nofollow" href="https://thebppa.org.uk/join-us" target="_blank" class="text-color">Membership</a> program to become an part of British Pakistan Psychiatrists. As a member, you'll gain access to exclusive resources, educational opportunities, and events to enhance your professional growth. Collaborate with professionals, share knowledge, and stay updated with the latest developments in psychiatry. 
+            <!-- Our membership offers you the chance to contribute to the field, connect with peers, and be part of a collective effort to advance mental health. Whether you're just starting or are an experienced practitioner, there's a place for you in our community. Together, we can make a meaningful impact. -->
           </p>
         </div>
 
         <div class="col-lg-6 col-12 mb-lg-3  abt-card">
           <p class="me-4" data-aos="fade-up" data-aos-delay="300">
-            <a rel="nofollow" href="https://thebppa.org.uk/educational" target="_blank" class="text-color">Education</a> is Key. We educate, share knowledge, fueling growth, innovation, and excellence within our community. We are committed to providing continuous learning opportunities through workshops, seminars, and training programs tailored to the diverse needs of our members. Our educational initiatives are designed to keep our community at the forefront of psychiatric practice, ensuring that every member has access to the latest research, clinical techniques, and best practices. We empower our members to advance their careers, and contribute meaningfully to the broader mental health landscape. 
+            <a rel="nofollow" href="https://thebppa.org.uk/educational" target="_blank" class="text-color">Education</a> is Key. We educate, share knowledge, fueling growth, innovation, and excellence within our community. We are committed to providing continuous learning opportunities through workshops, seminars, and training programs tailored to the diverse needs of our members. 
+            <!-- Our educational initiatives are designed to keep our community at the forefront of psychiatric practice, ensuring that every member has access to the latest research, clinical techniques, and best practices. We empower our members to advance their careers, and contribute meaningfully to the broader mental health landscape.  -->
           </p>
         </div>
 
         <div class="col-lg-6 col-12 mb-lg-3 abt-card">
           <p data-aos="fade-up" data-aos-delay="500">
-            Explore our <a rel="nofollow" href="https://thebppa.org.uk/photogallery" target="_blank" class="text-color">Gallery</a> to relive the moments that define our community. From insightful conference sessions to memorable networking events, our gallery captures the essence of what it means to be part of our group of British Pakistan Psychiatrists. Each image tells a story of collaboration, learning, and shared experiences, highlighting the connections we've built and the progress we've made together. Whether you're reminiscing about past events or discovering the energy of our community for the first time, our gallery offers a visual journey through the milestones and memories that shape our collective journey.
+            Explore our <a rel="nofollow" href="https://thebppa.org.uk/photogallery" target="_blank" class="text-color">Gallery</a> to relive the moments that define our community. From insightful conference sessions to memorable networking events, our gallery captures the essence of what it means to be part of our group of British Pakistan Psychiatrists. 
+            <!-- Each image tells a story of collaboration, learning, and shared experiences, highlighting the connections we've built and the progress we've made together. Whether you're reminiscing about past events or discovering the energy of our community for the first time, our gallery offers a visual journey through the milestones and memories that shape our collective journey. -->
           </p>
         </div>
       </div>
