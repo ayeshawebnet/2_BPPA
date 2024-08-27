@@ -38,13 +38,13 @@
 
             </div>
 
-            <div class="col-6">
+            <div class="col-12 text-center">
                 <p class="copyright-text mb-0">Copyright © 2024 British Pakistan Psychiatrists Association
                 </p>
 
             </div>
 
-            <div class="col-lg-3 col-5 ms-auto">
+            <!-- <div class="col-lg-3 col-5 ms-auto">
                 <ul class="social-icon">
                     <li><a href="#" class="social-icon-link bi-facebook"></a></li>
 
@@ -56,7 +56,7 @@
 
                     <li><a href="#" class="social-icon-link bi-youtube"></a></li>
                 </ul>
-            </div>
+            </div> -->
 
         </div>
         </section>
