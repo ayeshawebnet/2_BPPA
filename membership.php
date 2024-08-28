@@ -2,211 +2,822 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <title>Membership</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap"
-    rel="stylesheet" />
-
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/bootstrap-icons.css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/magnific-popup.css" />
-
-  <link href="css/aos.css" rel="stylesheet" />
-
-  <link href="css/templatemo-nomad-force.css" rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/membership.css" />
+    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="Codedthemes" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
 </head>
 
 <body>
-  <main>
-    <?php include 'include/header.php'; ?>
-    <div class="pricing-card">
-      <div class="demo10">
-        <div class="container-fluid">
-          <div class="row mx-5">
-            <div class="col-md-12 m-4">
-              <div class="main-heading text-center">Secure Your Membership</div>
-              <br />
-              <!-- <h5>Methods of Payment</h5> -->
-              <ol class="left-content-sub-text">
-                <li>
-                  Pay Online: Securely pay your Membership fee online through
-                  our website. Simply select the "Membership" option during
-                  checkout, and complete your payment.
-                </li>
-                <li>
-                  Cheque Payment:
-                  <ul>
-                    <li>
-                      If you prefer to pay by cheque, please make it payable to
-                      "BPPA" (British Pakistani Psychiatrists Association).
-                    </li>
-                    <li>
-                      Post your cheque to the following address: Account name:
-                      British Pakistani Psychiatrists Association
-                    </li>
-                  </ul>
-                </li>
-              </ol>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="loader-track">
+            <div class="preloader-wrapper">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="row mx-5 px-5">
-            <div class="col-lg-4 col-md-6 col-12 h-100">
-              <div class="pricingTable10">
-                <div class="pricingTable-header">
-                  <h3 class="heading">Early Career</h3>
-                  <span class="price-value">
-                    <span class="currency">£</span> 10
-                    <span class="month">/mo</span>
-                  </span>
-                </div>
-                <div class="pricing-content">
-                  <ul>
-                    <li>Affordable access to the network</li>
-                    <li>Support for career development</li>
-                    <li>10 Subdomains</li>
-                    <li>15 Domains</li>
-                  </ul>
-                  <a href="pages/auth.html" class="read">Sign up</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 h-100">
-              <div class="pricingTable10">
-                <div class="pricingTable-header">
-                  <h3 class="heading">Trainee</h3>
-                  <span class="price-value">
-                    <span class="currency">£</span> 30
-                    <span class="month">/mo</span>
-                  </span>
-                </div>
-                <div class="pricing-content">
-                  <ul>
-                    <li>Networking with professionals</li>
-                    <li>Educational events & workshops</li>
-                    <li>25 Subdomains</li>
-                    <li>30 Domains</li>
-                  </ul>
-                  <a href="pages/auth.html" class="read">Sign up</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 h-100">
-              <div class="pricingTable10">
-                <div class="pricingTable-header">
-                  <h3 class="heading">Retired</h3>
-                  <span class="price-value">
-                    <span class="currency">£</span> 30
-                    <span class="month">/mo</span>
-                  </span>
-                </div>
-                <div class="pricing-content">
-                  <ul>
-                    <li>Affordable access to the network</li>
-                    <li>Support for career development</li>
-                    <li>10 Subdomains</li>
-                    <li>15 Domains</li>
-                  </ul>
-                  <a href="pages/auth.html" class="read">Sign up</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 h-100">
-              <div class="pricingTable10">
-                <div class="pricingTable-header">
-                  <h3 class="heading">Annual</h3>
-                  <span class="price-value">
-                    <span class="currency">£</span> 55
-                    <span class="month">/mo</span>
-                  </span>
-                </div>
-                <div class="pricing-content">
-                  <ul>
-                    <li>Stay connected with the community</li>
-                    <li>Participate in events & discussions</li>
-                    <li>15 Subdomains</li>
-                    <li>20 Domains</li>
-                  </ul>
-                  <a href="pages/auth.html" class="read">Sign up</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 h-100">
-              <div class="pricingTable10">
-                <div class="pricingTable-header">
-                  <h3 class="heading">5-Year</h3>
-                  <span class="price-value">
-                    <span class="currency">£</span> 250
-                    <span class="month">/mo</span>
-                  </span>
-                </div>
-                <div class="pricing-content">
-                  <ul>
-                    <li>Full access to all resources</li>
-                    <li>Attend conferences & seminars</li>
-                    <li>20 Subdomains</li>
-                    <li>25 Domains</li>
-                  </ul>
-                  <a href="pages/auth.html" class="read">Sign up</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 h-100">
-              <div class="pricingTable10">
-                <div class="pricingTable-header">
-                  <h3 class="heading">Early Career</h3>
-                  <span class="price-value">
-                    <span class="currency">£</span> 10
-                    <span class="month">/mo</span>
-                  </span>
-                </div>
-                <div class="pricing-content">
-                  <ul>
-                    <li>Long-term commitment & savings</li>
-                    <li>Priority access to events & content</li>
-                    <li>20 Subdomains</li>
-                    <li>25 Domains</li>
-                  </ul>
-                  <a href="pages/auth.html" class="read">Sign up</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
         </div>
-      </div>
     </div>
-    <?php include 'include/footer.php'; ?>
-  </main>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-logo">
 
-  <!-- JAVASCRIPT FILES -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/magnific-popup-options.js"></script>
-  <script src="js/scrollspy.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="js/auth.js"></script>
+                        <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <div class="mobile-search waves-effect waves-light">
+                            <div class="header-search">
+                                <div class="main-search morphsearch-search">
+                                    <div class="input-group">
+                                        <span class="input-group-prepend search-close"><i class="ti-close input-group-text"></i></span>
+                                        <input type="text" class="form-control" placeholder="Enter Keyword">
+                                        <span class="input-group-append search-btn"><i class="ti-search input-group-text"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="index.php">
+                            <img class="img-fluid" width="150px" src="images/logoBanner/BPPA-white.png" alt="Theme-Logo" />
+                        </a>
+                        <a class="mobile-options waves-effect waves-light">
+                            <i class="ti-more"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li>
+                                <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="user-profile header-notification">
+                                <a href="#!" class="waves-effect waves-light">
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="user-profile header-notification">
+                                <a href="#!" class="waves-effect waves-light">
+                                    <span>About</span>
+                                    <i class="ti-angle-down"></i>
+                                </a>
+                                <ul class="show-notification profile-notification">
+                                    <li class="waves-effect waves-light">
+                                        <a href="#!">
+                                            <i class="ti-settings"></i> Settings
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="user-profile.html">
+                                            <i class="ti-user"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="email-inbox.html">
+                                            <i class="ti-email"></i> My Messages
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="auth-lock-screen.html">
+                                            <i class="ti-lock"></i> Lock Screen
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="auth-normal-sign-in.html">
+                                            <i class="ti-layout-sidebar-left"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="user-profile header-notification">
+                                <a href="#!" class="waves-effect waves-light">
+                                    <span>John Doe</span>
+                                    <i class="ti-angle-down"></i>
+                                </a>
+                                <ul class="show-notification profile-notification">
+                                    <li class="waves-effect waves-light">
+                                        <a href="#!">
+                                            <i class="ti-settings"></i> Settings
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="user-profile.html">
+                                            <i class="ti-user"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="email-inbox.html">
+                                            <i class="ti-email"></i> My Messages
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="auth-lock-screen.html">
+                                            <i class="ti-lock"></i> Lock Screen
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="auth-normal-sign-in.html">
+                                            <i class="ti-layout-sidebar-left"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+                        <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                        <div class="pcoded-inner-navbar main-menu">
+                            <div class="">
+                                <!-- <div class="main-menu-header">
+                                    <img class="img-80 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
+                                    <div class="user-details">
+                                        <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
+                                    </div>
+                                </div> -->
+                                <div class="main-menu-content">
+                                    <ul>
+                                        <li class="more-details">
+                                            <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
+                                            <a href="#!"><i class="ti-settings"></i>Settings</a>
+                                            <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pcoded-navigation-label">About</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu pcoded-trigger active ">
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i><b>BC</b></span>
+                                        <span class="pcoded-mtext">Who We Are?</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="active" id="aboutop1">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Overview</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="aboutop2">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Our History</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="aboutop3">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Consitution</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="aboutop4">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">News & Updates</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="aboutop5">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Leadership & Members</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="aboutop6">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">History</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="pcoded-navigation-label">Membership</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu">
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i><b>BC</b></span>
+                                        <span class="pcoded-mtext">Membership Benifits</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="active" id="op1">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Early Career</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="op2">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Trainee</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="op3">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Retired</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="op4">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Annual</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="op5">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Affilate</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="op6">
+                                            <a class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">5 year</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="pcoded-navigation-label">Forms</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="">
+                                    <a href="form-elements-component.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext">Form</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pcoded-navigation-label">Tables</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="">
+                                    <a href="bs-basic-table.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-receipt"></i><b>B</b></span>
+                                        <span class="pcoded-mtext">Table</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pcoded-navigation-label">Chart And Maps</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="">
+                                    <a href="chart-morris.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-bar-chart-alt"></i><b>C</b></span>
+                                        <span class="pcoded-mtext">Charts</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="map-google.html" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-map-alt"></i><b>M</b></span>
+                                        <span class="pcoded-mtext">Maps</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="pcoded-navigation-label">Pages</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu ">
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-id-badge"></i><b>A</b></span>
+                                        <span class="pcoded-mtext">Pages</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                        <li class="">
+                                            <a href="auth-normal-sign-in.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Login</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="auth-sign-up.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Registration</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="sample-page.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>S</b></span>
+                                                <span class="pcoded-mtext">Sample Page</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="pcoded-content">
+                        <!-- Page-header start -->
+                        <div class="page-header">
+                            <div class="page-block">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8">
+                                        <div class="page-header-title">
+                                            <h5 class="m-b-10">BPPA Member Benefits</h5>
+                                            <p class="m-b-0">Lorem Ipsum is simply dummy text of the printing</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                            </li>
+                                            <!-- <li class="breadcrumb-item"><a href="#!">Membership</a>
+                                            </li> -->
+                                            <li class="breadcrumb-item"><a href="#!">Membership Benifits</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Page-header end -->
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page-body start -->
+                                    <div class="page-body">
+                                        <!-- Row start -->
+                                        <div class="row">
+                                            <!-- Multiple Open Accordion start -->
+                                            <div class="col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5 class="card-header-text">
+                                                            Membership Benifits
+                                                           
+                                                        </h5>
+                                                    </div>
+                                                    <div class="card-block accordion-block">
+                                                        <div
+                                                            id="accordion"
+                                                            role="tablist"
+                                                            aria-multiselectable="true">
+                                                            <div class="accordion-panel">
+                                                                <div
+                                                                    class="accordion-heading"
+                                                                    role="tab"
+                                                                    id="headingOne">
+                                                                    <h3 class="card-title accordion-title">
+                                                                        <a
+                                                                            class="accordion-msg waves-effect waves-dark op1"
+                                                                            data-toggle="collapse"
+                                                                            data-parent="#accordion"
+                                                                            href="#collapseOne"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="collapseOne">
+                                                                            Early Career Doctor Membership
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div
+                                                                    id="collapseOne"
+                                                                    class="panel-collapse collapse in"
+                                                                    role="tabpanel"
+                                                                    aria-labelledby="headingOne">
+                                                                    <div
+                                                                        class="accordion-content accordion-desc">
+                                                                        <p>
+                                                                            Lorem Ipsum is simply dummy text of the
+                                                                            printing and typesetting industry. Lorem
+                                                                            Ipsum has been the industry's standard
+                                                                            dummy text ever since the 1500s, when an
+                                                                            unknown printer took a galley of type
+                                                                            and scrambled it to make a type specimen
+                                                                            book. It has survived not only five
+                                                                            centuries, but also the leap into
+                                                                            electronic typesetting, remaining
+                                                                            essentially unchanged. It was
+                                                                            popularised in the 1960s with the
+                                                                            release of Letraset sheets containing
+                                                                            Lorem Ipsum passages, and more recently
+                                                                            with desktop publishing software like
+                                                                            Aldus PageMaker including versions of
+                                                                            Lorem Ipsum.
+                                                                        </p>
+                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-panel">
+                                                                <div
+                                                                    class="accordion-heading"
+                                                                    role="tab"
+                                                                    id="headingTwo">
+                                                                    <h3 class="card-title accordion-title">
+                                                                        <a
+                                                                            class="accordion-msg waves-effect waves-dark op2"
+                                                                            data-toggle="collapse"
+                                                                            data-parent="#accordion"
+                                                                            href="#collapseTwo"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseTwo">
+                                                                            Trainee Membership
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div
+                                                                    id="collapseTwo"
+                                                                    class="panel-collapse collapse"
+                                                                    role="tabpanel"
+                                                                    aria-labelledby="headingTwo">
+                                                                    <div
+                                                                        class="accordion-content accordion-desc">
+                                                                        <p>
+                                                                            Lorem Ipsum is simply dummy text of the
+                                                                            printing and typesetting industry. Lorem
+                                                                            Ipsum has been the industry's standard
+                                                                            dummy text ever since the 1500s, when an
+                                                                            unknown printer took a galley of type
+                                                                            and scrambled it to make a type specimen
+                                                                            book. It has survived not only five
+                                                                            centuries, but also the leap into
+                                                                            electronic typesetting, remaining
+                                                                            essentially unchanged. It was
+                                                                            popularised in the 1960s with the
+                                                                            release of Letraset sheets containing
+                                                                            Lorem Ipsum passages, and more recently
+                                                                            with desktop publishing software like
+                                                                            Aldus PageMaker including versions of
+                                                                            Lorem Ipsum.
+                                                                        </p>
+                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-panel">
+                                                                <div
+                                                                    class="accordion-heading"
+                                                                    role="tab"
+                                                                    id="headingThree">
+                                                                    <h3 class="card-title accordion-title">
+                                                                        <a
+                                                                            class="accordion-msg waves-effect waves-dark op3"
+                                                                            data-toggle="collapse"
+                                                                            data-parent="#accordion"
+                                                                            href="#collapseThree"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseThree">
+                                                                            Retired Membership
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div
+                                                                    id="collapseThree"
+                                                                    class="panel-collapse collapse"
+                                                                    role="tabpanel"
+                                                                    aria-labelledby="headingThree">
+                                                                    <div
+                                                                        class="accordion-content accordion-desc">
+                                                                        <p>
+                                                                            Lorem Ipsum is simply dummy text of the
+                                                                            printing and typesetting industry. Lorem
+                                                                            Ipsum has been the industry's standard
+                                                                            dummy text ever since the 1500s, when an
+                                                                            unknown printer took a galley of type
+                                                                            and scrambled it to make a type specimen
+                                                                            book. It has survived not only five
+                                                                            centuries, but also the leap into
+                                                                            electronic typesetting, remaining
+                                                                            essentially unchanged. It was
+                                                                            popularised in the 1960s with the
+                                                                            release of Letraset sheets containing
+                                                                            Lorem Ipsum passages, and more recently
+                                                                            with desktop publishing software like
+                                                                            Aldus PageMaker including versions of
+                                                                            Lorem Ipsum.
+                                                                        </p>
+                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-panel">
+                                                                <div
+                                                                    class="accordion-heading"
+                                                                    role="tab"
+                                                                    id="headingFour">
+                                                                    <h3 class="card-title accordion-title">
+                                                                        <a
+                                                                            class="accordion-msg waves-effect waves-dark op4"
+                                                                            data-toggle="collapse"
+                                                                            data-parent="#accordion"
+                                                                            href="#collapseFour"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseFour">
+                                                                            Affiliate Membership
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div
+                                                                    id="collapseFour"
+                                                                    class="panel-collapse collapse"
+                                                                    role="tabpanel"
+                                                                    aria-labelledby="headingFour">
+                                                                    <div
+                                                                        class="accordion-content accordion-desc">
+                                                                        <p>
+                                                                            Lorem Ipsum is simply dummy text of the
+                                                                            printing and typesetting industry. Lorem
+                                                                            Ipsum has been the industry's standard
+                                                                            dummy text ever since the 1500s, when an
+                                                                            unknown printer took a galley of type
+                                                                            and scrambled it to make a type specimen
+                                                                            book. It has survived not only five
+                                                                            centuries, but also the leap into
+                                                                            electronic typesetting, remaining
+                                                                            essentially unchanged. It was
+                                                                            popularised in the 1960s with the
+                                                                            release of Letraset sheets containing
+                                                                            Lorem Ipsum passages, and more recently
+                                                                            with desktop publishing software like
+                                                                            Aldus PageMaker including versions of
+                                                                            Lorem Ipsum.
+                                                                        </p>
+                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-panel">
+                                                                <div
+                                                                    class="accordion-heading"
+                                                                    role="tab"
+                                                                    id="headingFive">
+                                                                    <h3 class="card-title accordion-title">
+                                                                        <a
+                                                                            class="accordion-msg waves-effect waves-dark op5"
+                                                                            data-toggle="collapse"
+                                                                            data-parent="#accordion"
+                                                                            href="#collapseFive"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseFive">
+                                                                            Annual Membership
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div
+                                                                    id="collapseFive"
+                                                                    class="panel-collapse collapse"
+                                                                    role="tabpanel"
+                                                                    aria-labelledby="headingFive">
+                                                                    <div
+                                                                        class="accordion-content accordion-desc">
+                                                                        <p>
+                                                                            Lorem Ipsum is simply dummy text of the
+                                                                            printing and typesetting industry. Lorem
+                                                                            Ipsum has been the industry's standard
+                                                                            dummy text ever since the 1500s, when an
+                                                                            unknown printer took a galley of type
+                                                                            and scrambled it to make a type specimen
+                                                                            book. It has survived not only five
+                                                                            centuries, but also the leap into
+                                                                            electronic typesetting, remaining
+                                                                            essentially unchanged. It was
+                                                                            popularised in the 1960s with the
+                                                                            release of Letraset sheets containing
+                                                                            Lorem Ipsum passages, and more recently
+                                                                            with desktop publishing software like
+                                                                            Aldus PageMaker including versions of
+                                                                            Lorem Ipsum.
+                                                                        </p>
+                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-panel">
+                                                                <div
+                                                                    class="accordion-heading"
+                                                                    role="tab"
+                                                                    id="headingSix">
+                                                                    <h3 class="card-title accordion-title">
+                                                                        <a
+                                                                            class="accordion-msg waves-effect waves-dark op6"
+                                                                            data-toggle="collapse"
+                                                                            data-parent="#accordion"
+                                                                            href="#collapseSix"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="collapseSix">
+                                                                            5-Year Membership
+                                                                        </a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div
+                                                                    id="collapseSix"
+                                                                    class="panel-collapse collapse"
+                                                                    role="tabpanel"
+                                                                    aria-labelledby="headingSix">
+                                                                    <div
+                                                                        class="accordion-content accordion-desc">
+                                                                        <p>
+                                                                            Lorem Ipsum is simply dummy text of the
+                                                                            printing and typesetting industry. Lorem
+                                                                            Ipsum has been the industry's standard
+                                                                            dummy text ever since the 1500s, when an
+                                                                            unknown printer took a galley of type
+                                                                            and scrambled it to make a type specimen
+                                                                            book. It has survived not only five
+                                                                            centuries, but also the leap into
+                                                                            electronic typesetting, remaining
+                                                                            essentially unchanged. It was
+                                                                            popularised in the 1960s with the
+                                                                            release of Letraset sheets containing
+                                                                            Lorem Ipsum passages, and more recently
+                                                                            with desktop publishing software like
+                                                                            Aldus PageMaker including versions of
+                                                                            Lorem Ipsum.
+                                                                        </p>
+                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Multiple Open Accordion ends -->
+                                        </div>
+                                        <!-- Row end -->
+                                    </div>
+                                    <!-- Page-body start -->
+                                </div>
+                            </div>
+                            <!-- Main-body start -->
+
+                            <div id="styleSelector">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 10]>
+<div class="ie-warning">
+    <h1>Warning!!</h1>
+    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+    <div class="iew-container">
+        <ul class="iew-download">
+            <li>
+                <a href="http://www.google.com/chrome/">
+                    <img src="assets/images/browser/chrome.png" alt="Chrome">
+                    <div>Chrome</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/">
+                    <img src="assets/images/browser/firefox.png" alt="Firefox">
+                    <div>Firefox</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://www.opera.com">
+                    <img src="assets/images/browser/opera.png" alt="Opera">
+                    <div>Opera</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.apple.com/safari/">
+                    <img src="assets/images/browser/safari.png" alt="Safari">
+                    <div>Safari</div>
+                </a>
+            </li>
+            <li>
+                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                    <img src="assets/images/browser/ie.png" alt="">
+                    <div>IE (9 & above)</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+    <!-- Warning Section Ends -->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="assets/js/jquery/jquery.min.js "></script>
+    <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
+    <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
+    <!-- waves js -->
+    <script src="assets/pages/waves/js/waves.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- Accordion js -->
+    <script type="text/javascript" src="assets/pages/accordion/accordion.js"></script>
+    <!-- Custom js -->
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/vertical/vertical-layout.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
 </body>
 
 </html>
