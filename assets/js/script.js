@@ -256,6 +256,11 @@ $(document).ready(function () {
   $(".pcoded-hasmenu").click(function () {
     $(".pcoded-hasmenu").removeClass("active");
     $(this).addClass("active");
+
+    //set first li of pcoded-submenu active
+    $(".pcoded-submenu li").removeClass("active");
+    $(".pcoded-submenu li").eq(0).addClass("active");
+    
   });
 });
 
