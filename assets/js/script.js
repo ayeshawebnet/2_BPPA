@@ -252,6 +252,12 @@ function toggleFullScreen() {
   }
 }
 
+$(document).ready(function () {
+  $(".pcoded-hasmenu").click(function () {
+    $(".pcoded-hasmenu").removeClass("active");
+    $(this).addClass("active");
+  });
+});
 
 $(document).ready(function() {
     // Cache selectors
