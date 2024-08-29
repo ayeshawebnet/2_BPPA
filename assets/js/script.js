@@ -253,52 +253,85 @@ function toggleFullScreen() {
 }
 
 $(document).ready(function () {
+  var $accordionMsgs = $(".accordion-msg");
+  var $submenuItems = $(".pcoded-submenu li");
+  //open first accordion of member list
+  var initialActiveAccordion = $accordionMsgs.filter(".op1");
+  if (initialActiveAccordion.length) {
+    initialActiveAccordion.click();
+  }
+
   $(".pcoded-hasmenu").click(function () {
     $(".pcoded-hasmenu").removeClass("active");
     $(this).addClass("active");
 
-    //set first li of pcoded-submenu active
-    $(".pcoded-submenu li").removeClass("active");
-    $(".pcoded-submenu li").eq(0).addClass("active");
-    
+    // if ($(this).hasClass("active")) {
+    //   //set first li of pcoded-submenu active
+    // $(".pcoded-submenu li").removeClass("active");
+    // // console.log("pcoded-hasmenu clicked");
+    // $(".pcoded-submenu li").eq(0).addClass("active");
+    // }
+
+  });
+
+  // Handle click event on menu items
+  $submenuItems.on("click", function () {
+    var activeId = $(this).attr("id");
+
+    if (activeId) {
+      $submenuItems.removeClass("active");
+      $(this).addClass("active");
+      $accordionMsgs.filter("." + activeId).click();
+    }
+  });
+
+  // Handle click event on accordion items
+  $accordionMsgs.on("click", function () {
+    var activeClass = $(this)
+      .attr("class")
+      .split(" ")
+      .find((cls) => cls.startsWith("op"));
+
+    if (activeClass) {
+      $submenuItems.removeClass("active");
+      $submenuItems.filter("#" + activeClass).addClass("active");
+    }
   });
 });
+//172779
+// $(document).ready(function() {
+//     // Cache selectors
+//     var $accordionMsgs = $('.accordion-msg');
+//     var $submenuItems = $('.pcoded-submenu li');
 
-$(document).ready(function() {
-    // Cache selectors
-    var $accordionMsgs = $('.accordion-msg');
-    var $submenuItems = $('.pcoded-submenu li');
+//     // Handle click event on accordion items
+//     $accordionMsgs.on('click', function() {
+//         var activeClass = $(this).attr('class').split(' ').find(cls => cls.startsWith('op'));
 
-    // Handle click event on accordion items
-    $accordionMsgs.on('click', function() {
-        var activeClass = $(this).attr('class').split(' ').find(cls => cls.startsWith('op'));
+//         if (activeClass) {
+//             $submenuItems.removeClass('active');
+//             $submenuItems.filter('#' + activeClass).addClass('active');
+//         }
+//     });
 
-        if (activeClass) {
-            $submenuItems.removeClass('active');
-            $submenuItems.filter('#' + activeClass).addClass('active');
-        }
-    });
+//     // Handle click event on menu items
+//     $submenuItems.on('click', function() {
+//         var activeId = $(this).attr('id');
 
-    // Handle click event on menu items
-    $submenuItems.on('click', function() {
-        var activeId = $(this).attr('id');
+//         if (activeId) {
+//             $submenuItems.removeClass('active');
+//             $(this).addClass('active');
 
-        if (activeId) {
-            $submenuItems.removeClass('active');
-            $(this).addClass('active');
+//             $accordionMsgs.filter('.' + activeId).click();
+//         }
+//     });
 
-            $accordionMsgs.filter('.' + activeId).click();
-        }
-    });
-
-    // Optionally trigger click on the initial active accordion item on page load
-    var initialActiveAccordion = $accordionMsgs.filter('.op1');
-    if (initialActiveAccordion.length) {
-        initialActiveAccordion.click();
-    }
-});
-
-
+//     // Optionally trigger click on the initial active accordion item on page load
+//     var initialActiveAccordion = $accordionMsgs.filter('.op1');
+//     if (initialActiveAccordion.length) {
+//         initialActiveAccordion.click();
+//     }
+// });
 
 $("body").append(
   '<div class="fixed-button active"><a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro</a> </div>'

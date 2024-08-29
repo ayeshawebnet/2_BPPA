@@ -23,11 +23,12 @@ $(document).ready(function(){
                 icons: icons
             });
         } );
+        
         if($(".accordion-msg").attr('aria-expanded') == 'true'){ 
             $(".accordion-msg").addClass("scale_active");
-            
+            console.log($(".accordion-msg").attr('aria-expanded'));
         }
-        else{console.log("hello"); 
+        else{ 
             $(".accordion-msg").removeClass("scale_active");
         }   
     });
