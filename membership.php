@@ -29,6 +29,9 @@
     <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+      <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
@@ -901,14 +904,181 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="tab-pane" id="news3" role="tabpanel">
-                                                                        <dl class="dl-horizontal row">
-                                                                            <dt class="col-sm-1">About BPPA:</dt>
-                                                                            <dd class="col-sm-11">The British Pakistani Psychiatrists Association (BPPA) is an association of Psychiatrists and allied mental health professionals in Britain of Pakistani heritage and cultural affiliation.</dd>
-                                                                            <dt class="col-sm-1">Educational:</dt>
-                                                                            <dd class="col-sm-11">BPPA is a forum to represent and share the individual and collective views of its members to promote social and academic development among one another and with the wider British Society.</dd>
-                                                                            <dt class="col-sm-1">Members:</dt>
-                                                                            <dd class="col-sm-11">BPPA is at the forefront of offering its members job and career counselling, training and voicing the needs of trainees in Psychiatry.</dd>
-                                                                        </dl>
+                                                                        <div class="col-lg-12 col-xl-12 tab-with-img">
+                                                                            <div class="sub-title">Executive Officers</div>
+                                                                            <!-- Nav tabs -->
+                                                                            <ul class="nav nav-tabs md-tabs img-tabs b-none" role="tablist">
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link active" data-toggle="tab" href="#home8" role="tab">
+                                                                                        <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
+                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link" data-toggle="tab" href="#profile8" role="tab">
+                                                                                        <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
+                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link" data-toggle="tab" href="#messages8" role="tab">
+                                                                                        <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
+                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link" data-toggle="tab" href="#settings8" role="tab">
+                                                                                        <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <!-- Tab panes -->
+                                                                            <div class="tab-content card-block">
+                                                                                <div class="tab-pane active" id="home8" role="tabpanel">
+                                                                                    <p class="text-center m-0">1. Dr. Shahid Latif, Chairman of the British Pakistani Psychiatrists Association (BPPA), is a leading psychiatrist committed to advancing career development and training for members. Under his leadership, the BPPA focuses on providing support and resources to enhance professional growth and address the needs of psychiatric trainees.</p>
+                                                                                </div>
+                                                                                <div class="tab-pane" id="profile8" role="tabpanel">
+                                                                                    <p class="text-center m-0">2. Dr. Rais Irfan Ahmad is the General Secretary of the British Pakistani Psychiatrists Association (BPPA). In this role, he plays a crucial part in coordinating the association's activities, facilitating communication among members, and supporting the organization’s initiatives to advance the field of psychiatry and support mental health professionals of Pakistani heritage.</p>
+                                                                                </div>
+                                                                                <div class="tab-pane" id="messages8" role="tabpanel">
+                                                                                    <p class="text-center m-0">3. Dr. Aamer Malik Sajjad serves as the Treasurer of the British Pakistani Psychiatrists Association (BPPA). He is responsible for managing the association’s finances, ensuring fiscal responsibility, and overseeing budgeting and financial planning. Dr. Sajjad’s role is pivotal in supporting BPPA’s initiatives and ensuring the effective allocation of resources to benefit its members.</p>
+                                                                                </div>
+                                                                                <div class="tab-pane" id="settings8" role="tabpanel">
+                                                                                    <p class="text-center m-0">4. Dr. Asad Malik is the Social Secretary of the British Pakistani Psychiatrists Association (BPPA). He is responsible for organizing events and activities that foster networking and community engagement among members. Dr. Malik's role is essential in creating opportunities for social interaction and professional connection within the association.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Start Regional Executives -->
+                                                                        <div class="col-lg-12 col-xl-12 tab-with-img">
+                                                                            <div class="sub-title">Regional Executives</div>
+                                                                            <!-- Nav tabs -->                 
+                                                                            <div class="slide-container swiper">
+                                                                                <div class="slide-content">
+                                                                                    <ul class="card-wrapper swiper-wrapper img-tabs b-none" >
+                                                                                        <li class="swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Kamila Haider<br><small>East Midlands</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Muhammad Gul<br><small>West Midlands</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Ali Mesam Mehdi<br><small>South East</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Adnan Hafeez<br><small>North West</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Saman Khan<br><small>Scotland</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Saima Niaz<br><small>London</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Raja Adnan Ahmed<br><small>Wales</small></h6>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="swiper-button-next swiper-navBtn"></div>
+                                                                                <div class="swiper-button-prev swiper-navBtn"></div>
+                                                                                <div class="swiper-pagination"></div>
+                                                                            </div>
+                                                                            <!-- Tab panes -->
+                                                                        </div>
+                                                                        <!-- End Regional Executives -->
+                                                                          <!-- Start Co-opted Executives -->
+                                                                        <div class="col-lg-12 col-xl-12 tab-with-img">
+                                                                            <div class="sub-title">Co-opted Executives</div>
+                                                                            <!-- Nav tabs -->                 
+                                                                            <div class="slide-container swiper">
+                                                                                <div class="slide-content">
+                                                                                    <ul class="card-wrapper swiper-wrapper img-tabs b-none" >
+                                                                                        <li class="swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Kamila Haider<br><small>East Midlands</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Muhammad Gul<br><small>West Midlands</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Ali Mesam Mehdi<br><small>South East</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Adnan Hafeez<br><small>North West</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Saman Khan<br><small>Scotland</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Saima Niaz<br><small>London</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Raja Adnan Ahmed<br><small>Wales</small></h6>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="swiper-button-next swiper-navBtn"></div>
+                                                                                <div class="swiper-button-prev swiper-navBtn"></div>
+                                                                                <div class="swiper-pagination2"></div>
+                                                                            </div>
+                                                                            <!-- Tab panes -->
+                                                                        </div>
+                                                                        <!-- End Co-opted Executives -->
                                                                     </div>
                                                                     <div class="tab-pane" id="leadership3" role="tabpanel">
                                                                         <dl class="dl-horizontal row">
@@ -1306,6 +1476,9 @@
         <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
         <!-- Accordion js -->
         <script type="text/javascript" src="assets/pages/accordion/accordion.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
         <!-- Custom js -->
         <script src="assets/js/pcoded.min.js"></script>
         <script src="assets/js/vertical/vertical-layout.min.js"></script>

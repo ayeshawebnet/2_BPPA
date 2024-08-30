@@ -297,6 +297,7 @@ $(document).ready(function () {
       $submenuItems.filter("#" + activeClass).addClass("active");
     }
   });
+
 });
 //172779
 // $(document).ready(function() {
@@ -332,6 +333,40 @@ $(document).ready(function () {
 //         initialActiveAccordion.click();
 //     }
 // });
+
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 5,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination ",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: { 
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 5,
+    },
+  },
+});
 
 $("body").append(
   '<div class="fixed-button active"><a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro</a> </div>'
