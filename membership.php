@@ -29,9 +29,10 @@
     <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
-      <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- gallery -->
+    <link rel="stylesheet" href="css/gallery.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
@@ -137,7 +138,7 @@
                                     <span>Home</span>
                                 </a>
                             </li>
-                            <li class="user-profile header-notification">
+                            <!-- <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <span>About</span>
                                     <i class="ti-angle-down"></i>
@@ -202,7 +203,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -232,52 +233,45 @@
                             </div>
                             <div class="pcoded-navigation-label">About</div>
                             <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu pcoded-trigger active">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                <li class="pcoded-hasmenu b-menu pcoded-trigger active" data-target="who-we-are">
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark" >
                                         <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i><b>BC</b></span>
                                         <span class="pcoded-mtext">Who We Are?</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
-                                        <li class="active" id="aboutop1">
-                                            <a class="waves-effect waves-dark">
+                                        <li class="active " id="aboutop1">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#overview">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Overview</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" " id="aboutop2">
-                                            <a class="waves-effect waves-dark">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#meet">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Meet Our Organization</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="aboutop3">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#history">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Our History</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class=" " id="aboutop3">
-                                            <a class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Consitution</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
                                         <li class=" " id="aboutop4">
-                                            <a class="waves-effect waves-dark">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#constitution">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">News & Updates</span>
+                                                <span class="pcoded-mtext">Constitution</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" " id="aboutop5">
-                                            <a class="waves-effect waves-dark">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#leadership">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Leadership & Members</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" " id="aboutop6">
-                                            <a class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">History</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
@@ -286,50 +280,50 @@
                             </ul>
                             <div class="pcoded-navigation-label">Membership</div>
                             <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i><b>BC</b></span>
+                                <li class="pcoded-hasmenu b-menu" data-target="membership-benefit">
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark" >
+                                        <span class="pcoded-micon"><i class="ti-id-badge"></i><b>BC</b></span>
                                         <span class="pcoded-mtext">Membership Benifits</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class="active" id="op1">
-                                            <a class="waves-effect waves-dark">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#earlycareer">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Early Career</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" " id="op2">
-                                            <a class="waves-effect waves-dark">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#trainee">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Trainee</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" " id="op3">
-                                            <a class="waves-effect waves-dark">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#retired">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Retired</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" " id="op4">
-                                            <a class="waves-effect waves-dark">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#annual">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Annual</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" " id="op5">
-                                            <a class="waves-effect waves-dark">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#affiliate">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Affilate</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" " id="op6">
-                                            <a class="waves-effect waves-dark">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#5years">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">5 year</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -340,74 +334,15 @@
                             </ul>
                             <div class="pcoded-navigation-label">Gallery</div>
                             <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="form-elements-component.html" class="waves-effect waves-dark">
+                                <li class=" b-menu" data-target="gallery-bppa">
+                                    <a class="waves-effect waves-dark" >
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                         <span class="pcoded-mtext">Gallery</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                             </ul>
-                            <div class="pcoded-navigation-label">Tables</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="bs-basic-table.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-receipt"></i><b>B</b></span>
-                                        <span class="pcoded-mtext">Table</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="pcoded-navigation-label">Chart And Maps</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a href="chart-morris.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-bar-chart-alt"></i><b>C</b></span>
-                                        <span class="pcoded-mtext">Charts</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="map-google.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-map-alt"></i><b>M</b></span>
-                                        <span class="pcoded-mtext">Maps</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="pcoded-navigation-label">Pages</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu ">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-id-badge"></i><b>A</b></span>
-                                        <span class="pcoded-mtext">Pages</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
-                                        <li class="">
-                                            <a href="auth-normal-sign-in.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Login</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="auth-sign-up.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Registration</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="sample-page.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>S</b></span>
-                                                <span class="pcoded-mtext">Sample Page</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            
                         </div>
                     </nav>
                     <div class="pcoded-content">
@@ -444,7 +379,7 @@
                                     <div class="page-body">
 
                                         <!-- About Row Start -->
-                                        <div class="row">
+                                        <div class="row content-row" id="who-we-are">
                                             <div class="col-sm-12">
                                                 <!-- Material tab card start -->
                                                 <div class="card">
@@ -454,45 +389,272 @@
                                                     <div class="card-block">
                                                         <!-- Row start -->
                                                         <div class="row m-b-30">
-                                                            <div class="col-lg-12 col-xl-12">
+                                                            <div class="col-lg-12 col-xl-12 ">
                                                                 <!-- <div class="sub-title">Default</div> -->
                                                                 <!-- Nav tabs -->
-                                                                <ul class="nav nav-tabs md-tabs" role="tablist">
+                                                                <ul class="nav nav-tabs about-tabs md-tabs" role="tablist">
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link active" data-toggle="tab" href="#overview3" role="tab">Overview</a>
+                                                                        <a class="nav-link active"  data-toggle="tab" href="#overview" role="tab">Overview</a>
                                                                         <div class="slide"></div>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#news3" role="tab">Meet Our Organization</a>
+                                                                        <a class="nav-link" data-toggle="tab" href="#meet" role="tab">Meet Our Organization</a>
                                                                         <div class="slide"></div>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#history3" role="tab">Our History</a>
+                                                                        <a class="nav-link" id="aboutop3" data-toggle="tab" href="#history" role="tab">Our History</a>
                                                                         <div class="slide"></div>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#constitution3" role="tab">Consitution</a>
+                                                                        <a class="nav-link" id="aboutop4" data-toggle="tab" href="#constitution" role="tab">Consitution</a>
                                                                         <div class="slide"></div>
                                                                     </li>
 
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#leadership3" role="tab">Leadership & Members</a>
+                                                                        <a class="nav-link" id="aboutop5" data-toggle="tab" href="#leadership" role="tab">Leadership & Members</a>
                                                                         <div class="slide"></div>
                                                                     </li>
                                                                 </ul>
                                                                 <!-- Tab panes -->
                                                                 <div class="tab-content card-block">
-                                                                    <div class="tab-pane active" id="overview3" role="tabpanel">
-                                                                        <dl class="dl-horizontal row">
+                                                                    <div class="tab-pane active" id="overview" role="tabpanel">
+                                                                        <div class="swiper-wrapper about-card-container">
+                                                                            <div class="card about-card">
+                                                                                <div class="image-content">
+                                                                                    <!-- <span class="overlay"></span> -->
+
+                                                                                    <div class="about-card-image">
+                                                                                        <img src="assets/images/relax-icon.svg" width="100px" alt="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="card-content">
+                                                                                    <h2 class="name">About BPPAs</h2>
+                                                                                    <p class="description">The British Pakistani Psychiatrists Association (BPPA) is an association of Psychiatrists and allied mental health professionals in Britain of Pakistani heritage and cultural affiliation.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="card about-card">
+                                                                                <div class="image-content">
+                                                                                    <!-- <span class="overlay"></span> -->
+
+                                                                                    <div class="about-card-image">
+                                                                                        <img src="assets/images/book-open-icon.svg" width="100px" alt="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="card-content">
+                                                                                    <h2 class="name">Educational</h2>
+                                                                                    <p class="description">BPPA is a forum to represent and share the individual and collective views of its members to promote social and academic development among one another and with the wider British Society.</p>
+
+                                                                                    <!-- <button class="button">View More</button> -->
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="card about-card">
+                                                                                <div class="image-content">
+                                                                                    <!-- <span class="overlay"></span> -->
+
+                                                                                    <div class="about-card-image">
+                                                                                        <img src="assets/images/hierarchy-management-task-icon.svg" width="100px" alt="">
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="card-content">
+                                                                                    <h2 class="name">Members</h2>
+                                                                                    <p class="description">BPPA is at the forefront of offering its members job and career counselling, training and voicing the needs of trainees in Psychiatry.</p>
+
+                                                                                    <!-- <button class="button">View More</button> -->
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                        <!-- <dl class="dl-horizontal row">
                                                                             <dt class="col-sm-12">About BPPAs:</dt>
                                                                             <dd class="col-sm-12">The British Pakistani Psychiatrists Association (BPPA) is an association of Psychiatrists and allied mental health professionals in Britain of Pakistani heritage and cultural affiliation.</dd>
                                                                             <dt class="col-sm-12">Educational:</dt>
                                                                             <dd class="col-sm-12">BPPA is a forum to represent and share the individual and collective views of its members to promote social and academic development among one another and with the wider British Society.</dd>
                                                                             <dt class="col-sm-12">Members:</dt>
                                                                             <dd class="col-sm-12">BPPA is at the forefront of offering its members job and career counselling, training and voicing the needs of trainees in Psychiatry.</dd>
-                                                                        </dl>
+                                                                        </dl> -->
                                                                     </div>
-                                                                    <div class="tab-pane" id="history3" role="tabpanel">
+                                                                    <div class="tab-pane" id="meet" role="tabpanel">
+                                                                        <div class="col-lg-12 col-xl-12 tab-with-img">
+                                                                            <div class="sub-title">Executive Officers</div>
+                                                                            <!-- Nav tabs -->
+                                                                            <ul class="nav nav-tabs md-tabs img-tabs b-none" role="tablist">
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link active" data-toggle="tab" href="#home8" role="tab">
+                                                                                        <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
+                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link" data-toggle="tab" href="#profile8" role="tab">
+                                                                                        <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
+                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link" data-toggle="tab" href="#messages8" role="tab">
+                                                                                        <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
+                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li class="nav-item">
+                                                                                    <a class="nav-link" data-toggle="tab" href="#settings8" role="tab">
+                                                                                        <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <!-- Tab panes -->
+                                                                            <div class="tab-content card-block">
+                                                                                <div class="tab-pane active" id="home8" role="tabpanel">
+                                                                                    <p class="text-center m-0">1. Dr. Shahid Latif, Chairman of the British Pakistani Psychiatrists Association (BPPA), is a leading psychiatrist committed to advancing career development and training for members. Under his leadership, the BPPA focuses on providing support and resources to enhance professional growth and address the needs of psychiatric trainees.</p>
+                                                                                </div>
+                                                                                <div class="tab-pane" id="profile8" role="tabpanel">
+                                                                                    <p class="text-center m-0">2. Dr. Rais Irfan Ahmad is the General Secretary of the British Pakistani Psychiatrists Association (BPPA). In this role, he plays a crucial part in coordinating the association's activities, facilitating communication among members, and supporting the organization’s initiatives to advance the field of psychiatry and support mental health professionals of Pakistani heritage.</p>
+                                                                                </div>
+                                                                                <div class="tab-pane" id="messages8" role="tabpanel">
+                                                                                    <p class="text-center m-0">3. Dr. Aamer Malik Sajjad serves as the Treasurer of the British Pakistani Psychiatrists Association (BPPA). He is responsible for managing the association’s finances, ensuring fiscal responsibility, and overseeing budgeting and financial planning. Dr. Sajjad’s role is pivotal in supporting BPPA’s initiatives and ensuring the effective allocation of resources to benefit its members.</p>
+                                                                                </div>
+                                                                                <div class="tab-pane" id="settings8" role="tabpanel">
+                                                                                    <p class="text-center m-0">4. Dr. Asad Malik is the Social Secretary of the British Pakistani Psychiatrists Association (BPPA). He is responsible for organizing events and activities that foster networking and community engagement among members. Dr. Malik's role is essential in creating opportunities for social interaction and professional connection within the association.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- Start Regional Executives -->
+                                                                        <div class="col-lg-12 col-xl-12 tab-with-img">
+                                                                            <div class="sub-title">Regional Executives</div>
+                                                                            <!-- Nav tabs -->
+                                                                            <div class="slide-container swiper swiper1">
+                                                                                <div class="slide-content slide-content1">
+                                                                                    <ul class="card-wrapper swiper-wrapper img-tabs b-none">
+                                                                                        <li class="swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Kamila Haider<br><small>East Midlands</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Muhammad Gul<br><small>West Midlands</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Ali Mesam Mehdi<br><small>South East</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Adnan Hafeez<br><small>North West</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Saman Khan<br><small>Scotland</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Saima Niaz<br><small>London</small></h6>
+                                                                                        </li>
+                                                                                        <li class="swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Raja Adnan Ahmed<br><small>Wales</small></h6>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="swiper-button-next swiper-navBtn swiper1-next"></div>
+                                                                                <div class="swiper-button-prev swiper-navBtn swiper1-prev"></div>
+                                                                                <div class="swiper-pagination swiper-pagination1"></div>
+                                                                            </div>
+                                                                            <!-- Tab panes -->
+                                                                        </div>
+                                                                        <!-- End Regional Executives -->
+                                                                        <!-- Start Co-opted Executives -->
+                                                                        <div class="col-lg-12 col-xl-12 tab-with-img">
+                                                                            <div class="sub-title">Co-opted Executives</div>
+                                                                            <!-- Nav tabs -->
+                                                                            <div class="slide-container swiper swiper2">
+                                                                                <div class="slide-content slide-content2">
+                                                                                    <ul class="card-wrapper swiper-wrapper img-tabs b-none">
+                                                                                        <li class="swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Kamila Haider<br><small>East Midlands</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Muhammad Gul<br><small>West Midlands</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Ali Mesam Mehdi<br><small>South East</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Adnan Hafeez<br><small>North West</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Saman Khan<br><small>Scotland</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Saima Niaz<br><small>London</small></h6>
+                                                                                        </li>
+                                                                                        <li class=" swiper-slide nav-item">
+                                                                                            <a class="nav-link active text-center" href="">
+                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
+                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
+                                                                                            </a><br>
+                                                                                            <h6 class="text-center">Dr. Raja Adnan Ahmed<br><small>Wales</small></h6>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <div class="swiper-button-next swiper-navBtn swiper2-next"></div>
+                                                                                <div class="swiper-button-prev swiper-navBtn swiper2-prev"></div>
+                                                                                <div class="swiper-pagination swiper-pagination2"></div>
+                                                                            </div>
+                                                                            <!-- Tab panes -->
+                                                                        </div>
+                                                                        <!-- End Co-opted Executives -->
+                                                                    </div>
+                                                                    <div class="tab-pane" id="history" role="tabpanel">
                                                                         <p class="m-0">The creation of the BPPA was one that began as a matter of importance, particularly when British Pakistani psychiatrists began to feel to lose their identity and their say on issues important to their future and working lives. Surviving in a society that accords massive opportunities and challenges, survival can be stressful especially with dignity and parity. There is a constant need for everyone to be part of a larger, vocal, support network, like a union, a spokes-body for one’s aspirations, protection and assistance. That was why the trade union movement started. That was why human beings chose to live in groups and had alliances with each other. British Pakistani psychiatrists needed to have such alliances and representation. However, there was the desire but there was neither time nor resources to build this support network. Of course some attempts were made but those collapsed due to internal conflicts and divisions. Yet, there were always opportunities to meet at various conferences and forums, periodically, which gave us- British Pakistani psychiatrists, a sense of camaraderie and support.
 
 
@@ -555,14 +717,14 @@
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
-
+                                                                        <br>
                                                                         Other purposes are to work closely with the royal college and other bodies like GMC and PMETB, the NHS and department of Health; work closely with the Pakistan High Commission, to make matters easier for its members in particular and all others in general.
 
                                                                         It has proposed various ideas to the government of Pakistan, the health planners in Pakistan, to show another side of the picture, with an international view in mind. It is in communication with Pakistani medical institutions to develop international faculty.
 
                                                                         It is a new association, but has come far in this short time. It has pioneered many constructive initiatives, nationally and internationally. It is proud of its tradition of proactive engagement with the wider society and to make our living experience better, in the country of our choice, our adopted country: Britain, while trying to improve life in Pakistan.</p>
                                                                     </div>
-                                                                    <div class="tab-pane" id="constitution3" role="tabpanel">
+                                                                    <div class="tab-pane" id="constitution" role="tabpanel">
                                                                         <div class="card-block">
                                                                             <!-- Row start -->
                                                                             <div class="sub-title mt-4">AIMS AND OBJECTIVES</div>
@@ -903,184 +1065,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="tab-pane" id="news3" role="tabpanel">
-                                                                        <div class="col-lg-12 col-xl-12 tab-with-img">
-                                                                            <div class="sub-title">Executive Officers</div>
-                                                                            <!-- Nav tabs -->
-                                                                            <ul class="nav nav-tabs md-tabs img-tabs b-none" role="tablist">
-                                                                                <li class="nav-item">
-                                                                                    <a class="nav-link active" data-toggle="tab" href="#home8" role="tab">
-                                                                                        <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
-                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                    </a>
-                                                                                </li>
-                                                                                <li class="nav-item">
-                                                                                    <a class="nav-link" data-toggle="tab" href="#profile8" role="tab">
-                                                                                        <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
-                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                    </a>
-                                                                                </li>
-                                                                                <li class="nav-item">
-                                                                                    <a class="nav-link" data-toggle="tab" href="#messages8" role="tab">
-                                                                                        <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
-                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                    </a>
-                                                                                </li>
-                                                                                <li class="nav-item">
-                                                                                    <a class="nav-link" data-toggle="tab" href="#settings8" role="tab">
-                                                                                        <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
-                                                                                        <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                    </a>
-                                                                                </li>
-                                                                            </ul>
-                                                                            <!-- Tab panes -->
-                                                                            <div class="tab-content card-block">
-                                                                                <div class="tab-pane active" id="home8" role="tabpanel">
-                                                                                    <p class="text-center m-0">1. Dr. Shahid Latif, Chairman of the British Pakistani Psychiatrists Association (BPPA), is a leading psychiatrist committed to advancing career development and training for members. Under his leadership, the BPPA focuses on providing support and resources to enhance professional growth and address the needs of psychiatric trainees.</p>
-                                                                                </div>
-                                                                                <div class="tab-pane" id="profile8" role="tabpanel">
-                                                                                    <p class="text-center m-0">2. Dr. Rais Irfan Ahmad is the General Secretary of the British Pakistani Psychiatrists Association (BPPA). In this role, he plays a crucial part in coordinating the association's activities, facilitating communication among members, and supporting the organization’s initiatives to advance the field of psychiatry and support mental health professionals of Pakistani heritage.</p>
-                                                                                </div>
-                                                                                <div class="tab-pane" id="messages8" role="tabpanel">
-                                                                                    <p class="text-center m-0">3. Dr. Aamer Malik Sajjad serves as the Treasurer of the British Pakistani Psychiatrists Association (BPPA). He is responsible for managing the association’s finances, ensuring fiscal responsibility, and overseeing budgeting and financial planning. Dr. Sajjad’s role is pivotal in supporting BPPA’s initiatives and ensuring the effective allocation of resources to benefit its members.</p>
-                                                                                </div>
-                                                                                <div class="tab-pane" id="settings8" role="tabpanel">
-                                                                                    <p class="text-center m-0">4. Dr. Asad Malik is the Social Secretary of the British Pakistani Psychiatrists Association (BPPA). He is responsible for organizing events and activities that foster networking and community engagement among members. Dr. Malik's role is essential in creating opportunities for social interaction and professional connection within the association.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <!-- Start Regional Executives -->
-                                                                        <div class="col-lg-12 col-xl-12 tab-with-img">
-                                                                            <div class="sub-title">Regional Executives</div>
-                                                                            <!-- Nav tabs -->                 
-                                                                            <div class="slide-container swiper">
-                                                                                <div class="slide-content">
-                                                                                    <ul class="card-wrapper swiper-wrapper img-tabs b-none" >
-                                                                                        <li class="swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Kamila Haider<br><small>East Midlands</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Muhammad Gul<br><small>West Midlands</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Ali Mesam Mehdi<br><small>South East</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Adnan Hafeez<br><small>North West</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Saman Khan<br><small>Scotland</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Saima Niaz<br><small>London</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Raja Adnan Ahmed<br><small>Wales</small></h6>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                                <div class="swiper-button-next swiper-navBtn"></div>
-                                                                                <div class="swiper-button-prev swiper-navBtn"></div>
-                                                                                <div class="swiper-pagination"></div>
-                                                                            </div>
-                                                                            <!-- Tab panes -->
-                                                                        </div>
-                                                                        <!-- End Regional Executives -->
-                                                                          <!-- Start Co-opted Executives -->
-                                                                        <div class="col-lg-12 col-xl-12 tab-with-img">
-                                                                            <div class="sub-title">Co-opted Executives</div>
-                                                                            <!-- Nav tabs -->                 
-                                                                            <div class="slide-container swiper">
-                                                                                <div class="slide-content">
-                                                                                    <ul class="card-wrapper swiper-wrapper img-tabs b-none" >
-                                                                                        <li class="swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Kamila Haider<br><small>East Midlands</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Muhammad Gul<br><small>West Midlands</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Ali Mesam Mehdi<br><small>South East</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Adnan Hafeez<br><small>North West</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Saman Khan<br><small>Scotland</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Saima Niaz<br><small>London</small></h6>
-                                                                                        </li>
-                                                                                        <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
-                                                                                                <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
-                                                                                                <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
-                                                                                            </a><br>
-                                                                                            <h6 class="text-center">Dr. Raja Adnan Ahmed<br><small>Wales</small></h6>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                                <div class="swiper-button-next swiper-navBtn"></div>
-                                                                                <div class="swiper-button-prev swiper-navBtn"></div>
-                                                                                <div class="swiper-pagination2"></div>
-                                                                            </div>
-                                                                            <!-- Tab panes -->
-                                                                        </div>
-                                                                        <!-- End Co-opted Executives -->
-                                                                    </div>
-                                                                    <div class="tab-pane" id="leadership3" role="tabpanel">
+                                                                    <div class="tab-pane" id="leadership" role="tabpanel">
                                                                         <dl class="dl-horizontal row">
                                                                             <dt class="col-sm-1">About BPPA:</dt>
                                                                             <dd class="col-sm-11">The British Pakistani Psychiatrists Association (BPPA) is an association of Psychiatrists and allied mental health professionals in Britain of Pakistani heritage and cultural affiliation.</dd>
@@ -1103,16 +1088,15 @@
 
 
                                         </div>
-
+                                        <!-- About Row end -->
                                         <!-- Membership Row start -->
-                                        <div class="row">
+                                        <div class="row content-row" id="membership-benefit" style="display: none;">
                                             <!-- Multiple Open Accordion start -->
                                             <div class="col-sm-12">
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <h5 class="card-header-text">
                                                             Membership Benifits
-
                                                         </h5>
                                                     </div>
                                                     <div class="card-block accordion-block">
@@ -1130,16 +1114,16 @@
                                                                             class="accordion-msg waves-effect waves-dark op1"
                                                                             data-toggle="collapse"
                                                                             data-parent="#accordion"
-                                                                            href="#collapseOne"
+                                                                            href="#earlycareer"
                                                                             aria-expanded="true"
-                                                                            aria-controls="collapseOne">
+                                                                            aria-controls="earlycareer">
                                                                             Early Career Doctor Membership
                                                                         </a>
                                                                     </h3>
                                                                 </div>
                                                                 <div
-                                                                    id="collapseOne"
-                                                                    class="panel-collapse collapse in"
+                                                                    id="earlycareer"
+                                                                    class="panel-collapse collapse show"
                                                                     role="tabpanel"
                                                                     aria-labelledby="headingOne">
                                                                     <div
@@ -1162,7 +1146,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4" >Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
 
                                                                 </div>
@@ -1177,15 +1161,15 @@
                                                                             class="accordion-msg waves-effect waves-dark op2"
                                                                             data-toggle="collapse"
                                                                             data-parent="#accordion"
-                                                                            href="#collapseTwo"
+                                                                            href="#trainee"
                                                                             aria-expanded="false"
-                                                                            aria-controls="collapseTwo">
+                                                                            aria-controls="trainee">
                                                                             Trainee Membership
                                                                         </a>
                                                                     </h3>
                                                                 </div>
                                                                 <div
-                                                                    id="collapseTwo"
+                                                                    id="trainee"
                                                                     class="panel-collapse collapse"
                                                                     role="tabpanel"
                                                                     aria-labelledby="headingTwo">
@@ -1209,7 +1193,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1223,15 +1207,15 @@
                                                                             class="accordion-msg waves-effect waves-dark op3"
                                                                             data-toggle="collapse"
                                                                             data-parent="#accordion"
-                                                                            href="#collapseThree"
+                                                                            href="#retired"
                                                                             aria-expanded="false"
-                                                                            aria-controls="collapseThree">
+                                                                            aria-controls="retired">
                                                                             Retired Membership
                                                                         </a>
                                                                     </h3>
                                                                 </div>
                                                                 <div
-                                                                    id="collapseThree"
+                                                                    id="retired"
                                                                     class="panel-collapse collapse"
                                                                     role="tabpanel"
                                                                     aria-labelledby="headingThree">
@@ -1255,7 +1239,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1269,15 +1253,15 @@
                                                                             class="accordion-msg waves-effect waves-dark op4"
                                                                             data-toggle="collapse"
                                                                             data-parent="#accordion"
-                                                                            href="#collapseFour"
+                                                                            href="#affiliate"
                                                                             aria-expanded="false"
-                                                                            aria-controls="collapseFour">
+                                                                            aria-controls="affiliate">
                                                                             Affiliate Membership
                                                                         </a>
                                                                     </h3>
                                                                 </div>
                                                                 <div
-                                                                    id="collapseFour"
+                                                                    id="affiliate"
                                                                     class="panel-collapse collapse"
                                                                     role="tabpanel"
                                                                     aria-labelledby="headingFour">
@@ -1301,7 +1285,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1315,15 +1299,15 @@
                                                                             class="accordion-msg waves-effect waves-dark op5"
                                                                             data-toggle="collapse"
                                                                             data-parent="#accordion"
-                                                                            href="#collapseFive"
+                                                                            href="#annual"
                                                                             aria-expanded="false"
-                                                                            aria-controls="collapseFive">
+                                                                            aria-controls="annual">
                                                                             Annual Membership
                                                                         </a>
                                                                     </h3>
                                                                 </div>
                                                                 <div
-                                                                    id="collapseFive"
+                                                                    id="annual"
                                                                     class="panel-collapse collapse"
                                                                     role="tabpanel"
                                                                     aria-labelledby="headingFive">
@@ -1347,7 +1331,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1361,15 +1345,15 @@
                                                                             class="accordion-msg waves-effect waves-dark op6"
                                                                             data-toggle="collapse"
                                                                             data-parent="#accordion"
-                                                                            href="#collapseSix"
+                                                                            href="#5years"
                                                                             aria-expanded="false"
-                                                                            aria-controls="collapseSix">
+                                                                            aria-controls="5years">
                                                                             5-Year Membership
                                                                         </a>
                                                                     </h3>
                                                                 </div>
                                                                 <div
-                                                                    id="collapseSix"
+                                                                    id="5years"
                                                                     class="panel-collapse collapse"
                                                                     role="tabpanel"
                                                                     aria-labelledby="headingSix">
@@ -1393,7 +1377,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1404,7 +1388,53 @@
                                             <!-- Multiple Open Accordion ends -->
                                         </div>
                                         <!-- Membership Row end -->
-                                        <!-- Page-body start -->
+
+
+                                        <!-- Gallery Row Start -->
+                                        <div class="row content-row" id="gallery-bppa" style="display: none;">
+                                            <div class="col-sm-12">
+                                                <!-- Material tab card start -->
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Photo Gallery</h5>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <!-- Row start -->
+                                                        <div class="row m-b-30">
+                                                            <div class="col-lg-12 col-xl-12">
+                                                                <!-- gallery -->
+                                                                <div class="gallery">
+                                                                    <!-- <header>
+                                                                        <h1>Photo Gallery</h1>
+                                                                    </header> -->
+                                                                    <main id="image-gallery" class="gimages"></main>
+                                                                    <footer id="gallery-pagination">
+                                                                        <button id="btnPrevious">&larr; <span class="sr-only">Previous</span></button>
+                                                                        <div class="text-center">
+                                                                            <div id="gallery-dots"></div>
+                                                                            <span id="page"></span>
+                                                                        </div>
+                                                                        <button id="btnNext"><span class="sr-only">Next </span>&rarr;</button>
+                                                                    </footer>
+                                                                </div>
+
+                                                                <!-- Lightbox for expanded images -->
+                                                                <!-- <div id="lightbox" class="lightbox">
+                                                                    <span class="lightbox-close">&times;</span>
+                                                                    <img class="lightbox-content" id="lightbox-img">
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <!-- Row end -->
+                                                    </div>
+                                                    <!-- Material tab card end -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Gallery Row end -->
+
+
+                                        <!-- Page-body end -->
                                     </div>
                                 </div>
                                 <!-- Main-body start -->
@@ -1479,11 +1509,13 @@
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
         <!-- Custom js -->
         <script src="assets/js/pcoded.min.js"></script>
         <script src="assets/js/vertical/vertical-layout.min.js"></script>
         <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
+
 
 </body>
 

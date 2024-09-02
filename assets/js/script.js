@@ -251,121 +251,273 @@ function toggleFullScreen() {
     }
   }
 }
-
 $(document).ready(function () {
-  var $accordionMsgs = $(".accordion-msg");
-  var $submenuItems = $(".pcoded-submenu li");
-  //open first accordion of member list
-  var initialActiveAccordion = $accordionMsgs.filter(".op1");
-  if (initialActiveAccordion.length) {
-    initialActiveAccordion.click();
+  var $submenuItems = $(".pcoded-submenu .sidebar-link");
+  $submenuItems.on("click", function (e) {
+    e.preventDefault();
+    //get this href parent li and add active class but remove active class from siblings
+    $(this).parent("li").addClass("active").siblings().removeClass("active");
+    const targetTab = $(this).attr("href");
+    // Activate the corresponding tab
+    $('.nav-tabs a[href="' + targetTab + '"]').tab("show");
+    $('.accordion-msg[href="' + targetTab + '"]').click();
+  });
+  // Handle accordion title click
+  $(".accordion-msg").on("click", function () {
+    var targetAccordion = $(this).attr("href");
+
+    // Remove active class from all li elements
+    $(".pcoded-submenu li").removeClass("active");
+
+    // Add active class to the corresponding sidebar menu item
+    $('.pcoded-submenu .sidebar-link[href="' + targetAccordion + '"]')
+      .closest("li")
+      .addClass("active");
+
+    // Optionally, you can show the tab associated with the accordion as well
+    $('.nav-tabs a[href="' + targetAccordion + '"]').tab("show");
+  });
+
+  // Handle tab click
+  $(".about-tabs a").on("click", function () {
+    var targetTab = $(this).attr("href");
+
+    // Remove active class from all li elements
+    $(".pcoded-submenu li").removeClass("active");
+
+    // Add active class to the corresponding sidebar menu item
+    $('.pcoded-submenu .sidebar-link[href="' + targetTab + '"]')
+      .closest("li")
+      .addClass("active");
+
+    // Optionally, trigger the accordion as well
+    $('.accordion-msg[href="' + targetTab + '"]').click();
+  });
+
+
+ // Click event for sidebar menu items
+ $('.b-menu').on('click', function(e) {
+  e.preventDefault(); // Prevent default link behavior
+
+  var target = $(this).data('target'); // Get the target ID
+
+  // Hide all content rows
+  $('.content-row').hide();
+
+  // Show the targeted content row
+  $('#' + target).show();
+
+  // Remove active class from all menu items
+  $('.b-menu').removeClass('active');
+
+  // Add active class to the clicked menu item
+  $(this).addClass('active');
+});
+
+
+$('#join-us-btn').click(function() {
+  window.location.href = 'pages/auth.html';
+});
+});
+
+
+// Initialize first Swiper
+function initializeSwiper(
+  containerClass,
+  paginationClass,
+  nextButtonClass,
+  prevButtonClass
+) {
+  return new Swiper(containerClass, {
+    slidesPerView: 5,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: true,
+    fade: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: paginationClass,
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: nextButtonClass,
+      prevEl: prevButtonClass,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      950: {
+        slidesPerView: 5,
+      },
+    },
+  });
+}
+
+// Initialize Swipers
+initializeSwiper(
+  ".slide-content1",
+  ".swiper-pagination1",
+  ".swiper1-next",
+  ".swiper1-prev"
+);
+initializeSwiper(
+  ".slide-content2",
+  ".swiper-pagination2",
+  ".swiper2-next",
+  ".swiper2-prev"
+);
+
+var previous = document.getElementById("btnPrevious");
+var next = document.getElementById("btnNext");
+var gallery = document.getElementById("image-gallery");
+var pageIndicator = document.getElementById("page");
+var galleryDots = document.getElementById("gallery-dots");
+
+var images = [];
+
+for (var i = 23; i > 0; i--) {
+  images.push({
+    title: "Image" + i,
+    source: "assets/images/gallery/img" + i + ".jpg",
+  });
+}
+
+var perPage = 12;
+var page = 1;
+var pages = Math.ceil(images.length / perPage);
+
+// Gallery dots
+for (var i = 0; i < pages; i++) {
+  var dot = document.createElement("button");
+  var dotSpan = document.createElement("span");
+  var dotNumber = document.createTextNode(i + 1);
+  dot.classList.add("gallery-dot");
+  dot.setAttribute("data-index", i);
+  dotSpan.classList.add("sr-only");
+
+  dotSpan.appendChild(dotNumber);
+  dot.appendChild(dotSpan);
+
+  dot.addEventListener("click", function (e) {
+    var self = e.target;
+    goToPage(self.getAttribute("data-index"));
+  });
+
+  galleryDots.appendChild(dot);
+}
+
+// Previous Button
+previous.addEventListener("click", function () {
+  if (page === 1) {
+    page = 1;
+  } else {
+    page--;
+    showImages();
+  }
+});
+
+// Next Button
+next.addEventListener("click", function () {
+  if (page < pages) {
+    page++;
+    showImages();
+  }
+});
+
+// Jump to page
+function goToPage(index) {
+  index = parseInt(index);
+  page = index + 1;
+
+  showImages();
+}
+
+// Load images
+function showImages() {
+  while (gallery.firstChild) gallery.removeChild(gallery.firstChild);
+
+  var offset = (page - 1) * perPage;
+  var dots = document.querySelectorAll(".gallery-dot");
+
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
   }
 
-  $(".pcoded-hasmenu").click(function () {
-    $(".pcoded-hasmenu").removeClass("active");
-    $(this).addClass("active");
+  dots[page - 1].classList.add("active");
 
-    // if ($(this).hasClass("active")) {
-    //   //set first li of pcoded-submenu active
-    // $(".pcoded-submenu li").removeClass("active");
-    // // console.log("pcoded-hasmenu clicked");
-    // $(".pcoded-submenu li").eq(0).addClass("active");
-    // }
+  for (var i = offset; i < offset + perPage; i++) {
+    if (images[i]) {
+      var template = document.createElement("div");
+      var title = document.createElement("p");
+      var titleText = document.createTextNode(images[i].title);
+      var img = document.createElement("img");
+      img.classList.add("gallery-img");
+      template.classList.add("template");
+      img.setAttribute("src", images[i].source);
+      img.setAttribute("alt", images[i].title);
 
-  });
-
-  // Handle click event on menu items
-  $submenuItems.on("click", function () {
-    var activeId = $(this).attr("id");
-
-    if (activeId) {
-      $submenuItems.removeClass("active");
-      $(this).addClass("active");
-      $accordionMsgs.filter("." + activeId).click();
+      title.appendChild(titleText);
+      template.appendChild(img);
+      // template.appendChild(title);
+      gallery.appendChild(template);
     }
-  });
+  }
 
-  // Handle click event on accordion items
-  $accordionMsgs.on("click", function () {
-    var activeClass = $(this)
-      .attr("class")
-      .split(" ")
-      .find((cls) => cls.startsWith("op"));
+  // Animate images
+  var galleryItems = document.querySelectorAll(".template");
+  for (var i = 0; i < galleryItems.length; i++) {
+    var onAnimateItemIn = animateItemIn(i);
+    setTimeout(onAnimateItemIn, i * 100);
+  }
 
-    if (activeClass) {
-      $submenuItems.removeClass("active");
-      $submenuItems.filter("#" + activeClass).addClass("active");
-    }
-  });
+  function animateItemIn(i) {
+    var item = galleryItems[i];
+    return function () {
+      item.classList.add("animate");
+    };
+  }
 
-});
-//172779
-// $(document).ready(function() {
-//     // Cache selectors
-//     var $accordionMsgs = $('.accordion-msg');
-//     var $submenuItems = $('.pcoded-submenu li');
+  // Update page indicator
+  pageIndicator.textContent = "Page " + page + " of " + pages;
+}
 
-//     // Handle click event on accordion items
-//     $accordionMsgs.on('click', function() {
-//         var activeClass = $(this).attr('class').split(' ').find(cls => cls.startsWith('op'));
+showImages();
 
-//         if (activeClass) {
-//             $submenuItems.removeClass('active');
-//             $submenuItems.filter('#' + activeClass).addClass('active');
-//         }
-//     });
+// Show the lightbox when an image is clicked
+// gallery.addEventListener('click', function(e) {
+//   if (e.target && e.target.classList.contains('gallery-img')) {
+//       var lightbox = document.getElementById('lightbox');
+//       var lightboxImg = document.getElementById('lightbox-img');
 
-//     // Handle click event on menu items
-//     $submenuItems.on('click', function() {
-//         var activeId = $(this).attr('id');
+//       // Set the src of the lightbox image to the clicked image
+//       lightboxImg.src = e.target.src;
 
-//         if (activeId) {
-//             $submenuItems.removeClass('active');
-//             $(this).addClass('active');
-
-//             $accordionMsgs.filter('.' + activeId).click();
-//         }
-//     });
-
-//     // Optionally trigger click on the initial active accordion item on page load
-//     var initialActiveAccordion = $accordionMsgs.filter('.op1');
-//     if (initialActiveAccordion.length) {
-//         initialActiveAccordion.click();
-//     }
+//       // Display the lightbox
+//       lightbox.style.display = 'block';
+//   }
 // });
 
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 5,
-  spaceBetween: 25,
-  loop: true,
-  centerSlide: 'true',
-  fade: 'true',
-  grabCursor: 'true',
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination ",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+// // Close the lightbox when the close button is clicked
+// var lightboxClose = document.querySelector('.lightbox-close');
+// lightboxClose.addEventListener('click', function() {
+//   document.getElementById('lightbox').style.display = 'none';
+// });
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    520: { 
-      slidesPerView: 2,
-    },
-    950: {
-      slidesPerView: 5,
-    },
-  },
+// Close the lightbox if the user clicks anywhere outside the image
+window.addEventListener("click", function (e) {
+  var lightbox = document.getElementById("lightbox");
+  if (e.target == lightbox) {
+    lightbox.style.display = "none";
+  }
 });
 
 $("body").append(
