@@ -34,7 +34,7 @@
     <!-- gallery -->
     <link rel="stylesheet" href="css/gallery.css">
     <!-- Profile -->
-    <link rel="stylesheet" href="css/profile.css">
+    <!-- <link rel="stylesheet" href="css/profile.css"> -->
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
