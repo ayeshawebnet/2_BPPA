@@ -17,31 +17,26 @@
                 <div class="col">
                     <h5>Links</h5>
                     <ul class="footer-li">
-                        <li>Introduction</li>
-                        <li>BPPA Nama</li>
-                        <li>Constitution</li>
-                        <li>Contact Us</li>
-                        <li>Membership</li>
-                        <li>List Of Members</li>
+                        <li><a href="#">Introduction</a></li>
+                        <li><a href="membership.php">About us</a></li>
+                        <li><a href="membership.php">Membership</a></li>
+                        <li><a href="membership.php">Contact-us</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h5>Blogs</h5>
                     <ul class="footer-li">
-                        <li>Educational</li>
-                        <li>News and Events</li>
-                        <li>Gallery</li>
-                        <li>News</li>
-                        <li>Archive</li>
+                        <li><a href="conference.php">Conferences</a></li>
+                        <li><a href="education.php">Educational</a></li>
+                        <li><a href="news-detail.php">News and Events</a></li>
+                        <li><a href="membership.php">Gallery</a></li>                        
                     </ul>
                 </div>
-
             </div>
 
             <div class="col-12 text-center">
                 <p class="copyright-text mb-0">Copyright © 2024 British Pakistan Psychiatrists Association
                 </p>
-
             </div>
 
             <!-- <div class="col-lg-3 col-5 ms-auto">

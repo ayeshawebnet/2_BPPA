@@ -11,11 +11,7 @@
       <div class="formbold-form-wrapper">
         <!-- Register Form -->
 
-        <form
-          action="email-template.html"
-          method="POST"
-          class="register-form"
-        >
+        <form action="email-template.html" method="POST" class="register-form">
           <div class="formbold-input-flex">
             <div class="formbold-img">
               <img src="../images/logoBanner/BPPA.png" width="250px" />
@@ -52,7 +48,9 @@
 
           <div class="formbold-input-flex">
             <div>
-              <label for="email" class="formbold-form-label"> Email <span class="required-asterisk">*</span></label>
+              <label for="email" class="formbold-form-label">
+                Email <span class="required-asterisk">*</span></label
+              >
               <input
                 type="email"
                 name="email"
@@ -62,22 +60,23 @@
               />
             </div>
             <div>
-              <label for="phone" class="formbold-form-label"> Phone Number <span class="required-asterisk">*</span></label>
+              <label for="phone" class="formbold-form-label">
+                Phone Number <span class="required-asterisk">*</span></label
+              >
               <div class="phone-input-wrapper">
                 <span class="country-code">+44</span>
                 <input
-                type="tel"
-                name="phone"
-                id="phone"
-                class="formbold-form-num-input formbold-form-input"
-                placeholder="0207 1234567"
-                pattern="^\d{4}\s\d{7}$"
-                title="Please enter a valid UK phone number (e.g., 0207 1234567)"
-                required
-              />
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="formbold-form-num-input formbold-form-input"
+                  placeholder="0207 1234567"
+                  pattern="^\d{4}\s\d{7}$"
+                  title="Please enter a valid UK phone number (e.g., 0207 1234567)"
+                  required
+                />
               </div>
             </div>
-           
           </div>
 
           <div class="formbold-mb-3">
@@ -106,7 +105,9 @@
 
           <div class="formbold-input-flex">
             <div>
-              <label for="state" class="formbold-form-label"> City/Town <span class="required-asterisk">*</span></label>
+              <label for="state" class="formbold-form-label">
+                City/Town <span class="required-asterisk">*</span></label
+              >
               <input
                 type="text"
                 name="state"
@@ -116,7 +117,9 @@
               />
             </div>
             <div>
-              <label for="country" class="formbold-form-label"> Country <span class="required-asterisk">*</span></label>
+              <label for="country" class="formbold-form-label">
+                Country <span class="required-asterisk">*</span></label
+              >
               <input
                 disabled
                 type="text"
@@ -130,14 +133,15 @@
 
           <div class="formbold-input-flex">
             <div>
-              <label for="postcode" class="formbold-form-label"> Postcode <span class="required-asterisk">*</span></label>
+              <label for="postcode" class="formbold-form-label">
+                Postcode <span class="required-asterisk">*</span></label
+              >
               <input
                 type="text"
                 name="postcode"
                 id="postcode"
                 class="formbold-form-input"
                 placeholder="e.g., SW1A 1AA"
-                
                 required
               />
             </div>
@@ -152,6 +156,25 @@
                 class="formbold-form-input"
               />
             </div> -->
+            <div>
+              <label for="memberplan" class="formbold-form-label">
+                Membership Plan <span class="required-asterisk">*</span>
+              </label>
+              <select
+                name="memberplan"
+                id="memberplan"
+                class="formbold-form-input"
+                required
+              >
+                <option value="" disabled selected>Select a plan</option>
+                <option value="early-career">Early Career £10.00 GBP</option>
+                <option value="trainee">Trainee £30.00 GBP</option>
+                <option value="retired">Retired £30.00 GBP annually</option>
+                <option value="annual">Annual £55.00 GBP</option>
+                <option value="annual">Affiliate £30.00 GBP</option>
+                <option value="annual">5 year £250.00 GBP</option>
+              </select>
+            </div>
           </div>
 
           <div class="formbold-mb-3">
@@ -193,7 +216,19 @@
               />
             </div>
           </div>
-
+          <div>
+            <label for="cvupload" class="formbold-form-label"
+              >Upload Your CV <span class="required-asterisk">*</span></label
+            >
+            <input
+              type="file"
+              name="cvupload"
+              id="cvupload"
+              class="formbold-form-input"
+              accept=".pdf,.doc,.docx"
+              required
+            />
+          </div>
           <!-- <div class="formbold-checkbox-wrapper">
             <label for="supportCheckbox" class="formbold-checkbox-label">
               <div class="formbold-relative">
@@ -224,7 +259,7 @@
             </label>
           </div> -->
 
-          <button class="formbold-btn verify-email" >Register Now</button>
+          <button class="formbold-btn verify-email">Register Now</button>
           <br />
           <br />
           <span class="green-link go-to-login"> Already have an account? </span>
@@ -264,7 +299,9 @@
           </div>
 
           <div class="formbold-mb-3">
-            <label for="email" class="formbold-form-label"> Email <span class="required-asterisk">*</span> </label>
+            <label for="email" class="formbold-form-label">
+              Email <span class="required-asterisk">*</span>
+            </label>
             <input
               type="email"
               name="email"
@@ -275,7 +312,9 @@
           </div>
 
           <div class="formbold-mb-3">
-            <label for="password" class="formbold-form-label"> Password <span class="required-asterisk">*</span></label>
+            <label for="password" class="formbold-form-label">
+              Password <span class="required-asterisk">*</span></label
+            >
             <input
               type="text"
               name="password"

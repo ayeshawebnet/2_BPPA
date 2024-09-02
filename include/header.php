@@ -13,8 +13,10 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.php#hero">Home</a>
         </li>
-
-        <li class="nav-item">
+        <li class="nav-item active">
+          <a class="nav-link" href="membership.php#hero">About</a>
+        </li>
+        <!-- <li class="nav-item">
           <label class="about-dropdown">
 
             <div class="dd-button nav-link">
@@ -26,7 +28,7 @@
               <li class="divider"></li>
             </ul>
           </label>
-        </li>
+        </li> -->
 
 
 
@@ -37,13 +39,15 @@
         <li class="nav-item">
           <a class="nav-link" href="index.php#contact">Contact Us</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link  d-none" href="index.php" id="form-open">Login</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="membership.php" target="_blank" id="member-ship">Membership</a>
         </li>
-
+        <li class="nav-item">
+          <a class="nav-link" href="pages/auth.html">Login</a>
+        </li>
       </ul>
     </div>
 

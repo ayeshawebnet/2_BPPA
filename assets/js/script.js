@@ -315,7 +315,8 @@ $(document).ready(function () {
 });
 
 
-$('#join-us-btn').click(function() {
+$('.join-us-btn').click(function() {
+  console.log('clicked');
   window.location.href = 'pages/auth.html';
 });
 });
@@ -520,8 +521,8 @@ window.addEventListener("click", function (e) {
   }
 });
 
-$("body").append(
-  '<div class="fixed-button active"><a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro</a> </div>'
-);
+// $("body").append(
+//   '<div class="fixed-button active"><a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro</a> </div>'
+// );
 var $window = $(window),
   nav = $(".fixed-button");

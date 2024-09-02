@@ -51,7 +51,7 @@
                 <img src="images/logoBanner/texture1.png" alt="" class="texture-image">
                 <div class="container ">
                     <div class="profile-container">
-                            <img class="profile-container-img" src="images/people/dp5.jpg" width="200px" alt="">
+                        <img class="profile-container-img" src="images/people/dp5.jpg" width="200px" alt="">
                     </div>
                     <h3 class="mb-3 text-center" data-aos="fade-up">
                         Dr. Kamila Haider</h3>
@@ -61,6 +61,11 @@
                             <div class="accordion" id="accordionExample" data-aos="fade-left">
                                 <div class="accordion-item" data-aos="fade-up">
                                     <div class="accordion-header" id="headingOne">
+                                        <a href="path-to-your-cv.pdf" download="CV.pdf">
+                                            <button class="accordion-button profile-acc-btn bg-danger download" type="button">
+                                                <h6 class="m-auto">Download CV</h6>
+                                            </button>
+                                        </a>
                                         <button class="accordion-button profile-acc-btn" type="button">
                                             <h6 class="me-4">About</h6>
                                         </button>

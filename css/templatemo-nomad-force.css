@@ -668,14 +668,16 @@ body {
   color: rgba(255, 255, 255, 0.65);
   font-size: var(--p-font-size);
 }
-
+.site-footer a{
+  color: #afafaf;
+}
 .site-footer .custom-link:hover,
 .site-footer .social-icon-link:hover {
   color: var(--white-color);
 }
 
 .copyright-text {
-  color: rgba(255, 255, 255, 0.45);
+  color: #afafaf;
   font-size: var(--copyright-text-font-size);
 }
 
@@ -834,7 +836,7 @@ body {
 /* footer */
 
 .footer-li li {
-  color: var(--p-color);
+  color: #afafaf;
   list-style-type: none;
   text-align: left;
 }
@@ -1839,4 +1841,8 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: inline-block;
+}
+
+.download{
+  cursor: pointer!important;
 }

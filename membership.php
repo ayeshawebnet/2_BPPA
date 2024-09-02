@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- gallery -->
     <link rel="stylesheet" href="css/gallery.css">
+    <!-- Profile -->
+    <link rel="stylesheet" href="css/profile.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
@@ -134,10 +136,33 @@
                         </ul>
                         <ul class="nav-right">
                             <li class="user-profile header-notification">
-                                <a href="#!" class="waves-effect waves-light">
+                                <a href="index.php" class="waves-effect waves-light">
                                     <span>Home</span>
                                 </a>
                             </li>
+                            <span class="res-head">
+                                <li class="user-profile header-notification b-menu" data-target="who-we-are">
+                                    <a href="#!" class="waves-effect waves-light">
+                                        <span>About</span>
+                                    </a>
+                                </li>
+                                <li class="user-profile header-notification b-menu" data-target="membership-benefit">
+                                    <a href="#!" class="waves-effect waves-light">
+                                        <span>Membership</span>
+                                    </a>
+                                </li>
+                                <li class="user-profile header-notification b-menu" data-target="gallery-bppa">
+                                    <a href="#!" class="waves-effect waves-light">
+                                        <span>Gallery</span>
+                                    </a>
+                                </li>
+                            </span>
+                            <li class="user-profile header-notification">
+                                <a href="pages/auth.html" class="waves-effect waves-light">
+                                    <span>Login</span>
+                                </a>
+                            </li>
+
                             <!-- <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <span>About</span>
@@ -170,7 +195,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li>-->
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <span>John Doe</span>
@@ -182,8 +207,8 @@
                                             <i class="ti-settings"></i> Settings
                                         </a>
                                     </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="user-profile.html">
+                                    <li class="waves-effect waves-light b-menu" data-target='profile-bppa'>
+                                        <a>
                                             <i class="ti-user"></i> Profile
                                         </a>
                                     </li>
@@ -203,7 +228,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </li> -->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -234,7 +259,7 @@
                             <div class="pcoded-navigation-label">About</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu b-menu pcoded-trigger active" data-target="who-we-are">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark" >
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i><b>BC</b></span>
                                         <span class="pcoded-mtext">Who We Are?</span>
                                         <span class="pcoded-mcaret"></span>
@@ -268,20 +293,20 @@
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class=" " id="aboutop5">
+                                        <!-- <li class=" " id="aboutop5">
                                             <a class="waves-effect waves-dark sidebar-link" href="#leadership">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Leadership & Members</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </li>
                             </ul>
                             <div class="pcoded-navigation-label">Membership</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu b-menu" data-target="membership-benefit">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark" >
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="ti-id-badge"></i><b>BC</b></span>
                                         <span class="pcoded-mtext">Membership Benifits</span>
                                         <span class="pcoded-mcaret"></span>
@@ -335,14 +360,23 @@
                             <div class="pcoded-navigation-label">Gallery</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class=" b-menu" data-target="gallery-bppa">
-                                    <a class="waves-effect waves-dark" >
+                                    <a class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                         <span class="pcoded-mtext">Gallery</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                             </ul>
-                            
+                            <div class="pcoded-navigation-label">Contact</div>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class=" b-menu" data-target="contact-bppa">
+                                    <a class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext">Contact us</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </nav>
                     <div class="pcoded-content">
@@ -352,8 +386,8 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">BPPA Member Benefits</h5>
-                                            <p class="m-b-0">Lorem Ipsum is simply dummy text of the printing</p>
+                                            <h5 class="m-b-10">British Pakistani Psychiatrists Association</h5>
+                                            <p class="m-b-0">Become a part of British Pakistani Psychiatrists Association</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -363,7 +397,7 @@
                                             </li>
                                             <!-- <li class="breadcrumb-item"><a href="#!">Membership</a>
                                             </li> -->
-                                            <li class="breadcrumb-item"><a href="#!">Membership Benifits</a>
+                                            <li class="breadcrumb-item"><a href="#!">About us</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -394,7 +428,7 @@
                                                                 <!-- Nav tabs -->
                                                                 <ul class="nav nav-tabs about-tabs md-tabs" role="tablist">
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link active"  data-toggle="tab" href="#overview" role="tab">Overview</a>
+                                                                        <a class="nav-link active" data-toggle="tab" href="#overview" role="tab">Overview</a>
                                                                         <div class="slide"></div>
                                                                     </li>
                                                                     <li class="nav-item">
@@ -410,10 +444,10 @@
                                                                         <div class="slide"></div>
                                                                     </li>
 
-                                                                    <li class="nav-item">
+                                                                    <!-- <li class="nav-item">
                                                                         <a class="nav-link" id="aboutop5" data-toggle="tab" href="#leadership" role="tab">Leadership & Members</a>
                                                                         <div class="slide"></div>
-                                                                    </li>
+                                                                    </li> -->
                                                                 </ul>
                                                                 <!-- Tab panes -->
                                                                 <div class="tab-content card-block">
@@ -531,49 +565,49 @@
                                                                                 <div class="slide-content slide-content1">
                                                                                     <ul class="card-wrapper swiper-wrapper img-tabs b-none">
                                                                                         <li class="swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Kamila Haider<br><small>East Midlands</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Muhammad Gul<br><small>West Midlands</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Ali Mesam Mehdi<br><small>South East</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Adnan Hafeez<br><small>North West</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Saman Khan<br><small>Scotland</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Saima Niaz<br><small>London</small></h6>
                                                                                         </li>
                                                                                         <li class="swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
@@ -596,49 +630,49 @@
                                                                                 <div class="slide-content slide-content2">
                                                                                     <ul class="card-wrapper swiper-wrapper img-tabs b-none">
                                                                                         <li class="swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-1.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Kamila Haider<br><small>East Midlands</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-2.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Muhammad Gul<br><small>West Midlands</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-3.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Ali Mesam Mehdi<br><small>South East</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Adnan Hafeez<br><small>North West</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Saman Khan<br><small>Scotland</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
                                                                                             <h6 class="text-center">Dr. Saima Niaz<br><small>London</small></h6>
                                                                                         </li>
                                                                                         <li class=" swiper-slide nav-item">
-                                                                                            <a class="nav-link active text-center" href="">
+                                                                                            <a class="nav-link active text-center" href="person.php">
                                                                                                 <img src="assets/images/avatar-4.jpg" class="img-fluid img-circle" alt="">
                                                                                                 <span class="quote"><i class="icofont icofont-quote-left bg-main"></i></span>
                                                                                             </a><br>
@@ -1118,8 +1152,11 @@
                                                                             aria-expanded="true"
                                                                             aria-controls="earlycareer">
                                                                             Early Career Doctor Membership
+                                                                            <small>£10.00 GBP</small>
                                                                         </a>
+
                                                                     </h3>
+
                                                                 </div>
                                                                 <div
                                                                     id="earlycareer"
@@ -1146,7 +1183,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4" >Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="join-us-btn btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
 
                                                                 </div>
@@ -1165,6 +1202,7 @@
                                                                             aria-expanded="false"
                                                                             aria-controls="trainee">
                                                                             Trainee Membership
+                                                                            <small>£30.00 GBP</small>
                                                                         </a>
                                                                     </h3>
                                                                 </div>
@@ -1193,7 +1231,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="join-us-btn btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1211,6 +1249,7 @@
                                                                             aria-expanded="false"
                                                                             aria-controls="retired">
                                                                             Retired Membership
+                                                                            <small>£30.00 GBP</small>
                                                                         </a>
                                                                     </h3>
                                                                 </div>
@@ -1239,7 +1278,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="join-us-btn btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1257,6 +1296,7 @@
                                                                             aria-expanded="false"
                                                                             aria-controls="affiliate">
                                                                             Affiliate Membership
+                                                                            <small>£30.00 GBP</small>
                                                                         </a>
                                                                     </h3>
                                                                 </div>
@@ -1285,7 +1325,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="join-us-btn btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1303,6 +1343,7 @@
                                                                             aria-expanded="false"
                                                                             aria-controls="annual">
                                                                             Annual Membership
+                                                                            <small>£55.00 GBP</small>
                                                                         </a>
                                                                     </h3>
                                                                 </div>
@@ -1331,7 +1372,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="join-us-btn btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1349,6 +1390,7 @@
                                                                             aria-expanded="false"
                                                                             aria-controls="5years">
                                                                             5-Year Membership
+                                                                            <small>£250.00 GBP</small>
                                                                         </a>
                                                                     </h3>
                                                                 </div>
@@ -1377,7 +1419,7 @@
                                                                             Aldus PageMaker including versions of
                                                                             Lorem Ipsum.
                                                                         </p>
-                                                                        <button id="join-us-btn" class="btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
+                                                                        <button id="join-us-btn" class="join-us-btn btn waves-effect waves-light btn-primary btn-outline-primary mt-4">Join us<i class="icofont icofont-arrow-right"></i></button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1433,7 +1475,197 @@
                                         </div>
                                         <!-- Gallery Row end -->
 
+                                        <!-- Contact us Start -->
+                                        <div class="row content-row justify-content-center" id="contact-bppa" style="display: none;">
+                                            <div class="col-sm-12 ">
+                                                <!-- Material tab card start -->
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Contact us</h5>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <!-- Row start -->
+                                                        <div class="row m-b-30">
+                                                            <div class="col-sm-12  col-xl-6">
+                                                                <div class="col-sm-12 col-md-12 col-xl-12">
+                                                                    <h4 class="sub-title">Where to Find Us</h4>
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-12 col-xl-12 m-b-30">
+                                                                    <dl class="dl-horizontal row">
+                                                                        <div class="col-12 d-flex">
+                                                                            <dt>Address:&nbsp;</dt>
+                                                                            <dd> BPPA 91C Main Road Cheapside Waltham DN37 0HP</dd>
+                                                                        </div>
+                                                                        <div class="col-12 d-flex">
+                                                                            <dt>Email:&nbsp;</dt>
+                                                                            <dd> Britishpakistanipsychiatrists@gmail.com</dd>
+                                                                        </div>
+                                                                    </dl>
+                                                                </div>
+                                                                <div class="col-lg-12 col-xl-12">
+                                                                    <h2 class="sub-title">Have a Question? Ask Us!</h2>
+                                                                    <form>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-2 col-form-label">Name</label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="text" class="form-control" placeholder="Your Name">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-2 col-form-label">Message</label>
+                                                                            <div class="col-sm-10">
+                                                                                <textarea rows="5" cols="5" class="form-control" placeholder="Your Message"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <div class="col-sm-2"></div>
+                                                                            <div class="col-sm-10 ">
+                                                                                <!-- <button class="btn btn-inverse waves-effect waves-light btn-block">Send</button> -->
+                                                                                <a href="mailto:Britishpakistanipsychiatrists@gmail.com">
+                                                                                    <div class="btn btn-inverse gmail-btn waves-effect waves-light btn-block">
+                                                                                        Send Email
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
 
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 col-xl-6 justify-content-center d-flex">
+                                                                <img src="assets/images/contact-us.svg" width="70%" alt="contact-us">
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- Row end -->
+                                                    </div>
+                                                    <!-- Material tab card end -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Contact us End -->
+
+                                        <!-- Profile us Start -->
+                                        <div class="row content-row justify-content-center" id="profile-bppa" style="display: none;">
+                                            <div class="col-sm-12 ">
+                                                <!-- Material tab card start -->
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Profile</h5>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <!-- Row start -->
+                                                        <div class="row">
+                                                            <div class="col-lg-8 col-xl-8">
+                                                                <div class="sub-title">Default</div>
+                                                                <!-- Nav tabs -->
+                                                                <ul class="nav nav-tabs  tabs" role="tablist">
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">Home</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">Profile</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">Messages</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" data-toggle="tab" href="#settings1" role="tab">Settings</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <!-- Tab panes -->
+                                                                <div class="tab-content tabs card-block">
+                                                                    <div class="tab-pane active" id="home1" role="tabpanel">
+                                                                        <p class="m-0">1. This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                                                            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                                                            mas Cum sociis natoque penatibus et magnis dis.....</p>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="profile1" role="tabpanel">
+                                                                        <p class="m-0">2.Cras consequat in enim ut efficitur. Nulla posuere elit quis auctor interdum praesent sit amet nulla vel enim amet. Donec convallis tellus neque, et imperdiet
+                                                                            felis amet.</p>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="messages1" role="tabpanel">
+                                                                        <p class="m-0">3. This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                                                                            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                                                            mas Cum sociis natoque penatibus et magnis dis.....</p>
+                                                                    </div>
+                                                                    <div class="tab-pane" id="settings1" role="tabpanel">
+                                                                        <p class="m-0">4.Cras consequat in enim ut efficitur. Nulla posuere elit quis auctor interdum praesent sit amet nulla vel enim amet. Donec convallis tellus neque, et imperdiet
+                                                                            felis amet.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-xl-4">
+                                                                <div class="card card-profile shadow">
+                                                                    <div class="row justify-content-center">
+                                                                        <div class="col-lg-3 order-lg-2">
+                                                                            <div class="card-profile-image">
+                                                                                <a href="#">
+                                                                                    <img src="images/people/dp2.png" class="rounded-circle">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                                                                        <div class="d-flex justify-content-between">
+                                                                            <a href="#" class="btn btn-sm btn-info mr-4">Connect</a>
+                                                                            <a href="#" class="btn btn-sm btn-default float-right">Message</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-body pt-0 pt-md-4">
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                                                                                    <div>
+                                                                                        <span class="heading">22</span>
+                                                                                        <span class="description">Friends</span>
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        <span class="heading">10</span>
+                                                                                        <span class="description">Photos</span>
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        <span class="heading">89</span>
+                                                                                        <span class="description">Comments</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <h3>
+                                                                                Ayesha Webnet<span class="font-weight-light">, 35</span>
+                                                                            </h3>
+                                                                            <div class="h5 font-weight-300">
+                                                                                <i class="ni location_pin mr-2"></i>Karachi, Pakistan
+                                                                            </div>
+                                                                            <div class="h5 mt-4">
+                                                                                <i class="ni business_briefcase-24 mr-2"></i>Psychiatrist -
+                                                                                Health Care
+                                                                            </div>
+                                                                            <div>
+                                                                                <i class="ni education_hat mr-2"></i>University of Computer
+                                                                                Science
+                                                                            </div>
+                                                                            <hr class="my-4">
+                                                                            <p>
+                                                                                Dedicated to advancing mental health and well-being, you
+                                                                                bring your expertise to the forefront of healthcare. Your
+                                                                                commitment to helping others and improving mental health
+                                                                                care is at the core of your professional journey
+                                                                            </p>
+                                                                            <!-- <a href="#">Show more</a> -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Row end -->
+                                                    </div>
+                                                    <!-- Material tab card end -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Profile us End -->
                                         <!-- Page-body end -->
                                     </div>
                                 </div>
