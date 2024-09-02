@@ -10,7 +10,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
     <!-- Meta -->
-     <!--  -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,7 +35,7 @@
     <!-- gallery -->
     <link rel="stylesheet" href="css/gallery.css">
     <!-- Profile -->
-    <!-- <link rel="stylesheet" href="css/profile.css"> -->
+    <link rel="stylesheet" href="css/profile.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
@@ -1562,35 +1562,35 @@
                                                                 <!-- Nav tabs -->
                                                                 <ul class="nav nav-tabs  tabs" role="tablist">
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link active" data-toggle="tab" href="#home1" role="tab">Home</a>
+                                                                        <a class="nav-link active" data-toggle="tab" href="#info" role="tab">Home</a>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#profile1" role="tab">Profile</a>
+                                                                        <a class="nav-link" data-toggle="tab" href="#education" role="tab">Profile</a>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#messages1" role="tab">Messages</a>
+                                                                        <a class="nav-link" data-toggle="tab" href="#certificate" role="tab">Certificate</a>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#settings1" role="tab">Settings</a>
+                                                                        <a class="nav-link" data-toggle="tab" href="#xyz" role="tab">Settings</a>
                                                                     </li>
                                                                 </ul>
                                                                 <!-- Tab panes -->
                                                                 <div class="tab-content tabs card-block">
-                                                                    <div class="tab-pane active" id="home1" role="tabpanel">
+                                                                    <div class="tab-pane active" id="info" role="tabpanel">
                                                                         <p class="m-0">1. This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
                                                                             bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                                                                             mas Cum sociis natoque penatibus et magnis dis.....</p>
                                                                     </div>
-                                                                    <div class="tab-pane" id="profile1" role="tabpanel">
+                                                                    <div class="tab-pane" id="education" role="tabpanel">
                                                                         <p class="m-0">2.Cras consequat in enim ut efficitur. Nulla posuere elit quis auctor interdum praesent sit amet nulla vel enim amet. Donec convallis tellus neque, et imperdiet
                                                                             felis amet.</p>
                                                                     </div>
-                                                                    <div class="tab-pane" id="messages1" role="tabpanel">
+                                                                    <div class="tab-pane" id="certificate" role="tabpanel">
                                                                         <p class="m-0">3. This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
                                                                             bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                                                                             mas Cum sociis natoque penatibus et magnis dis.....</p>
                                                                     </div>
-                                                                    <div class="tab-pane" id="settings1" role="tabpanel">
+                                                                    <div class="tab-pane" id="xyz" role="tabpanel">
                                                                         <p class="m-0">4.Cras consequat in enim ut efficitur. Nulla posuere elit quis auctor interdum praesent sit amet nulla vel enim amet. Donec convallis tellus neque, et imperdiet
                                                                             felis amet.</p>
                                                                     </div>
@@ -1614,7 +1614,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="card-body pt-0 pt-md-4">
-                                                                        <div class="row">
+                                                                        <!-- <div class="row">
                                                                             <div class="col">
                                                                                 <div class="card-profile-stats d-flex justify-content-center mt-md-5">
                                                                                     <div>
@@ -1631,7 +1631,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
+                                                                        </div> -->
                                                                         <div class="text-center">
                                                                             <h3>
                                                                                 Ayesha Webnet<span class="font-weight-light">, 35</span>
