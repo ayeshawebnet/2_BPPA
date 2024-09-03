@@ -244,10 +244,11 @@
                                   <label
                                     class="form-control-label"
                                     for="input-username">Professional Category</label>
+                                    <!-- <input type="text" class="form-control" placeholder="Type your title in Placeholder"> -->
                                   <input
                                     type="text"
                                     id="input-username"
-                                    class="form-control form-control-alternative"
+                                    class="form-control "
                                     placeholder="Username"
                                     value="Psychiatrist" />
                                 </div>
@@ -261,7 +262,7 @@
                                     disabled
                                     type="email"
                                     id="input-email"
-                                    class="form-control form-control-alternative"
+                                    class="form-control "
                                     placeholder="jesse@example.com" />
                                 </div>
                               </div>
@@ -275,7 +276,7 @@
                                   <input
                                     type="text"
                                     id="input-first-name"
-                                    class="form-control form-control-alternative"
+                                    class="form-control "
                                     placeholder="First name"
                                     value="Lucky" />
                                 </div>
@@ -288,7 +289,7 @@
                                   <input
                                     type="text"
                                     id="input-last-name"
-                                    class="form-control form-control-alternative"
+                                    class="form-control "
                                     placeholder="Last name"
                                     value="Jesse" />
                                 </div>
@@ -309,7 +310,7 @@
                                     for="input-address">Address</label>
                                   <input
                                     id="input-address"
-                                    class="form-control form-control-alternative"
+                                    class="form-control "
                                     placeholder="Home Address"
                                     value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
                                     type="text" />
@@ -322,7 +323,7 @@
                                     for="input-address">Phone no</label>
                                   <input
                                     id="input-number"
-                                    class="form-control form-control-alternative"
+                                    class="form-control "
                                     placeholder="Contact Number"
                                     value="922347834234"
                                     type="number"
@@ -339,7 +340,7 @@
                                   <input
                                     type="text"
                                     id="input-city"
-                                    class="form-control form-control-alternative"
+                                    class="form-control "
                                     placeholder="City"
                                     value="New York"
                                     disabled />
@@ -353,7 +354,7 @@
                                   <input
                                     type="text"
                                     id="input-country"
-                                    class="form-control form-control-alternative"
+                                    class="form-control "
                                     placeholder="Country"
                                     value="United States"
                                     disabled />
@@ -367,7 +368,7 @@
                                   <input
                                     type="number"
                                     id="input-postal-code"
-                                    class="form-control form-control-alternative"
+                                    class="form-control "
                                     placeholder="Postal code"
                                     disabled />
                                 </div>
@@ -384,7 +385,7 @@
                               <label>About Me</label>
                               <textarea
                                 rows="4"
-                                class="form-control form-control-alternative"
+                                class="form-control "
                                 placeholder="A few words about you ...">
           A beautiful Dashboard. Write about yourself</textarea>
                             </div>

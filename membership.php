@@ -199,7 +199,7 @@
                             </li>-->
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
-                                    <span>John Doe</span>
+                                    <span>Ayesha Khalid</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
@@ -414,7 +414,7 @@
                                     <div class="page-body">
 
                                         <!-- About Row Start -->
-                                        <div class="row content-row" id="who-we-are">
+                                        <div class="row content-row" id="who-we-are" style="display: none;">
                                             <div class="col-sm-12">
                                                 <!-- Material tab card start -->
                                                 <div class="card">
@@ -1547,7 +1547,7 @@
                                         <!-- Contact us End -->
 
                                         <!-- Profile us Start -->
-                                        <div class="row content-row justify-content-center" id="profile-bppa" style="display: none;">
+                                        <div class="row content-row justify-content-center" id="profile-bppa">
                                             <div class="col-sm-12 ">
                                                 <!-- Material tab card start -->
                                                 <div class="card">
@@ -1562,38 +1562,272 @@
                                                                 <!-- Nav tabs -->
                                                                 <ul class="nav nav-tabs  tabs" role="tablist">
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link active" data-toggle="tab" href="#info" role="tab">Home</a>
+                                                                        <a class="nav-link active" data-toggle="tab" href="#info" role="tab">Introduction</a>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#education" role="tab">Profile</a>
+                                                                        <a class="nav-link" data-toggle="tab" href="#education" role="tab">Education</a>
                                                                     </li>
                                                                     <li class="nav-item">
                                                                         <a class="nav-link" data-toggle="tab" href="#certificate" role="tab">Certificate</a>
                                                                     </li>
+                                                                   
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#xyz" role="tab">Settings</a>
+                                                                        <a class="nav-link" data-toggle="tab" href="#order" role="tab">Order</a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a class="nav-link" data-toggle="tab" href="#payment-method" role="tab">Payment Methods</a>
                                                                     </li>
                                                                 </ul>
                                                                 <!-- Tab panes -->
                                                                 <div class="tab-content tabs card-block">
                                                                     <div class="tab-pane active" id="info" role="tabpanel">
-                                                                        <p class="m-0">1. This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                                                                            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                                                                            mas Cum sociis natoque penatibus et magnis dis.....</p>
+                                                                        <form>
+                                                                            <h6 class="heading-small text-muted mb-4">
+                                                                                User information
+                                                                            </h6>
+                                                                            <div class="pl-lg-4">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="form-group focused">
+                                                                                            <label
+                                                                                                class="form-control-label"
+                                                                                                for="input-username">Professional Category</label>
+                                                                                            <input
+                                                                                                type="text"
+                                                                                                id="input-username"
+                                                                                                class="form-control form-control-alternative"
+                                                                                                placeholder="Username"
+                                                                                                value="Psychiatrist" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="form-group">
+                                                                                            <label
+                                                                                                class="form-control-label"
+                                                                                                for="input-email">Email address</label>
+                                                                                            <input
+                                                                                                disabled
+                                                                                                type="email"
+                                                                                                id="input-email"
+                                                                                                class="form-control form-control-alternative"
+                                                                                                placeholder="jesse@example.com" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="form-group focused">
+                                                                                            <label
+                                                                                                class="form-control-label"
+                                                                                                for="input-first-name">First name</label>
+                                                                                            <input
+                                                                                                type="text"
+                                                                                                id="input-first-name"
+                                                                                                class="form-control form-control-alternative"
+                                                                                                placeholder="First name"
+                                                                                                value="Lucky" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="form-group focused">
+                                                                                            <label
+                                                                                                class="form-control-label"
+                                                                                                for="input-last-name">Last name</label>
+                                                                                            <input
+                                                                                                type="text"
+                                                                                                id="input-last-name"
+                                                                                                class="form-control form-control-alternative"
+                                                                                                placeholder="Last name"
+                                                                                                value="Jesse" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <hr class="my-4" />
+                                                                            <!-- Address -->
+                                                                            <h6 class="heading-small text-muted mb-4">
+                                                                                Contact information
+                                                                            </h6>
+                                                                            <div class="pl-lg-4">
+                                                                                <div class="row">
+                                                                                    <div class="col-xl-8">
+                                                                                        <div class="form-group focused">
+                                                                                            <label
+                                                                                                class="form-control-label"
+                                                                                                for="input-address">Address</label>
+                                                                                            <input
+                                                                                                id="input-address"
+                                                                                                class="form-control form-control-alternative"
+                                                                                                placeholder="Home Address"
+                                                                                                value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                                                                                                type="text" />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-4">
+                                                                                        <div class="form-group focused">
+                                                                                            <label
+                                                                                                class="form-control-label"
+                                                                                                for="input-address">Phone no</label>
+                                                                                            <input
+                                                                                                id="input-number"
+                                                                                                class="form-control form-control-alternative"
+                                                                                                placeholder="Contact Number"
+                                                                                                value="922347834234"
+                                                                                                type="number"
+                                                                                                disabled />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-4">
+                                                                                        <div class="form-group focused">
+                                                                                            <label
+                                                                                                class="form-control-label"
+                                                                                                for="input-city">City</label>
+                                                                                            <input
+                                                                                                type="text"
+                                                                                                id="input-city"
+                                                                                                class="form-control form-control-alternative"
+                                                                                                placeholder="City"
+                                                                                                value="New York"
+                                                                                                disabled />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-4">
+                                                                                        <div class="form-group focused">
+                                                                                            <label
+                                                                                                class="form-control-label"
+                                                                                                for="input-country">Country</label>
+                                                                                            <input
+                                                                                                type="text"
+                                                                                                id="input-country"
+                                                                                                class="form-control form-control-alternative"
+                                                                                                placeholder="Country"
+                                                                                                value="United States"
+                                                                                                disabled />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-4">
+                                                                                        <div class="form-group">
+                                                                                            <label
+                                                                                                class="form-control-label"
+                                                                                                for="input-country">Postal code</label>
+                                                                                            <input
+                                                                                                type="number"
+                                                                                                id="input-postal-code"
+                                                                                                class="form-control form-control-alternative"
+                                                                                                placeholder="Postal code"
+                                                                                                disabled />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <hr class="my-4" />
+                                                                            <!-- Description -->
+                                                                            <h6 class="heading-small text-muted mb-4">
+                                                                                About me
+                                                                            </h6>
+                                                                            <div class="pl-lg-4">
+                                                                                <div class="form-group focused">
+                                                                                    <label>About Me</label>
+                                                                                    <textarea
+                                                                                        rows="4"
+                                                                                        class="form-control form-control-alternative"
+                                                                                        placeholder="A few words about you ...">
+          A beautiful Dashboard. Write about yourself</textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                        </form>
                                                                     </div>
                                                                     <div class="tab-pane" id="education" role="tabpanel">
-                                                                        <p class="m-0">2.Cras consequat in enim ut efficitur. Nulla posuere elit quis auctor interdum praesent sit amet nulla vel enim amet. Donec convallis tellus neque, et imperdiet
-                                                                            felis amet.</p>
+                                                                        <?php include 'component/tbl-education.php'; ?>
+
                                                                     </div>
                                                                     <div class="tab-pane" id="certificate" role="tabpanel">
-                                                                        <p class="m-0">3. This is Photoshop's version of Lorem IpThis is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                                                                            bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                                                                            mas Cum sociis natoque penatibus et magnis dis.....</p>
+                                                                        <?php include 'component/tbl-education.php'; ?>
                                                                     </div>
-                                                                    <div class="tab-pane" id="xyz" role="tabpanel">
-                                                                        <p class="m-0">4.Cras consequat in enim ut efficitur. Nulla posuere elit quis auctor interdum praesent sit amet nulla vel enim amet. Donec convallis tellus neque, et imperdiet
-                                                                            felis amet.</p>
+                                                                    <div class="tab-pane" id="order" role="tabpanel">
+                                                                        
                                                                     </div>
+                                                                    <div class="tab-pane" id="payment-method" role="tabpanel">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                                <div class="review-content-section">
+                                                                                    <div class="row">
+                                                                                        <!-- <div class="col-lg-3"></div> -->
+                                                                                        <div class="col-lg-12">
+                                                                                            <form class="form-material">
+                                                                                                <div class="devit-card-custom">
+                                                                                                    <!-- <div class="form-group">
+                                                                                                    <input type="text" class="form-control form-control-alternative fill" placeholder="Type your Full Name">
+                                                                                                    </div> -->
+                                                                                                    
+                                                                                                    <div class="form-group form-primary">
+                                                                                                        <input type="text" name="footer-email" class="form-control" required="">
+                                                                                                        <span class="form-bar"></span>
+                                                                                                        <label class="float-label">Full Name</label>
+                                                                                                    </div>
+                                                                                                    <!-- <div class="form-group CVV">
+                                                                                                    <input type="text" class="form-control form-control-alternative fill" id="cvv" placeholder="CVV">
+                                                                                                    </div> -->
+                                                                                                    <div class="form-group form-primary">
+                                                                                                        <input type="text" name="footer-email" class="form-control" required="">
+                                                                                                        <span class="form-bar"></span>
+                                                                                                        <label class="float-label">CVV</label>
+                                                                                                    </div>
+                                                                                                    <!-- <div class="form-group" id="card-number-field">
+                                                                                                    <input type="text" name="name" class="form-control form-control-alternative fill" id="cardNumber" placeholder="Card Number">
+                                                                                                    </div> -->
+                                                                                                    <div class="form-group form-primary">
+                                                                                                        <input type="text" name="footer-email" class="form-control" required="">
+                                                                                                        <span class="form-bar"></span>
+                                                                                                        <label class="float-label">Card Number</label>
+                                                                                                    </div>
+
+                                                                                                    <select class="form-control mb-3">
+                                                                                                        <option>Select Month</option>
+                                                                                                        <option value="01">January</option>
+                                                                                                        <option value="02">February </option>
+                                                                                                        <option value="03">March</option>
+                                                                                                        <option value="04">April</option>
+                                                                                                        <option value="05">May</option>
+                                                                                                        <option value="06">June</option>
+                                                                                                        <option value="07">July</option>
+                                                                                                        <option value="08">August</option>
+                                                                                                        <option value="09">September</option>
+                                                                                                        <option value="10">October</option>
+                                                                                                        <option value="11">November</option>
+                                                                                                        <option value="12">December</option>
+                                                                                                    </select>
+                                                                                                    <select class="form-control mb-3">
+                                                                                                        <option>Select Year</option>
+                                                                                                        <option value="16"> 2016</option>
+                                                                                                        <option value="17"> 2017</option>
+                                                                                                        <option value="18"> 2018</option>
+                                                                                                        <option value="19"> 2019</option>
+                                                                                                        <option value="20"> 2020</option>
+                                                                                                        <option value="21"> 2021</option>
+                                                                                                    </select>
+                                                                                                    <div class="payment-method-ht mb-3 text-center">
+                                                                                                        <span><i class="fa fa-cc-paypal" aria-hidden="true"></i></span>
+                                                                                                        <span><i class="fa fa-cc-visa" aria-hidden="true"></i></span>
+                                                                                                        <span><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                                                                                                        <span><i class="fa fa-cc-mastercard" aria-hidden="true"></i></span>
+                                                                                                    </div>
+                                                                                                    <!-- <a href="#!" class="btn bg-btn-cl waves-effect waves-light">Submit</a> -->
+                                                                                                    <div class="btn btn-inverse gmail-btn waves-effect waves-light btn-block">
+                                                                                                        Submit
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </form>
+                                                                                        </div>
+                                                                                        <!-- <div class="col-lg-3"></div> -->
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div></div>
                                                                 </div>
                                                             </div>
                                                             <div class="col-lg-4 col-xl-4">
@@ -1633,12 +1867,12 @@
                                                                             </div>
                                                                         </div> -->
                                                                         <div class="text-center">
-                                                                            <h3>
+                                                                            <!-- <h3>
                                                                                 Ayesha Webnet<span class="font-weight-light">, 35</span>
-                                                                            </h3>
-                                                                            <div class="h5 font-weight-300">
+                                                                            </h3> -->
+                                                                            <!-- <div class="h5 font-weight-300">
                                                                                 <i class="ni location_pin mr-2"></i>Karachi, Pakistan
-                                                                            </div>
+                                                                            </div> -->
                                                                             <div class="h5 mt-4">
                                                                                 <i class="ni business_briefcase-24 mr-2"></i>Psychiatrist -
                                                                                 Health Care
