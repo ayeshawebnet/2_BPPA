@@ -3,12 +3,12 @@
 		<div class="table-wrapper">
 			<div class="table-title">
 				<div class="row">
-					<div class="col-sm-6">
+					<!-- <div class="col-sm-6">
 						<h2>Manage <b>Employees</b></h2>
-					</div>
-					<div class="col-sm-6">
-						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
-						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+					</div> -->
+					<div class="col-sm-12 text-right mb-3">
+						<a href="#addEmployeeModal" class="btn btn-add btn-sm" data-toggle="modal"><i class="fa fa-plus"></i> <span>Add</span></a>
+						<a href="#deleteEmployeeModal" class="btn btn-danger btn-sm" data-toggle="modal"><i class="fa fa-trash-o"></i> <span>Delete</span></a>
 					</div>
 				</div>
 			</div>
@@ -22,10 +22,11 @@
 							</span>
 						</th>
 						<th>Begin Date</th>
-						<th>Expected Gradustion Date</th>
+						<th>Graduation Date</th>
 						<th>Institute Name</th>
 						<th>Program Degree</th>
-						<th>Program Type</th>
+						<!-- <th>Program Type</th> -->
+						<th>Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -40,10 +41,10 @@
 						<td>June 15, 2025</td>
 						<td>University of Cambridge</td>
 						<td>Bachelor of Science in Psychology</td>
-						<td>Full-time</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+						<!-- <td>Full-time</td> -->
+						<td class="d-flex">
+							<a href="#editEmployeeModal" class="edit mr-2" data-toggle="modal"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i></a>
+							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa fa-trash-o" data-toggle="tooltip" title="Delete"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -57,10 +58,10 @@
 						<td>June 15, 2025</td>
 						<td>University of Cambridge</td>
 						<td>Bachelor of Science in Psychology</td>
-						<td>Full-time</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+						<!-- <td>Full-time</td> -->
+						<td class="d-flex">
+							<a href="#editEmployeeModal" class="edit mr-2" data-toggle="modal"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i></a>
+							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa fa-trash-o" data-toggle="tooltip" title="Delete"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -71,13 +72,13 @@
 							</span>
 						</td>
 						<td>September 1, 2021</td>
-            <td>June 15, 2025</td>
-            <td>University of Cambridge</td>
-            <td>Bachelor of Science in Psychology</td>
-            <td>Full-time</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+						<td>June 15, 2025</td>
+						<td>University of Cambridge</td>
+						<td>Bachelor of Science in Psychology</td>
+						<!-- <td>Full-time</td> -->
+						<td class="d-flex">
+							<a href="#editEmployeeModal" class="edit mr-2" data-toggle="modal"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i></a>
+							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa fa-trash-o" data-toggle="tooltip" title="Delete"></i></a>
 						</td>
 					</tr>
 					<tr>
@@ -88,34 +89,18 @@
 							</span>
 						</td>
 						<td>September 1, 2021</td>
-            <td>June 15, 2025</td>
-            <td>University of Cambridge</td>
-            <td>Bachelor of Science in Psychology</td>
-            <td>Full-time</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox5" name="options[]" value="1">
-								<label for="checkbox5"></label>
-							</span>
-						</td>
-						<td>Martin Blank</td>
-						<td>martinblank@mail.com</td>
-						<td>Via Monte Bianco 34, Turin, Italy</td>
-						<td>(480) 631-2097</td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+						<td>June 15, 2025</td>
+						<td>University of Cambridge</td>
+						<td>Bachelor of Science in Psychology</td>
+						<!-- <td>Full-time</td> -->
+						<td class="d-flex">
+							<a href="#editEmployeeModal" class="edit mr-2" data-toggle="modal"><i class="fa fa-edit" data-toggle="tooltip" title="Edit"></i></a>
+							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="fa fa-trash-o" data-toggle="tooltip" title="Delete"></i></a>
 						</td>
 					</tr>
 				</tbody>
 			</table>
-			<div class="clearfix">
+			<!-- <div class="clearfix">
 				<div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
 				<ul class="pagination">
 					<li class="page-item disabled"><a href="#">Previous</a></li>
@@ -126,7 +111,7 @@
 					<li class="page-item"><a href="#" class="page-link">5</a></li>
 					<li class="page-item"><a href="#" class="page-link">Next</a></li>
 				</ul>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
@@ -136,24 +121,24 @@
 		<div class="modal-content">
 			<form>
 				<div class="modal-header">
-					<h4 class="modal-title">Add Employee</h4>
+					<h4 class="modal-title">Add</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<label>Name</label>
-						<input type="text" class="form-control" required>
+						<label>Begin Date</label>
+						<input type="date" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label>Email</label>
-						<input type="email" class="form-control" required>
+						<label>Graduation Date</label>
+						<input type="date" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label>Address</label>
-						<textarea class="form-control" required></textarea>
+						<label>Institute Name</label>
+						<input class="form-control" required></i>
 					</div>
 					<div class="form-group">
-						<label>Phone</label>
+						<label>Program Date</label>
 						<input type="text" class="form-control" required>
 					</div>
 				</div>
@@ -171,24 +156,24 @@
 		<div class="modal-content">
 			<form>
 				<div class="modal-header">
-					<h4 class="modal-title">Edit Employee</h4>
+					<h4 class="modal-title">Edit</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
-						<label>Name</label>
-						<input type="text" class="form-control" required>
+						<label>Begin Date</label>
+						<input type="date" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label>Email</label>
-						<input type="email" class="form-control" required>
+						<label>Graduation Date</label>
+						<input type="date" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label>Address</label>
-						<textarea class="form-control" required></textarea>
+						<label>Institute Name</label>
+						<input class="form-control" required></input>
 					</div>
 					<div class="form-group">
-						<label>Phone</label>
+						<label>Program Date</label>
 						<input type="text" class="form-control" required>
 					</div>
 				</div>

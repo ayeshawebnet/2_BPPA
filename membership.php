@@ -203,26 +203,26 @@
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
-                                    <li class="waves-effect waves-light">
+                                    <!-- <li class="waves-effect waves-light">
                                         <a href="#!">
                                             <i class="ti-settings"></i> Settings
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li class="waves-effect waves-light b-menu" data-target='profile-bppa'>
                                         <a>
                                             <i class="ti-user"></i> Profile
                                         </a>
                                     </li>
-                                    <li class="waves-effect waves-light">
+                                    <!-- <li class="waves-effect waves-light">
                                         <a href="email-inbox.html">
                                             <i class="ti-email"></i> My Messages
                                         </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
+                                    </li> -->
+                                    <!-- <li class="waves-effect waves-light">
                                         <a href="auth-lock-screen.html">
                                             <i class="ti-lock"></i> Lock Screen
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li class="waves-effect waves-light">
                                         <a href="auth-normal-sign-in.html">
                                             <i class="ti-layout-sidebar-left"></i> Logout
@@ -266,41 +266,34 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
-                                        <li class="active " id="aboutop1">
+                                        <li class="active ">
                                             <a class="waves-effect waves-dark sidebar-link" href="#overview">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Overview</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class=" " id="aboutop2">
+                                        <li class=" ">
                                             <a class="waves-effect waves-dark sidebar-link" href="#meet">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Meet Our Organization</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class=" " id="aboutop3">
+                                        <li class=" ">
                                             <a class="waves-effect waves-dark sidebar-link" href="#history">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Our History</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class=" " id="aboutop4">
+                                        <li class=" ">
                                             <a class="waves-effect waves-dark sidebar-link" href="#constitution">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Constitution</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <!-- <li class=" " id="aboutop5">
-                                            <a class="waves-effect waves-dark sidebar-link" href="#leadership">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Leadership & Members</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li> -->
                                     </ul>
                                 </li>
                             </ul>
@@ -414,7 +407,10 @@
                                     <div class="page-body">
 
                                         <!-- About Row Start -->
-                                        <div class="row content-row" id="who-we-are" style="display: none;">
+                                     
+                                        
+                                         
+                                        <div class="row content-row" id="who-we-are">
                                             <div class="col-sm-12">
                                                 <!-- Material tab card start -->
                                                 <div class="card">
@@ -437,11 +433,11 @@
                                                                         <div class="slide"></div>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" id="aboutop3" data-toggle="tab" href="#history" role="tab">Our History</a>
+                                                                        <a class="nav-link" data-toggle="tab" href="#history" role="tab">Our History</a>
                                                                         <div class="slide"></div>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" id="aboutop4" data-toggle="tab" href="#constitution" role="tab">Consitution</a>
+                                                                        <a class="nav-link" data-toggle="tab" href="#constitution" role="tab">Consitution</a>
                                                                         <div class="slide"></div>
                                                                     </li>
 
@@ -1547,7 +1543,7 @@
                                         <!-- Contact us End -->
 
                                         <!-- Profile us Start -->
-                                        <div class="row content-row justify-content-center" id="profile-bppa">
+                                        <div class="row content-row justify-content-center" id="profile-bppa" style="display: none;">
                                             <div class="col-sm-12 ">
                                                 <!-- Material tab card start -->
                                                 <div class="card">
@@ -1556,8 +1552,8 @@
                                                     </div>
                                                     <div class="card-block">
                                                         <!-- Row start -->
-                                                        <div class="row">
-                                                            <div class="col-lg-8 col-xl-8">
+                                                        <div class="row row-reverse">
+                                                            <div class="col-lg-12 col-xl-8 ">
                                                                 <div class="sub-title">Default</div>
                                                                 <!-- Nav tabs -->
                                                                 <ul class="nav nav-tabs  tabs" role="tablist">
@@ -1567,15 +1563,15 @@
                                                                     <li class="nav-item">
                                                                         <a class="nav-link" data-toggle="tab" href="#education" role="tab">Education</a>
                                                                     </li>
-                                                                    <li class="nav-item">
+                                                                    <!-- <li class="nav-item">
                                                                         <a class="nav-link" data-toggle="tab" href="#certificate" role="tab">Certificate</a>
                                                                     </li>
-                                                                   
+                                                                    -->
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#order" role="tab">Order</a>
+                                                                        <a class="nav-link" data-toggle="tab" href="#order" role="tab">Upgrade Membership</a>
                                                                     </li>
                                                                     <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#payment-method" role="tab">Payment Methods</a>
+                                                                        <a class="nav-link" data-toggle="tab" id="next" href="#payment-method" role="tab">Payment Methods</a>
                                                                     </li>
                                                                 </ul>
                                                                 <!-- Tab panes -->
@@ -1734,20 +1730,157 @@
                                                                                         rows="4"
                                                                                         class="form-control form-control-alternative"
                                                                                         placeholder="A few words about you ...">
-          A beautiful Dashboard. Write about yourself</textarea>
+A beautiful Dashboard. Write about yourself</textarea>
                                                                                 </div>
                                                                             </div>
                                                                         </form>
                                                                     </div>
                                                                     <div class="tab-pane" id="education" role="tabpanel">
                                                                         <?php include 'component/tbl-education.php'; ?>
-
                                                                     </div>
                                                                     <div class="tab-pane" id="certificate" role="tabpanel">
                                                                         <?php include 'component/tbl-education.php'; ?>
                                                                     </div>
                                                                     <div class="tab-pane" id="order" role="tabpanel">
-                                                                        
+
+                                                                        <div class="tab-with-img">
+                                                                            <div class="sub-title">Current Plan</div>
+                                                                            <div class="ag-courses_item">
+                                                                                <a class="ag-courses-item_link bg-d1d1d1">
+                                                                                    <div class="ag-courses-item_bg"></div>
+                                                                                    <div class="ag-courses-item_title text-white">
+                                                                                        Trainee
+                                                                                    </div>
+                                                                                    <div class="ag-courses-item_date-box text-white">
+                                                                                        Price:
+                                                                                        <span class="ag-courses-item_date">
+                                                                                            £30.00 GBP
+
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="sub-title">Upgrade Plan</div>
+                                                                            <!-- Nav tabs -->
+                                                                            <div class="slide-container swiper swiper3">
+                                                                                <div class="slide-content3 ag-format-container">
+                                                                                    <div class="swiper-wrapper">
+
+                                                                                        <!-- card 1 -->
+                                                                                        <div class="ag-courses_item swiper-slide">
+                                                                                            <a class="ag-courses-item_link">
+                                                                                                <div class="ag-courses-item_bg"></div>
+                                                                                                <div class="ag-courses-item_title">
+                                                                                                    Trainee
+                                                                                                </div>
+                                                                                                <div class="ag-courses-item_date-box">
+                                                                                                    Price:
+                                                                                                    <span class="ag-courses-item_date">
+                                                                                                        £30.00 GBP
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+
+                                                                                        <!-- card 2 -->
+                                                                                        <div class="swiper-slide ag-courses_item">
+                                                                                            <a class="ag-courses-item_link">
+                                                                                                <div class="ag-courses-item_bg"></div>
+                                                                                                <div class="ag-courses-item_title">
+                                                                                                    Early Career
+                                                                                                </div>
+                                                                                                <div class="ag-courses-item_date-box">
+                                                                                                    Price:
+                                                                                                    <span class="ag-courses-item_date">
+                                                                                                        £10.00 GBP
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+
+                                                                                        <!-- card 3 -->
+                                                                                        <div class="swiper-slide ag-courses_item">
+                                                                                            <a class="ag-courses-item_link">
+                                                                                                <div class="ag-courses-item_bg"></div>
+
+                                                                                                <div class="ag-courses-item_title">
+                                                                                                    Retired
+                                                                                                </div>
+
+                                                                                                <div class="ag-courses-item_date-box">
+                                                                                                    Price:
+                                                                                                    <span class="ag-courses-item_date">
+                                                                                                        £30.00 GBP
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+
+                                                                                        <!-- card 4 -->
+                                                                                        <div class="swiper-slide ag-courses_item">
+                                                                                            <a class="ag-courses-item_link">
+                                                                                                <div class="ag-courses-item_bg"></div>
+
+                                                                                                <div class="ag-courses-item_title">
+                                                                                                    Affiliate
+                                                                                                </div>
+
+                                                                                                <div class="ag-courses-item_date-box">
+                                                                                                    Price:
+                                                                                                    <span class="ag-courses-item_date">
+                                                                                                        £30.00 GBP
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+
+                                                                                        <!-- card 5 -->
+                                                                                        <div class="swiper-slide ag-courses_item">
+                                                                                            <a class="ag-courses-item_link">
+                                                                                                <div class="ag-courses-item_bg"></div>
+
+                                                                                                <div class="ag-courses-item_title">
+                                                                                                    Annual
+                                                                                                </div>
+
+                                                                                                <div class="ag-courses-item_date-box">
+                                                                                                    Price:
+                                                                                                    <span class="ag-courses-item_date">
+                                                                                                        £55.00 GBP
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+
+
+                                                                                        <!-- card 6 -->
+                                                                                        <div class="swiper-slide ag-courses_item">
+                                                                                            <a class="ag-courses-item_link">
+                                                                                                <div class="ag-courses-item_bg"></div>
+
+                                                                                                <div class="ag-courses-item_title">
+                                                                                                    5-Year
+                                                                                                </div>
+
+                                                                                                <div class="ag-courses-item_date-box">
+                                                                                                    Price:
+                                                                                                    <span class="ag-courses-item_date">
+                                                                                                        £250.00 GBP
+                                                                                                    </span>
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="swiper-button-next swiper-navBtn swiper3-next"></div>
+                                                                                <div class="swiper-button-prev swiper-navBtn swiper3-prev"></div>
+                                                                                <div class="swiper-pagination swiper-pagination3"></div>
+                                                                            </div>
+                                                                            <div class="text-right">
+                                                                                <button class="goToPay btn btn-primary waves-effect waves-light">Next</button>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="tab-pane" id="payment-method" role="tabpanel">
                                                                         <div class="row">
@@ -1761,7 +1894,7 @@
                                                                                                     <!-- <div class="form-group">
                                                                                                     <input type="text" class="form-control form-control-alternative fill" placeholder="Type your Full Name">
                                                                                                     </div> -->
-                                                                                                    
+
                                                                                                     <div class="form-group form-primary">
                                                                                                         <input type="text" name="footer-email" class="form-control" required="">
                                                                                                         <span class="form-bar"></span>
@@ -1801,12 +1934,14 @@
                                                                                                     </select>
                                                                                                     <select class="form-control mb-3">
                                                                                                         <option>Select Year</option>
-                                                                                                        <option value="16"> 2016</option>
-                                                                                                        <option value="17"> 2017</option>
-                                                                                                        <option value="18"> 2018</option>
-                                                                                                        <option value="19"> 2019</option>
-                                                                                                        <option value="20"> 2020</option>
-                                                                                                        <option value="21"> 2021</option>
+                                                                                                        <option value="16"> 2017</option>
+                                                                                                        <option value="16"> 2018</option>
+                                                                                                        <option value="16"> 2019</option>
+                                                                                                        <option value="17"> 2020</option>
+                                                                                                        <option value="18"> 2021</option>
+                                                                                                        <option value="19"> 2022</option>
+                                                                                                        <option value="20"> 2023</option>
+                                                                                                        <option value="21"> 2024</option>
                                                                                                     </select>
                                                                                                     <div class="payment-method-ht mb-3 text-center">
                                                                                                         <span><i class="fa fa-cc-paypal" aria-hidden="true"></i></span>
@@ -1816,7 +1951,7 @@
                                                                                                     </div>
                                                                                                     <!-- <a href="#!" class="btn bg-btn-cl waves-effect waves-light">Submit</a> -->
                                                                                                     <div class="btn btn-inverse gmail-btn waves-effect waves-light btn-block">
-                                                                                                        Submit
+                                                                                                        Pay
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </form>
@@ -1830,7 +1965,7 @@
                                                                     <div></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-4 col-xl-4">
+                                                            <div class="col-lg-12 col-xl-4">
                                                                 <div class="card card-profile shadow">
                                                                     <div class="row justify-content-center">
                                                                         <div class="col-lg-3 order-lg-2">
@@ -1866,13 +2001,13 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div> -->
-                                                                        <div class="text-center">
-                                                                            <!-- <h3>
+                                                                        <div class="text-center mt-5">
+                                                                            <h3>
                                                                                 Ayesha Webnet<span class="font-weight-light">, 35</span>
-                                                                            </h3> -->
-                                                                            <!-- <div class="h5 font-weight-300">
+                                                                            </h3>
+                                                                            <div class="h5 font-weight-300">
                                                                                 <i class="ni location_pin mr-2"></i>Karachi, Pakistan
-                                                                            </div> -->
+                                                                            </div>
                                                                             <div class="h5 mt-4">
                                                                                 <i class="ni business_briefcase-24 mr-2"></i>Psychiatrist -
                                                                                 Health Care
@@ -1975,8 +2110,6 @@
         <script type="text/javascript" src="assets/pages/accordion/accordion.js"></script>
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
         <!-- Custom js -->
         <script src="assets/js/pcoded.min.js"></script>
         <script src="assets/js/vertical/vertical-layout.min.js"></script>

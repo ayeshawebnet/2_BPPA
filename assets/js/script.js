@@ -294,6 +294,9 @@ $(document).ready(function () {
     $('.accordion-msg[href="' + targetTab + '"]').click();
   });
 
+$(".goToPay").on("click", function () {
+  document.getElementById("next").click();
+});
 
  // Click event for sidebar menu items
  $('.b-menu').on('click', function(e) {
@@ -327,7 +330,7 @@ function initializeSwiper(
   containerClass,
   paginationClass,
   nextButtonClass,
-  prevButtonClass
+  prevButtonClass,
 ) {
   return new Swiper(containerClass, {
     slidesPerView: 5,
@@ -336,10 +339,10 @@ function initializeSwiper(
     centerSlide: true,
     fade: true,
     grabCursor: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: true,
+    // },
     pagination: {
       el: paginationClass,
       clickable: true,
@@ -368,13 +371,19 @@ initializeSwiper(
   ".slide-content1",
   ".swiper-pagination1",
   ".swiper1-next",
-  ".swiper1-prev"
+  ".swiper1-prev",
 );
 initializeSwiper(
   ".slide-content2",
   ".swiper-pagination2",
   ".swiper2-next",
-  ".swiper2-prev"
+  ".swiper2-prev",
+);
+initializeSwiper(
+  ".slide-content3",
+  ".swiper-pagination3",
+  ".swiper3-next",
+  ".swiper3-prev",
 );
 
 var previous = document.getElementById("btnPrevious");
@@ -493,6 +502,16 @@ function showImages() {
 
 showImages();
 
+$(document).ready(function() {
+  $('.ag-courses_item').on('click', function() {
+      // Remove 'active' class from all slides
+      $('.ag-courses_item').removeClass('active-card');
+      // Add 'active' class to the clicked slide
+      $(this).addClass('active-card');
+  });
+});
+
+
 // Show the lightbox when an image is clicked
 // gallery.addEventListener('click', function(e) {
 //   if (e.target && e.target.classList.contains('gallery-img')) {
@@ -514,12 +533,12 @@ showImages();
 // });
 
 // Close the lightbox if the user clicks anywhere outside the image
-window.addEventListener("click", function (e) {
-  var lightbox = document.getElementById("lightbox");
-  if (e.target == lightbox) {
-    lightbox.style.display = "none";
-  }
-});
+// window.addEventListener("click", function (e) {
+//   var lightbox = document.getElementById("lightbox");
+//   if (e.target == lightbox) {
+//     lightbox.style.display = "none";
+//   }
+// });
 
 // $("body").append(
 //   '<div class="fixed-button active"><a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro</a> </div>'
