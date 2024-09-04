@@ -365,7 +365,7 @@
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class=" b-menu" data-target="contact-bppa">
                                     <a class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-micon"><i class="ti-email"></i><b>FC</b></span>
                                         <span class="pcoded-mtext">Contact us</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
