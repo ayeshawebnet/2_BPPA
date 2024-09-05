@@ -37,7 +37,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="index.php#contact">Contact Us</a>
+          <a class="nav-link" href="membership.php">Contact Us</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link  d-none" href="index.php" id="form-open">Login</a>

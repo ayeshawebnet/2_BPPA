@@ -3,10 +3,10 @@
         <div class="row">
 
             <div class="col-12">
-                <h5 class="text-white">
+                <!-- <h5 class="text-white">
                     <i class="bi-geo-alt-fill me-2"></i>
                     BPPA 91C Main Road Cheapside Waltham DN37 0HP
-                </h5>
+                </h5> -->
 
                 <a href="mailto:Britishpakistanipsychiatrists@gmail.com" class="custom-link mt-3 mb-5">
                     Britishpakistanipsychiatrists@gmail.com

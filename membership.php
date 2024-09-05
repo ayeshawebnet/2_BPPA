@@ -3,14 +3,6 @@
 
 <head>
     <title>Membership</title>
-    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 10]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    <!-- Meta -->
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +10,7 @@
     <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
     <meta name="author" content="Codedthemes" />
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/bppa-fav-icon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <!-- Required Fremwork -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
@@ -96,13 +88,15 @@
         </div>
     </div>
     <!-- Pre-loader end -->
+
+    <!-- --------------------------------- Header Start -------------------------------------->
+
     <div id="pcoded" class="pcoded">
         <div class="pcoded-overlay-box"></div>
         <div class="pcoded-container navbar-wrapper">
             <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
                     <div class="navbar-logo">
-
                         <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
                             <i class="ti-menu"></i>
                         </a>
@@ -163,66 +157,18 @@
                                     <span>Login</span>
                                 </a>
                             </li>
-
-                            <!-- <li class="user-profile header-notification">
-                                <a href="#!" class="waves-effect waves-light">
-                                    <span>About</span>
-                                    <i class="ti-angle-down"></i>
-                                </a>
-                                <ul class="show-notification profile-notification">
-                                    <li class="waves-effect waves-light">
-                                        <a href="#!">
-                                            <i class="ti-settings"></i> Settings
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="user-profile.html">
-                                            <i class="ti-user"></i> Profile
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="email-inbox.html">
-                                            <i class="ti-email"></i> My Messages
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="auth-lock-screen.html">
-                                            <i class="ti-lock"></i> Lock Screen
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="auth-normal-sign-in.html">
-                                            <i class="ti-layout-sidebar-left"></i> Logout
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>-->
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <span>Ayesha Khalid</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
-                                    <!-- <li class="waves-effect waves-light">
-                                        <a href="#!">
-                                            <i class="ti-settings"></i> Settings
-                                        </a>
-                                    </li> -->
+
                                     <li class="waves-effect waves-light b-menu" data-target='profile-bppa'>
                                         <a>
                                             <i class="ti-user"></i> Profile
                                         </a>
                                     </li>
-                                    <!-- <li class="waves-effect waves-light">
-                                        <a href="email-inbox.html">
-                                            <i class="ti-email"></i> My Messages
-                                        </a>
-                                    </li> -->
-                                    <!-- <li class="waves-effect waves-light">
-                                        <a href="auth-lock-screen.html">
-                                            <i class="ti-lock"></i> Lock Screen
-                                        </a>
-                                    </li> -->
                                     <li class="waves-effect waves-light">
                                         <a href="auth-normal-sign-in.html">
                                             <i class="ti-layout-sidebar-left"></i> Logout
@@ -234,29 +180,25 @@
                     </div>
                 </div>
             </nav>
+            <!-- ----------------------------------- Header End --------------------------------------->
 
+
+            <!-- --------------------------------- Side Bar Start -------------------------------------->
             <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
                     <nav class="pcoded-navbar">
                         <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
                         <div class="pcoded-inner-navbar main-menu">
-                            <div class="">
-                                <!-- <div class="main-menu-header">
-                                    <img class="img-80 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
-                                    <div class="user-details">
-                                        <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
-                                    </div>
-                                </div> -->
-                                <div class="main-menu-content">
-                                    <ul>
-                                        <li class="more-details">
-                                            <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
-                                            <a href="#!"><i class="ti-settings"></i>Settings</a>
-                                            <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="main-menu-content">
+                                <ul>
+                                    <li class="more-details">
+                                        <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
+                                        <a href="#!"><i class="ti-settings"></i>Settings</a>
+                                        <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
+                                    </li>
+                                </ul>
                             </div>
+
                             <div class="pcoded-navigation-label">About</div>
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu b-menu pcoded-trigger active" data-target="who-we-are">
@@ -327,17 +269,17 @@
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class=" " id="op4">
-                                            <a class="waves-effect waves-dark sidebar-link" href="#annual">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Annual</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
                                         <li class=" " id="op5">
                                             <a class="waves-effect waves-dark sidebar-link" href="#affiliate">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Affilate</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" " id="op4">
+                                            <a class="waves-effect waves-dark sidebar-link" href="#annual">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Annual</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
@@ -373,6 +315,8 @@
                             </ul>
                         </div>
                     </nav>
+                    <!-- --------------------------------- Side Bar End -------------------------------------->
+                    <!-- --------------------------------- Top Banner Start -------------------------------------->
                     <div class="pcoded-content">
                         <!-- Page-header start -->
                         <div class="page-header">
@@ -389,8 +333,6 @@
                                             <li class="breadcrumb-item">
                                                 <a href="index.html"> <i class="fa fa-home"></i> </a>
                                             </li>
-                                            <!-- <li class="breadcrumb-item"><a href="#!">Membership</a>
-                                            </li> -->
                                             <li class="breadcrumb-item"><a href="#!">About us</a>
                                             </li>
                                         </ul>
@@ -398,6 +340,8 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- --------------------------------- Top Banner End -------------------------------------->
+                        <!-- --------------------------------- Page Body Tab Start -------------------------------------->
                         <!-- Page-header end -->
                         <div class="pcoded-inner-content">
                             <!-- Main-body start -->
@@ -405,11 +349,7 @@
                                 <div class="page-wrapper">
                                     <!-- Page-body start -->
                                     <div class="page-body">
-
-                                        <!-- About Row Start -->
-                                     
-                                        
-                                         
+                                        <!-- --------------------------------- About Tab Start -------------------------------------->
                                         <div class="row content-row" id="who-we-are">
                                             <div class="col-sm-12">
                                                 <!-- Material tab card start -->
@@ -421,7 +361,6 @@
                                                         <!-- Row start -->
                                                         <div class="row m-b-30">
                                                             <div class="col-lg-12 col-xl-12 ">
-                                                                <!-- <div class="sub-title">Default</div> -->
                                                                 <!-- Nav tabs -->
                                                                 <ul class="nav nav-tabs about-tabs md-tabs" role="tablist">
                                                                     <li class="nav-item">
@@ -440,11 +379,6 @@
                                                                         <a class="nav-link" data-toggle="tab" href="#constitution" role="tab">Consitution</a>
                                                                         <div class="slide"></div>
                                                                     </li>
-
-                                                                    <!-- <li class="nav-item">
-                                                                        <a class="nav-link" id="aboutop5" data-toggle="tab" href="#leadership" role="tab">Leadership & Members</a>
-                                                                        <div class="slide"></div>
-                                                                    </li> -->
                                                                 </ul>
                                                                 <!-- Tab panes -->
                                                                 <div class="tab-content card-block">
@@ -452,8 +386,6 @@
                                                                         <div class="swiper-wrapper about-card-container">
                                                                             <div class="card about-card">
                                                                                 <div class="image-content">
-                                                                                    <!-- <span class="overlay"></span> -->
-
                                                                                     <div class="about-card-image">
                                                                                         <img src="assets/images/relax-icon.svg" width="100px" alt="">
                                                                                     </div>
@@ -466,8 +398,6 @@
                                                                             </div>
                                                                             <div class="card about-card">
                                                                                 <div class="image-content">
-                                                                                    <!-- <span class="overlay"></span> -->
-
                                                                                     <div class="about-card-image">
                                                                                         <img src="assets/images/book-open-icon.svg" width="100px" alt="">
                                                                                     </div>
@@ -476,14 +406,10 @@
                                                                                 <div class="card-content">
                                                                                     <h2 class="name">Educational</h2>
                                                                                     <p class="description">BPPA is a forum to represent and share the individual and collective views of its members to promote social and academic development among one another and with the wider British Society.</p>
-
-                                                                                    <!-- <button class="button">View More</button> -->
                                                                                 </div>
                                                                             </div>
                                                                             <div class="card about-card">
                                                                                 <div class="image-content">
-                                                                                    <!-- <span class="overlay"></span> -->
-
                                                                                     <div class="about-card-image">
                                                                                         <img src="assets/images/hierarchy-management-task-icon.svg" width="100px" alt="">
                                                                                     </div>
@@ -492,21 +418,9 @@
                                                                                 <div class="card-content">
                                                                                     <h2 class="name">Members</h2>
                                                                                     <p class="description">BPPA is at the forefront of offering its members job and career counselling, training and voicing the needs of trainees in Psychiatry.</p>
-
-                                                                                    <!-- <button class="button">View More</button> -->
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-
-
-                                                                        <!-- <dl class="dl-horizontal row">
-                                                                            <dt class="col-sm-12">About BPPAs:</dt>
-                                                                            <dd class="col-sm-12">The British Pakistani Psychiatrists Association (BPPA) is an association of Psychiatrists and allied mental health professionals in Britain of Pakistani heritage and cultural affiliation.</dd>
-                                                                            <dt class="col-sm-12">Educational:</dt>
-                                                                            <dd class="col-sm-12">BPPA is a forum to represent and share the individual and collective views of its members to promote social and academic development among one another and with the wider British Society.</dd>
-                                                                            <dt class="col-sm-12">Members:</dt>
-                                                                            <dd class="col-sm-12">BPPA is at the forefront of offering its members job and career counselling, training and voicing the needs of trainees in Psychiatry.</dd>
-                                                                        </dl> -->
                                                                     </div>
                                                                     <div class="tab-pane" id="meet" role="tabpanel">
                                                                         <div class="col-lg-12 col-xl-12 tab-with-img">
@@ -1119,8 +1033,8 @@
 
 
                                         </div>
-                                        <!-- About Row end -->
-                                        <!-- Membership Row start -->
+                                        <!-- --------------------------------- About Tab End-------------------------------------->
+                                        <!-- --------------------------------- Membership Tab Start -------------------------------------->
                                         <div class="row content-row" id="membership-benefit" style="display: none;">
                                             <!-- Multiple Open Accordion start -->
                                             <div class="col-sm-12">
@@ -1426,10 +1340,8 @@
                                             </div>
                                             <!-- Multiple Open Accordion ends -->
                                         </div>
-                                        <!-- Membership Row end -->
-
-
-                                        <!-- Gallery Row Start -->
+                                        <!-- --------------------------------- Membership Tab End -------------------------------------->
+                                        <!-- ---------------------------------Gallery Row Start--------------------------------- -->
                                         <div class="row content-row" id="gallery-bppa" style="display: none;">
                                             <div class="col-sm-12">
                                                 <!-- Material tab card start -->
@@ -1443,9 +1355,6 @@
                                                             <div class="col-lg-12 col-xl-12">
                                                                 <!-- gallery -->
                                                                 <div class="gallery">
-                                                                    <!-- <header>
-                                                                        <h1>Photo Gallery</h1>
-                                                                    </header> -->
                                                                     <main id="image-gallery" class="gimages"></main>
                                                                     <footer id="gallery-pagination">
                                                                         <button id="btnPrevious">&larr; <span class="sr-only">Previous</span></button>
@@ -1456,12 +1365,6 @@
                                                                         <button id="btnNext"><span class="sr-only">Next </span>&rarr;</button>
                                                                     </footer>
                                                                 </div>
-
-                                                                <!-- Lightbox for expanded images -->
-                                                                <!-- <div id="lightbox" class="lightbox">
-                                                                    <span class="lightbox-close">&times;</span>
-                                                                    <img class="lightbox-content" id="lightbox-img">
-                                                                </div> -->
                                                             </div>
                                                         </div>
                                                         <!-- Row end -->
@@ -1470,79 +1373,74 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Gallery Row end -->
+                                        <!-- ---------------------------------Gallery Row end--------------------------------- -->
+                                        <!-- ---------------------------------Contact us Start--------------------------------- -->
+                                        <div class="row content-row " id="contact-bppa" style="display: none;">
 
-                                        <!-- Contact us Start -->
-                                        <div class="row content-row justify-content-center" id="contact-bppa" style="display: none;">
                                             <div class="col-sm-12 ">
                                                 <!-- Material tab card start -->
                                                 <div class="card">
+                                                    <!-- <img src="images/contact-texture.jpg" alt="" class="texture-image"> -->
                                                     <div class="card-header">
                                                         <h5>Contact us</h5>
                                                     </div>
                                                     <div class="card-block">
+
                                                         <!-- Row start -->
-                                                        <div class="row m-b-30">
-                                                            <div class="col-sm-12  col-xl-6">
-                                                                <div class="col-sm-12 col-md-12 col-xl-12">
-                                                                    <h4 class="sub-title">Where to Find Us</h4>
-                                                                </div>
-                                                                <div class="col-sm-12 col-md-12 col-xl-12 m-b-30">
-                                                                    <dl class="dl-horizontal row">
-                                                                        <div class="col-12 d-flex">
-                                                                            <dt>Address:&nbsp;</dt>
-                                                                            <dd> BPPA 91C Main Road Cheapside Waltham DN37 0HP</dd>
-                                                                        </div>
-                                                                        <div class="col-12 d-flex">
-                                                                            <dt>Email:&nbsp;</dt>
-                                                                            <dd> Britishpakistanipsychiatrists@gmail.com</dd>
-                                                                        </div>
-                                                                    </dl>
-                                                                </div>
-                                                                <div class="col-lg-12 col-xl-12">
-                                                                    <h2 class="sub-title">Have a Question? Ask Us!</h2>
-                                                                    <form>
-                                                                        <div class="form-group row">
-                                                                            <label class="col-sm-2 col-form-label">Name</label>
-                                                                            <div class="col-sm-10">
-                                                                                <input type="text" class="form-control" placeholder="Your Name">
+
+                                                        <div class="row justify-content-md-center mt-4">
+                                                            
+                                                            <div class="col-lg-12 col-xl-6">
+                                                                <form class="md-float-material form-material">
+                                                                    <div class="auth-box card">
+                                                                        <div class="card-block pt-0">
+                                                                            <div class="row m-b-20  card-header contact-header">
+                                                                                <div class="col-md-12">
+                                                                                    <h5 class="text-center">Have a Question? Ask Us!</h5>
+                                                                                </div>
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="form-group row">
-                                                                            <label class="col-sm-2 col-form-label">Message</label>
-                                                                            <div class="col-sm-10">
-                                                                                <textarea rows="5" cols="5" class="form-control" placeholder="Your Message"></textarea>
+                                                                            <div class="form-group form-primary">
+                                                                                <input type="text" name="name" class="form-control">
+                                                                                <span class="form-bar"></span>
+                                                                                <label class="float-label">Name</label>
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="form-group row">
-                                                                            <div class="col-sm-2"></div>
-                                                                            <div class="col-sm-10 ">
-                                                                                <!-- <button class="btn btn-inverse waves-effect waves-light btn-block">Send</button> -->
-                                                                                <a href="mailto:Britishpakistanipsychiatrists@gmail.com">
-                                                                                    <div class="btn btn-inverse gmail-btn waves-effect waves-light btn-block">
-                                                                                        Send Email
-                                                                                    </div>
-                                                                                </a>
+                                                                            <div class="form-group form-primary">
+                                                                                <input type="text" name="email" class="form-control">
+                                                                                <span class="form-bar"></span>
+                                                                                <label class="float-label">Email Address</label>
+                                                                            </div>
+                                                                            <div class="form-group form-primary">
+                                                                                <input type="number" name="pnumber" class="form-control">
+                                                                                <span class="form-bar"></span>
+                                                                                <label class="float-label">Phone Number</label>
+                                                                            </div>
+                                                                            <div class="form-group form-primary">
+                                                                                <textarea type="number" name="message" class="form-control"></textarea>
+                                                                                <span class="form-bar"></span>
+                                                                                <label class="float-label">Your Message</label>
+                                                                            </div>
+
+                                                                            <div class="row m-t-30">
+                                                                                <div class="col-md-12">
+                                                                                    <button type="button" class="btn btn-007c17 btn-md btn-block waves-effect waves-light text-center m-b-20">Send</button>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
-                                                                    </form>
-                                                                </div>
+                                                                    </div>
+                                                                </form>
                                                             </div>
-                                                            <div class="col-sm-12 col-xl-6 justify-content-center d-flex">
-                                                                <img src="assets/images/contact-us.svg" width="70%" alt="contact-us">
+                                                            <div class="col-sm-12 col-xl-5 justify-content-center d-flex">
+                                                                <img src="assets/images/contact-us.svg" width="80%" height="100%" alt="contact-us">
                                                             </div>
-
                                                         </div>
                                                         <!-- Row end -->
                                                     </div>
-                                                    <!-- Material tab card end -->
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Contact us End -->
-
-                                        <!-- Profile us Start -->
+                                        <!-- ---------------------------------Contact us End--------------------------------- -->
+                                        <!-- ---------------------------------Profile us Start--------------------------------- -->
                                         <div class="row content-row justify-content-center" id="profile-bppa" style="display: none;">
                                             <div class="col-sm-12 ">
                                                 <!-- Material tab card start -->
@@ -1554,7 +1452,7 @@
                                                         <!-- Row start -->
                                                         <div class="row row-reverse">
                                                             <div class="col-lg-12 col-xl-8 ">
-                                                                <div class="sub-title">Default</div>
+                                                                <!-- <div class="sub-title">Default</div> -->
                                                                 <!-- Nav tabs -->
                                                                 <ul class="nav nav-tabs  tabs" role="tablist">
                                                                     <li class="nav-item">
@@ -1563,10 +1461,6 @@
                                                                     <li class="nav-item">
                                                                         <a class="nav-link" data-toggle="tab" href="#education" role="tab">Education</a>
                                                                     </li>
-                                                                    <!-- <li class="nav-item">
-                                                                        <a class="nav-link" data-toggle="tab" href="#certificate" role="tab">Certificate</a>
-                                                                    </li>
-                                                                    -->
                                                                     <li class="nav-item">
                                                                         <a class="nav-link" data-toggle="tab" href="#order" role="tab">Upgrade Membership</a>
                                                                     </li>
@@ -2035,14 +1929,12 @@ A beautiful Dashboard. Write about yourself</textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Profile us End -->
+                                        <!-- ---------------------------------Profile us End--------------------------------- -->
                                         <!-- Page-body end -->
                                     </div>
                                 </div>
                                 <!-- Main-body start -->
-
                                 <div id="styleSelector">
-
                                 </div>
                             </div>
                         </div>
@@ -2050,53 +1942,7 @@ A beautiful Dashboard. Write about yourself</textarea>
                 </div>
             </div>
         </div>
-
-
-
-        <!-- Warning Section Starts -->
-        <!-- Older IE warning message -->
-        <!--[if lt IE 10]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-<![endif]-->
-        <!-- Warning Section Ends -->
+        <!-- --------------------------------- Page Body Tab End -------------------------------------->
         <!-- Required Jquery -->
         <script type="text/javascript" src="assets/js/jquery/jquery.min.js "></script>
         <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>

@@ -538,9 +538,9 @@
 
 
 
-  <section class="google-map" id="contact">
+  <!-- <section class="google-map" id="contact">
     <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5987469243846!2d-0.09756052300464382!3d53.511362862363356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487883867739ed13%3A0x5e9566a5718951b2!2s91C%20Cheapside%2C%20Waltham%2C%20Grimsby%20DN37%200HP%2C%20UK!5e0!3m2!1sen!2s!4v1723067955322!5m2!1sen!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
+  </section> -->
 
   <!-- </main> -->
 
