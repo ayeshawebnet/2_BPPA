@@ -148,7 +148,12 @@
                                 </li>
                                 <li class="user-profile header-notification b-menu" data-target="gallery-bppa">
                                     <a href="#!" class="waves-effect waves-light">
-                                        <span>Gallery</span>
+                                        <span>Gallerys</span>
+                                    </a>
+                                </li>
+                                <li class="user-profile header-notification b-menu" data-target="contact-bppa">
+                                    <a href="#!" class="waves-effect waves-light">
+                                        <span>Contact us</span>
                                     </a>
                                 </li>
                             </span>
@@ -1876,7 +1881,7 @@ A beautiful Dashboard. Write about yourself</textarea>
                                                                             <!-- <a href="#" class="btn btn-sm btn-default float-right">Message</a> -->
                                                                         </div>
                                                                     </div>
-                                                                    <div class="card-body pt-0 pt-md-4">
+                                                                    <div class="card-body pt-5">
                                                                         <!-- <div class="row">
                                                                             <div class="col">
                                                                                 <div class="card-profile-stats d-flex justify-content-center mt-md-5">

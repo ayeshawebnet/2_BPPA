@@ -154,16 +154,16 @@ function signOut() {
 
 $(document).ready(function(){
   $(".register-form").hide();
-  $(".formbold-main-wrapper").css("height", "100vh");
+  // $(".formbold-main-wrapper").css("height", "100vh");
   $(".go-to-signup").click(function(){
     $(".register-form").show();
     $(".login-form").hide();
-    $(".formbold-main-wrapper").css("height", "auto");
+    // $(".formbold-main-wrapper").css("height", "auto");
   });
   $(".go-to-login").click(function(){
     $(".register-form").hide();
     $(".login-form").show(); 
-    $(".formbold-main-wrapper").css("height", "100vh");
+    // $(".formbold-main-wrapper").css("height", "100vh");
   });
   // $("verify-email").click(function(){
   //   window.location.href = 'verify-template.html';

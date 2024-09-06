@@ -6763,6 +6763,9 @@ table tbody .border-bottom-info td {
 body[themebg-pattern="theme1"] {
   background-color: #448aff;
 }
+body[bppathemebg-pattern="theme-bppa"] {
+  background-color: #2d8643;
+}
 
 .pcoded .pcoded-navbar .pcoded-header[header-theme="theme1"] {
   color: #fff;

@@ -5,149 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BPPA</title>
     <link rel="stylesheet" href="../css/auth.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
   </head>
-  <body>
-    <div class="formbold-main-wrapper">
-      <div class="formbold-form-wrapper">
-        <!-- Register Form -->
-
-        <form action="email-template.html" method="POST" class="register-form">
-          <div class="formbold-input-flex">
-            <div class="formbold-img">
-              <img src="../images/logoBanner/BPPA.png" width="250px" />
+  <body bppathemebg-pattern="theme-bppa">
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+      <div class="loader-track">
+        <div class="preloader-wrapper">
+          <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
             </div>
-            <div class="formbold-form-title">
-              <h2 class="">Register Today</h2>
-              <p>Join Our Community</p>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
             </div>
           </div>
-          <div class="formbold-input-flex">
-            <div>
-              <label for="firstname" class="formbold-form-label">
-                First name
-              </label>
-              <input
-                type="text"
-                name="firstname"
-                id="firstname"
-                class="formbold-form-input"
-              />
+          <div class="spinner-layer spinner-red">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
             </div>
-            <div>
-              <label for="lastname" class="formbold-form-label">
-                Last name
-              </label>
-              <input
-                type="text"
-                name="lastname"
-                id="lastname"
-                class="formbold-form-input"
-              />
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
             </div>
           </div>
 
-          <div class="formbold-input-flex">
-            <div>
-              <label for="email" class="formbold-form-label">
-                Email <span class="required-asterisk">*</span></label
-              >
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="formbold-form-input"
-                required
-              />
+          <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
             </div>
-            <div>
-              <label for="phone" class="formbold-form-label">
-                Phone Number <span class="required-asterisk">*</span></label
-              >
-              <div class="phone-input-wrapper">
-                <span class="country-code">+44</span>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+
+          <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pre-loader end -->
+    <section class="login-block">
+      <!-- Container-fluid starts -->
+      <div class="container">
+        <!-- <div class="text-center">
+          <img src="../images/logoBanner/BPPA.png" width="20%" alt="logo.png" />
+        </div> -->
+        <div class="formbold-main-wrapper">
+          
+          <div class="formbold-form-wrapper">
+            <!-- Register Form -->
+            
+            <form
+              action="email-template.html"
+              method="POST"
+              class="register-form"
+            >
+              
+              <div class="formbold-input-flex">
+                <div class="formbold-img">
+                  <img src="../images/logoBanner/BPPA.png" width="100%" />
+                </div>
+                <div class="formbold-form-title">
+                  <h2 class="">Register Today</h2>
+                  <p>Join Our Community</p>
+                </div>
+              </div>
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="firstname" class="formbold-form-label">
+                    First name
+                  </label>
+                  <input
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    class="formbold-form-input"
+                  />
+                </div>
+                <div>
+                  <label for="lastname" class="formbold-form-label">
+                    Last name
+                  </label>
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="email" class="formbold-form-label">
+                    Email <span class="required-asterisk">*</span></label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="formbold-form-input"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="phone" class="formbold-form-label">
+                    Phone Number <span class="required-asterisk">*</span></label
+                  >
+                  <div class="phone-input-wrapper">
+                    <span class="country-code">+44</span>
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      class="formbold-form-num-input formbold-form-input"
+                      placeholder="0207 1234567"
+                      pattern="^\d{4}\s\d{7}$"
+                      title="Please enter a valid UK phone number (e.g., 0207 1234567)"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="formbold-mb-3">
+                <label for="address" class="formbold-form-label">
+                  Street Address
+                </label>
                 <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  class="formbold-form-num-input formbold-form-input"
-                  placeholder="0207 1234567"
-                  pattern="^\d{4}\s\d{7}$"
-                  title="Please enter a valid UK phone number (e.g., 0207 1234567)"
-                  required
+                  type="text"
+                  name="address"
+                  id="address"
+                  class="formbold-form-input"
                 />
               </div>
-            </div>
-          </div>
 
-          <div class="formbold-mb-3">
-            <label for="address" class="formbold-form-label">
-              Street Address
-            </label>
-            <input
-              type="text"
-              name="address"
-              id="address"
-              class="formbold-form-input"
-            />
-          </div>
+              <div class="formbold-mb-3">
+                <label for="address2" class="formbold-form-label">
+                  Street Address Line 2
+                </label>
+                <input
+                  type="text"
+                  name="address2"
+                  id="address2"
+                  class="formbold-form-input"
+                />
+              </div>
 
-          <div class="formbold-mb-3">
-            <label for="address2" class="formbold-form-label">
-              Street Address Line 2
-            </label>
-            <input
-              type="text"
-              name="address2"
-              id="address2"
-              class="formbold-form-input"
-            />
-          </div>
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="state" class="formbold-form-label">
+                    City/Town <span class="required-asterisk">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    class="formbold-form-input"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="country" class="formbold-form-label">
+                    Country <span class="required-asterisk">*</span></label
+                  >
+                  <input
+                    disabled
+                    type="text"
+                    value="United Kingdom"
+                    name="country"
+                    id="country"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
 
-          <div class="formbold-input-flex">
-            <div>
-              <label for="state" class="formbold-form-label">
-                City/Town <span class="required-asterisk">*</span></label
-              >
-              <input
-                type="text"
-                name="state"
-                id="state"
-                class="formbold-form-input"
-                required
-              />
-            </div>
-            <div>
-              <label for="country" class="formbold-form-label">
-                Country <span class="required-asterisk">*</span></label
-              >
-              <input
-                disabled
-                type="text"
-                value="United Kingdom"
-                name="country"
-                id="country"
-                class="formbold-form-input"
-              />
-            </div>
-          </div>
-
-          <div class="formbold-input-flex">
-            <div>
-              <label for="postcode" class="formbold-form-label">
-                Postcode <span class="required-asterisk">*</span></label
-              >
-              <input
-                type="text"
-                name="postcode"
-                id="postcode"
-                class="formbold-form-input"
-                placeholder="e.g., SW1A 1AA"
-                required
-              />
-            </div>
-            <!-- pattern="^\d{4}\s\d{3}$"
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="postcode" class="formbold-form-label">
+                    Postcode <span class="required-asterisk">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="postcode"
+                    id="postcode"
+                    class="formbold-form-input"
+                    placeholder="e.g., SW1A 1AA"
+                    required
+                  />
+                </div>
+                <!-- pattern="^\d{4}\s\d{3}$"
                 title="Please enter a valid UK postcode (e.g., SW1A 1AA)" -->
-            <!-- <div>
+                <!-- <div>
               <label for="area" class="formbold-form-label"> Area Code </label>
               <input
                 type="text"
@@ -156,80 +223,83 @@
                 class="formbold-form-input"
               />
             </div> -->
-            <div>
-              <label for="memberplan" class="formbold-form-label">
-                Membership Plan <span class="required-asterisk">*</span>
-              </label>
-              <select
-                name="memberplan"
-                id="memberplan"
-                class="formbold-form-input"
-                required
-              >
-                <option value="" disabled selected>Select a plan</option>
-                <option value="early-career">Early Career £10.00 GBP</option>
-                <option value="trainee">Trainee £30.00 GBP</option>
-                <option value="retired">Retired £30.00 GBP annually</option>
-                <option value="annual">Annual £55.00 GBP</option>
-                <option value="annual">Affiliate £30.00 GBP</option>
-                <option value="annual">5 year £250.00 GBP</option>
-              </select>
-            </div>
-          </div>
+                <div>
+                  <label for="memberplan" class="formbold-form-label">
+                    Membership Plan <span class="required-asterisk">*</span>
+                  </label>
+                  <select
+                    name="memberplan"
+                    id="memberplan"
+                    class="formbold-form-input"
+                    required
+                  >
+                    <option value="" disabled selected>Select a plan</option>
+                    <option value="early-career">
+                      Early Career £10.00 GBP
+                    </option>
+                    <option value="trainee">Trainee £30.00 GBP</option>
+                    <option value="retired">Retired £30.00 GBP annually</option>
+                    <option value="annual">Annual £55.00 GBP</option>
+                    <option value="annual">Affiliate £30.00 GBP</option>
+                    <option value="annual">5 year £250.00 GBP</option>
+                  </select>
+                </div>
+              </div>
 
-          <div class="formbold-mb-3">
-            <label for="profession" class="formbold-form-label">
-              Professional Category <span class="required-asterisk">*</span>
-            </label>
-            <input
-              type="text"
-              name="profession"
-              id="profession"
-              class="formbold-form-input"
-              required
-            />
-          </div>
+              <div class="formbold-mb-3">
+                <label for="profession" class="formbold-form-label">
+                  Professional Category <span class="required-asterisk">*</span>
+                </label>
+                <input
+                  type="text"
+                  name="profession"
+                  id="profession"
+                  class="formbold-form-input"
+                  required
+                />
+              </div>
 
-          <div class="formbold-input-flex">
-            <div>
-              <label for="password" class="formbold-form-label">
-                Password <span class="required-asterisk">*</span>
-              </label>
-              <input
-                type="text"
-                name="password"
-                id="password"
-                class="formbold-form-input"
-                required
-              />
-            </div>
-            <div>
-              <label for="cpassword" class="formbold-form-label">
-                Confirm Password <span class="required-asterisk">*</span>
-              </label>
-              <input
-                type="text"
-                name="cpassword"
-                id="cpassword"
-                class="formbold-form-input"
-                required
-              />
-            </div>
-          </div>
-          <div>
-            <label for="cvupload" class="formbold-form-label"
-              >Upload Your CV <span class="required-asterisk">*</span></label
-            >
-            <input
-              type="file"
-              name="cvupload"
-              id="cvupload"
-              class="formbold-form-input"
-              accept=".pdf,.doc,.docx"
-              required
-            />
-          </div>
-          <!-- <div class="formbold-checkbox-wrapper">
+              <div class="formbold-input-flex">
+                <div>
+                  <label for="password" class="formbold-form-label">
+                    Password <span class="required-asterisk">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="password"
+                    id="password"
+                    class="formbold-form-input"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="cpassword" class="formbold-form-label">
+                    Confirm Password <span class="required-asterisk">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="cpassword"
+                    id="cpassword"
+                    class="formbold-form-input"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label for="cvupload" class="formbold-form-label"
+                  >Upload Your CV
+                  <span class="required-asterisk">*</span></label
+                >
+                <input
+                  type="file"
+                  name="cvupload"
+                  id="cvupload"
+                  class="formbold-form-input"
+                  accept=".pdf,.doc,.docx"
+                  required
+                />
+              </div>
+              <!-- <div class="formbold-checkbox-wrapper">
             <label for="supportCheckbox" class="formbold-checkbox-label">
               <div class="formbold-relative">
                 <input
@@ -259,87 +329,118 @@
             </label>
           </div> -->
 
-          <button class="formbold-btn verify-email">Register Now</button>
-          <br />
-          <br />
-          <span class="green-link go-to-login"> Already have an account? </span>
-        </form>
-        <!-- Login Form -->
-        <form
-          action="https://formbold.com/s/FORM_ID"
-          method="POST"
-          class="login-form"
-        >
-          <div class="formbold-input-flex">
-            <div class="formbold-img">
-              <img src="../images/logoBanner/BPPA.png" width="250px" />
-            </div>
-            <div class="formbold-form-title">
-              <h2 class="">Welcome Back!</h2>
-              <p>Login Below</p>
-            </div>
-          </div>
-
-          <div class="formbold-mb-3 formbold-form-label" data-aos="fade-left">
-            <span class="formbold-form-label">
-              Log in using your registered email address and password. If you've
-              forgotten your password, simply click the "Forgot Your Password?"
-              link below, and follow the instructions to reset it. You'll
-              receive an email with a link to create a new password, allowing
-              you to regain access to your account quickly. For any issues or if
-              you've forgotten your login details, please reach out to BPPA
-              Support at
-            </span>
-            <a
-              class="green-link"
-              href="mailto:Britishpakistanipsychiatrists@gmail.com"
-              >Britishpakistanipsychiatrists@gmail.com</a
+              <button class="formbold-btn verify-email">Register Now</button>
+              <br />
+              <br />
+              <span class="green-link go-to-login">
+                Already have an account?
+              </span>
+            </form>
+            <!-- Login Form -->
+            <form
+              action="https://formbold.com/s/FORM_ID"
+              method="POST"
+              class="login-form md-float-material form-material"
             >
-            for assistance.
-          </div>
+              <div class="formbold-input-flex">
+                <div class="formbold-img">
+                  <img src="../images/logoBanner/BPPA.png" width="100%" />
+                </div>
+                <div class="formbold-form-title">
+                  <h2 class="">Welcome Back!</h2>
+                  <p>Login Below</p>
+                </div>
+              </div>
 
-          <div class="formbold-mb-3">
-            <label for="email" class="formbold-form-label">
-              Email <span class="required-asterisk">*</span>
-            </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="formbold-form-input"
-              required
-            />
-          </div>
+              <div
+                class="formbold-mb-3 formbold-form-label"
+                data-aos="fade-left"
+              >
+                <span class="formbold-form-label">
+                  Log in using your registered email address and password. If
+                  you've forgotten your password, simply click the "Forgot Your
+                  Password?" link below, and follow the instructions to reset
+                  it. You'll receive an email with a link to create a new
+                  password, allowing you to regain access to your account
+                  quickly. For any issues or if you've forgotten your login
+                  details, please reach out to BPPA Support at
+                </span>
+                <a
+                  class="green-link"
+                  href="mailto:Britishpakistanipsychiatrists@gmail.com"
+                  >Britishpakistanipsychiatrists@gmail.com</a
+                >
+                for assistance.
+              </div>
 
-          <div class="formbold-mb-3">
-            <label for="password" class="formbold-form-label">
-              Password <span class="required-asterisk">*</span></label
-            >
-            <input
-              type="text"
-              name="password"
-              id="password"
-              class="formbold-form-input"
-              required
-            />
-          </div>
+              <div class="formbold-mb-3">
+                <label for="email" class="formbold-form-label">
+                  Email <span class="required-asterisk">*</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="formbold-form-input"
+                  required
+                />
+              </div>
 
-          <div class="formbold-checkbox-wrapper">
-            <label class="formbold-checkbox-label">
-              <a class="go-to-signup green-link">New User?</a>
-              <span>&nbsp;or&nbsp;</span>
-              <a href="#" class="forgot-pass"> Forgot your Password?</a>
-            </label>
-          </div>
+              <div class="formbold-mb-3">
+                <label for="password" class="formbold-form-label">
+                  Password <span class="required-asterisk">*</span></label
+                >
+                <input
+                  type="text"
+                  name="password"
+                  id="password"
+                  class="formbold-form-input"
+                  required
+                />
+              </div>
 
-          <button class="formbold-btn log-in">Login</button>
-        </form>
+              <div class="formbold-checkbox-wrapper">
+                <label class="formbold-checkbox-label">
+                  <a class="go-to-signup green-link">New User?</a>
+                  <span>&nbsp;or&nbsp;</span>
+                  <a href="#" class="forgot-pass"> Forgot your Password?</a>
+                </label>
+              </div>
+
+              <button class="formbold-btn log-in">Login</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-
+    </section>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/auth.js"></script>
     <script src="../js/aos.js"></script>
+    <!-- Required Jquery -->
+    <script
+      type="text/javascript"
+      src="../assets/js/jquery/jquery.min.js "
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/jquery-ui/jquery-ui.min.js "
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/popper.js/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/bootstrap/js/bootstrap.min.js "
+    ></script>
+    <!-- waves js -->
+    <script src="../assets/pages/waves/js/waves.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script
+      type="text/javascript"
+      src="../assets/js/jquery-slimscroll/jquery.slimscroll.js"
+    ></script>
+    <script type="text/javascript" src="../assets/js/common-pages.js"></script>
   </body>
 </html>
