@@ -112,7 +112,7 @@
 
             <section class="news-detail section-padding page-body">
                 <img src="images/logoBanner/texture1.png" alt="" class="texture-image texture-opacity">
-                <div class="container">
+                <div class="container news-content">
                     <div class="row">
                         <div class="col-lg-8 col-10 mx-auto mb-5">
                             <h2 class="text-center" data-aos="fade-up">Latest News and Updates</h2>
@@ -276,7 +276,7 @@
             <?php include 'include/footer.php'; ?>
         </main>
     </div>
-    <!-- <div class="area">
+    <div class="area">
         <ul class="circles">
             <li></li>
             <li></li>
@@ -289,7 +289,7 @@
             <li></li>
             <li></li>
         </ul>
-    </div> -->
+    </div>
 
 
 
