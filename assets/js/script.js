@@ -317,6 +317,13 @@ $(".goToPay").on("click", function () {
   $(this).addClass('active');
 });
 
+// Handle click event on the "Profile" menu item
+$('.b-menu[data-target="profile-bppa"]').on('click', function() {
+  // e.preventDefault(); 
+  $('li.pcoded-hasmenu.b-menu.pcoded-trigger').removeClass('pcoded-trigger active');
+  $('.pcoded-submenu').css('display', 'none');
+});
+
 
 $('.join-us-btn').click(function() {
   console.log('clicked');

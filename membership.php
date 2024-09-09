@@ -213,7 +213,7 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
-                                        <li class="active ">
+                                        <li class="active">
                                             <a class="waves-effect waves-dark sidebar-link" href="#overview">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Overview</span>

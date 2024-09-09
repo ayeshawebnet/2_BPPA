@@ -1847,3 +1847,86 @@ body {
   cursor: pointer!important;
 }
 
+/* start readmore animated button */
+/* /////////////////////////////
+//button-4 
+/////////////////////////// */
+.btn-4 {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-4 span {
+  z-index: 20;
+}
+
+.btn-4:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.btn-4:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* /////////////////////////////
+//button-4 
+/////////////////////////// */
+/* end readmore animated button */
+
+/* /////////////////////////////
+//Start - New Details Page Modal
+/////////////////////////// */
+.content-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.content-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.content-video video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-link a:hover {
+  text-decoration: underline;
+}
+/* /////////////////////////////
+//End - New Details Page Modal
+/////////////////////////// */

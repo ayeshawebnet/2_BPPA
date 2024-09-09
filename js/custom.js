@@ -153,6 +153,7 @@ $(document).ready(function () {
       ResCarousel(ell, Parent, slide);
   }
 
+  
 });
 
 $('#myModal').on('shown.bs.modal', function () {

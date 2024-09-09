@@ -32,7 +32,7 @@
 
 
 
-    <!-- Modal -->
+    <!-----------------Start-Modal----------------->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
@@ -43,7 +43,59 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus corrupti praesentium, ratione doloremque, in repellat itaque eum error quia voluptate adipisci est. Perspiciatis laboriosam ratione soluta ea repellat quis sequi?
+                    <div class="content-wrapper">
+                        <?php
+                        $contentData = [
+                            'images' => [
+                                'images/news/event-banner-1.jpg',
+                                'images/news/event-banner-2.jpg'
+                            ],
+                            'videos' => [
+                                'https://www.youtube.com/embed/biLdKre2HO4',
+                                'https://www.youtube.com/embed/dQw4w9WgXcQ'
+                            ],
+                            'text'  => 'This is an example text content. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima illum, nisi necessitatibus quod obcaecati voluptatum id molestiae soluta. Odit, provident excepturi nam culpa nobis doloribus nostrum ad maxime soluta possimus?', // Set to '' if no text
+                            'link'  => 'https://www.example.com' // Set to '' if no link
+                        ];
+                        ?>
+
+                        <!-- Image Section -->
+                        <?php if (!empty($contentData['images']) && is_array($contentData['images'])): ?>
+                            <div class="content-images">
+                                <?php foreach ($contentData['images'] as $image): ?>
+                                    <div class="content-image">
+                                        <img src="<?php echo $image; ?>" alt="Content Image">
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <!-- Video Section -->
+                        <?php if (!empty($contentData['videos']) && is_array($contentData['videos'])): ?>
+                            <div class="content-videos">
+                                <?php foreach ($contentData['videos'] as $video): ?>
+                                    <div class="content-video">
+                                        <iframe width="100%" height="600px" src="<?php echo $video; ?>" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <!-- Text Section -->
+                        <?php if (!empty($contentData['text'])): ?>
+                            <div class="content-text">
+                                <p><?php echo $contentData['text']; ?></p>
+                            </div>
+                        <?php endif; ?>
+
+                        <!-- Link Section -->
+                        <?php if (!empty($contentData['link'])): ?>
+                            <div class="content-link">
+                                <a href="<?php echo $contentData['link']; ?>" target="_blank">Visit Link</a>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -51,7 +103,7 @@
             </div>
         </div>
     </div>
-    <!-- Modal ended -->
+    <!-----------------End-Modal----------------->
 
 
     <div class="context">
@@ -59,61 +111,63 @@
             <?php include 'include/header.php'; ?>
 
             <section class="news-detail section-padding page-body">
-            <img src="images/logoBanner/texture1.png" alt="" class="texture-image texture-opacity">
+                <img src="images/logoBanner/texture1.png" alt="" class="texture-image texture-opacity">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-10 mx-auto mb-5">
                             <h2 class="text-center" data-aos="fade-up">Latest News and Updates</h2>
                             <hr class="mb-5 mx-auto">
-
-                            <p class="me-4" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
-
-                            <div class="clearfix my-4 mt-lg-0 mt-5">
-                                <div class="col-md-6 float-md-end mb-3 ms-md-3" data-aos="fade-up">
+                            <!---------------Start-content-1 --------------------->
+                            <div class="clearfix mt-lg-0 mt-5" data-aos="fade-up">
+                                <div class="col-md-6 float-md-end mb-3 ms-md-3">
                                     <figure class="figure">
                                         <img src="images/news/event-banner-1.jpg" class="img-fluid news-image" alt="">
 
                                         <figcaption class="figure-caption text-end">East Midlands Regional CPD Event on Wellbeing</figcaption>
                                     </figure>
                                 </div>
-
-                                <p data-aos="fade-up">
-                                    Morbi scelerisque urna in orci elementum, nec mollis ligula luctus. Proin ullamcorper pulvinar commodo. Quisque tortor nunc, ultricies efficitur ex sit amet, tempus rutrum libero. In nec faucibus tellus.
+                                <?php
+                                $full_text = "Morbi scelerisque urna in orci elementum, nec mollis ligula luctus. Proin ullamcorper pulvinar commodo. Quisque tortor nunc, ultricies efficitur ex sit amet, tempus rutrum libero. In nec faucibus tellus. Morbi scelerisque urna in orci elementum, nec mollis ligula luctus. Proin ullamcorper pulvinar commodo. Quisque tortor nunc, ultricies efficitur ex sit amet, tempus rutrum libero. In nec faucibus tellus. Morbi scelerisque urna in orci elementum, nec mollis ligula luctus.";
+                                // Function to limit words
+                                function limit_words($text, $limit)
+                                {
+                                    $words = explode(' ', $text);
+                                    if (count($words) > $limit) {
+                                        return implode(' ', array_slice($words, 0, $limit)) . '...';
+                                    } else {
+                                        return $text;
+                                    }
+                                }
+                                // Display truncated content with the Readmore link
+                                $truncated_text = limit_words($full_text, 45);
+                                ?>
+                                <p>
+                                    <?php echo $truncated_text; ?>
                                 </p>
-
-                                <p data-aos="fade-up">
-                                    Donec justo orci, pretium ultricies ante eget, bibendum semper enim. Nunc efficitur purus suscipit leo placerat, a ultricies purus gravida. Sed sollicitudin ornare porta. Mauris convallis sit amet purus sed rutrum.
-                                </p>
-
-                                <p data-aos="fade-up">
-                                    This Bootstrap 5 layout is provided by TemplateMo website and it is free to use for any of your website. You are allowed to edit it in any way you like. However, please do not redistribute this template ZIP file for a template download purpose on any other website such as Free CSS collection websites.
-                                </p>
+                                <!-- read more button start -->
+                                <a href="" class="btn btn-4" data-toggle="modal" data-target="#exampleModalCenter"><span>Readmore</span></a>
+                                <!-- read more button start -->
                             </div>
-
-                            <div class="clearfix my-4 mt-lg-0 mt-5">
-                                <div class="col-md-4 float-md-start mx-2 mb-3 ms-md-3" data-aos="fade-up">
+                            <!---------------End-content-1 --------------------->
+                            <!---------------Start-content-2 --------------------->
+                            <div class="clearfix mt-3" data-aos="fade-up">
+                                <div class="col-md-4 float-md-start mx-2 mb-3 ms-md-3">
                                     <figure class="figure">
                                         <img src="images/news/event-banner-2.jpg" class="img-fluid news-image" alt="">
-
                                         <figcaption class="figure-caption text-start">BPPA Call for Posters-images</figcaption>
                                     </figure>
                                 </div>
-
-                                <p data-aos="fade-up">
-                                    Morbi scelerisque urna in orci elementum, nec mollis ligula luctus. Proin ullamcorper pulvinar commodo. Quisque tortor nunc, ultricies efficitur ex sit amet, tempus rutrum libero. In nec faucibus tellus.
+                                <p>
+                                    <?php echo $truncated_text; ?>
                                 </p>
-
-                                <p data-aos="fade-up">
-                                    Donec justo orci, pretium ultricies ante eget, bibendum semper enim. Nunc efficitur purus suscipit leo placerat, a ultricies purus gravida. Sed sollicitudin ornare porta. Mauris convallis sit amet purus sed rutrum.
-                                </p>
-
-                                <p data-aos="fade-up">
-                                    This Bootstrap 5 layout is provided by TemplateMo website and it is free to use for any of your website. You are allowed to edit it in any way you like. However, please do not redistribute this template ZIP file for a template download purpose on any other website such as Free CSS collection websites.
-                                </p>
+                                <!-- read more button start -->
+                                <a href="" class="btn btn-4" data-toggle="modal" data-target="#exampleModalCenter"><span>Readmore</span></a>
+                                <!-- read more button start -->
                             </div>
-
-                            <div class="clearfix my-4 mt-lg-0 mt-5">
-                                <div class="col-md-4 float-md-end mb-3 ms-md-3" data-aos="fade-up">
+                            <!---------------End-content-2 --------------------->
+                            <!---------------Start-content-3 --------------------->
+                            <div class="clearfix mt-4" data-aos="fade-up">
+                                <div class="col-md-4 float-md-end mx-2 mb-3 ms-md-3">
                                     <figure class="figure">
                                         <img src="images/news/event-banner-3.jpg" class="img-fluid news-image" alt="">
 
@@ -121,30 +175,16 @@
                                     </figure>
                                 </div>
 
-                                <p data-aos="fade-up">
-                                    Morbi scelerisque urna in orci elementum, nec mollis ligula luctus. Proin ullamcorper pulvinar commodo. Quisque tortor nunc, ultricies efficitur ex sit amet, tempus rutrum libero. In nec faucibus tellus.
+                                <p>
+                                    <?php echo $truncated_text; ?>
                                 </p>
+                                <!-- read more button start -->
+                                <a href="" class="btn btn-4" data-toggle="modal" data-target="#exampleModalCenter"><span>Readmore</span></a>
+                                <!-- read more button start -->
 
-                                <p data-aos="fade-up">
-                                    Donec justo orci, pretium ultricies ante eget, bibendum semper enim. Nunc efficitur purus suscipit leo placerat, a ultricies purus gravida. Sed sollicitudin ornare porta. Mauris convallis sit amet purus sed rutrum.
-                                </p>
-
-                                <p data-aos="fade-up">
-                                    This Bootstrap 5 layout is provided by TemplateMo website and it is free to use for any of your website. You are allowed to edit it in any way you like. However, please do not redistribute this template ZIP file for a template download purpose on any other website such as Free CSS collection websites.
-                                </p>
                             </div>
-
-                            <!-- <div class="social-share d-flex mt-5">
-                                <span class="me-4" data-aos="zoom-in">Share this:</span>
-
-                                <a href="#" class="social-share-icon bi-facebook" data-aos="zoom-in"></a>
-
-                                <a href="#" class="social-share-icon bi-twitter mx-3" data-aos="zoom-in"></a>
-
-                                <a href="#" class="social-share-icon bi-envelope" data-aos="zoom-in"></a>
-                            </div> -->
+                            <!---------------End-content-3 --------------------->
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -236,7 +276,7 @@
             <?php include 'include/footer.php'; ?>
         </main>
     </div>
-    <div class="area">
+    <!-- <div class="area">
         <ul class="circles">
             <li></li>
             <li></li>
@@ -249,7 +289,7 @@
             <li></li>
             <li></li>
         </ul>
-    </div>
+    </div> -->
 
 
 
@@ -262,7 +302,7 @@
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/scrollspy.min.js"></script>
     <script src="js/custom.js"></script>
-   <!-- Modal Script -->
+    <!-- Modal Script -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
