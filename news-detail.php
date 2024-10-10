@@ -94,7 +94,7 @@
                                 <a href="<?php echo $contentData['link']; ?>" target="_blank">Visit Link</a>
                             </div>
                         <?php endif; ?>
-                    </div>
+                    </div>  
 
                 </div>
                 <div class="modal-footer">

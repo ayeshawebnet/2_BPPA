@@ -293,7 +293,6 @@ function floatchart() {
                 }
             }
         };
-
         //plotting
         $.plot($("#total-value-graph-1"), [{
             data: [
@@ -391,7 +390,6 @@ function floatchart() {
                 apply: true,
             }
         }], options);
-
         $.plot($("#power-card-chart1"), [{
             data: [
                 [0, 18],

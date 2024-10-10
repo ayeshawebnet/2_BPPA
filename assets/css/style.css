@@ -425,7 +425,7 @@ code {
 }
 
 .page-header {
-  background-image: url("../images/breadcrumb-bg.jpg");
+  background-image: url("assets/images/breadcrumb-bg.jpg");
   background-size: cover;
   background-position: bottom left;
   position: relative;
@@ -2380,7 +2380,7 @@ img.comment-img {
 }
 
 .pcoded .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: rgba(55, 71, 79, 0);
+  background-color: #007C17;
 }
 
 .pcoded .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
@@ -5346,7 +5346,7 @@ table tbody .border-bottom-info td {
 
 .header-navbar .navbar-wrapper .navbar-container .badge {
   border-radius: 100px;
-  right: 10px;
+  /* right: 10px; */
   position: absolute;
   top: 14px;
   padding: 4px;
@@ -5543,7 +5543,6 @@ table tbody .border-bottom-info td {
   display: block;
   position: relative;
 }
-
 .pcoded-inner-content {
   padding: 10px;
 }
@@ -14986,10 +14985,19 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
   .res-head {
     display: inline !important;
   }
-  .header-navbar .navbar-wrapper .navbar-logo .mobile-options {
+  .header-navbar .navbar-wrapper .navbar-logo .mobile-options1 {
     display: block;
     position: absolute;
     right: 0;
+    top: 0;
+    font-size: 16px;
+    line-height: 3.5;
+    width: 60px;
+  }
+  .header-navbar .navbar-wrapper .navbar-logo .mobile-options2 {
+    display: block;
+    position: absolute;
+    right: 60px;
     top: 0;
     font-size: 16px;
     line-height: 3.5;
@@ -15763,4 +15771,17 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
   box-shadow: none !important;
   
   padding-left:0px !important;
+}
+/* .fancybox-thumbs{
+  display: block !important;
+} */
+
+/* Header Cart badge styling */
+
+.cart-badge {
+  font-size: 0.75rem; 
+  padding: 4px 8px;
+  color: white;
+  left: 23px; 
+  transform: translate(-50%, -50%);
 }

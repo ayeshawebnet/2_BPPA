@@ -1,0 +1,229 @@
+/*product detail*/
+.event-product {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.event-header {
+  display: none; /* Hiding the header for now unless you need it */
+}
+
+.event-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-image {
+  width: 40%;
+  margin-right: 30px;
+}
+
+.event-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-details {
+  width: 55%;
+}
+
+.event-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.event-subtitle {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.event-price {
+  font-size: 1.25rem;
+  color: #007c17;
+  margin-bottom: 20px;
+}
+
+.event-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.form-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.event-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.quantity-selector label {
+  font-size: 1rem;
+  margin-right: 10px;
+  color: #333;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-to-cart-button {
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .event-main {
+      flex-direction: column;
+  }
+
+  .event-image {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .event-details {
+      width: 100%;
+  }
+}
+/*product detail*/
+
+
+/* tabs */
+
+.tab-wrap {
+  transition: 0.3s box-shadow ease;
+  border-radius: 10px; /* Replace with actual value */
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+  background-color: #fff;
+  margin: 40px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* .tab-wrap:hover {
+  box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+} */
+
+.checkout_details .tab {
+  display: none;
+}
+
+.checkout_details .tab:checked + label {
+  background-color: #fff;
+  box-shadow: 0 -1px 0 #fff inset;
+  cursor: default;
+}
+
+.checkout_details .tab:checked + label:hover {
+  box-shadow: 0 -1px 0 #fff inset;
+  background-color: #fff;
+}
+
+.checkout_details .tab:checked:nth-of-type(1) ~ .tab__content:nth-of-type(1),
+.checkout_details .tab:checked:nth-of-type(2) ~ .tab__content:nth-of-type(2),
+.checkout_details .tab:checked:nth-of-type(3) ~ .tab__content:nth-of-type(3) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in, 0.8s transform ease;
+  position: relative;
+  top: 0;
+  z-index: 100;
+  transform: translateY(0px);
+  text-shadow: 0 0 0;
+}
+
+.checkout_details .tab:first-of-type:not(:last-of-type) + label {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.checkout_details .tab:not(:first-of-type):not(:last-of-type) + label {
+  border-radius: 0;
+}
+
+.checkout_details .tab:last-of-type:not(:first-of-type) + label {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.checkout_details .tab + label {
+  box-shadow: 0 -1px 0 #eee inset;
+  border-radius: 10px 10px 0 0; /* Replace with actual value */
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  flex-grow: 3;
+  text-align: center;
+  background-color: #f2f2f2;
+  user-select: none;
+  transition: 0.3s background-color ease, 0.3s box-shadow ease;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.checkout_details .tab + label:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 0 #f4f4f4 inset;
+}
+
+.checkout_details .tab__content {
+  padding: 10px 25px;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  left: 0;
+  transform: translateY(-3px);
+  border-radius: 10px; /* Replace with actual value */
+  max-height: 250px; /* Set the maximum height for content */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+/* Scrollbar Styling */
+.checkout_details .tab__content::-webkit-scrollbar {
+  width: 6px; /* Thin scrollbar */
+}
+
+.checkout_details .tab__content::-webkit-scrollbar-thumb {
+  background-color: #007c17; /* Green scrollbar */
+  border-radius: 5px; /* Rounded edges */
+}
+
+.checkout_details .tab__content::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light gray background for the track */
+}
+.checkout_details .tab__content p{
+font-size:16px
+}
+.checkout_details .tab_content_heading{
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* tabs */

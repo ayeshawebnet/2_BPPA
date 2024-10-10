@@ -214,7 +214,7 @@ body {
   /* scroll-behavior: smooth !important; */
 }
 .navbar {
-  /* padding: 0px; */
+  margin-bottom: 0px !important;
   background-color: black;
   /* display: flex; */
   width: 100%;
@@ -230,15 +230,14 @@ body {
 }
 
 .navbar-brand {
+  height: auto !important;
   color: var(--primary-color);
   font-size: 24px;
   font-weight: var(--font-weight-bold);
+  
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 15px;
-  padding-left: 15px;
-}
+
 
 .navbar-nav .nav-link::after {
   content: "\f140";
@@ -264,6 +263,8 @@ body {
 
 /* nav-btn */
 .navbar-nav .nav-link {
+  display: flex;
+align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -370,7 +371,30 @@ body {
 .hero {
   padding: 60px 0px 199px;
 }
+#hero{
+  /* font-family: 'Montserrat', bold; */
+  position: relative;
+  color: #f2f2f2;
 
+}
+.hero-main-heading {
+  font-size: 72px;
+  white-space: nowrap; /* Prevents line break */
+}
+
+.hero-sub-heading {
+  font-size: 36px;
+  white-space: nowrap; /* Prevents line break */
+}
+
+.hero-box-heading {
+  display: inline-block;
+  padding: 13px;
+  color: #f2f2f2;
+  border: 1px solid yellow;
+  border-radius: 8px;
+  white-space: nowrap; /* Prevents line break */
+}
 .news-detail-title {
   color: #f2f2f2;
 }
@@ -392,7 +416,7 @@ body {
   .hero {
     /* height: 100vh; */
   }
-
+ 
   .custom-video,
   .news-detail-image {
     object-fit: cover;
@@ -404,6 +428,10 @@ body {
     position: relative;
     bottom: 76px;
   }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .8rem;
+    padding-left: 0px;
+}
 }
 
 .heroText {
@@ -717,7 +745,25 @@ body {
     min-height: 232.5px;
   }
 }
+/* Media query for screens 1024px or smaller */
+@media (max-width: 1024px) {
+  .heroText {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: flex-start;
+  }
 
+  .hero-main-heading {
+    font-size: 48px; /* Adjust font-size for smaller screens */
+  }
+
+  .hero-sub-heading {
+    font-size: 24px;
+  }
+
+  .hero-box-heading {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 48px;
@@ -774,14 +820,9 @@ body {
   }
 }
 
-@media screen and (max-width: 360px) {
-  h1 {
-    font-size: 32px;
-  }
 
-  .heroText p {
-    font-size: 14px;
-  }
+@media screen and (max-width: 360px) {
+
 }
 
 @media screen and (max-width: 359px) {
@@ -1670,6 +1711,7 @@ body {
   margin: auto;
   overflow: hidden;
   position: relative;
+  
   /* width: 960px; */
 }
 
@@ -1687,12 +1729,7 @@ body {
   );
 }
 
-@media (max-width: 768px) {
-  .founder-slider::before,
-  .founder-slider::after {
-    display: none;
-  }
-}
+
 
 .founder-slider::after {
   right: 0;
@@ -1705,26 +1742,27 @@ body {
   top: 0;
 }
 
-.slide-track {
+.slide-tracks {
   display: flex;
   width: calc(250px * 14);
 }
-.founder-slider .slide-track {
+
+.founder-slider .slide-tracks {
   animation: scroll-left-to-right 40s linear infinite;
 }
 
-.founder-slider.reverse-slider .slide-track {
+.founder-slider.reverse-slider .slide-tracks {
   justify-content: end;
   animation: scroll-right-to-left 40s linear infinite;
 }
 
-.founder-slider .slide {
+.founder-slider .slide{
   height: 100px;
   width: 250px;
 }
 
-.founder-slider .slide-track:hover,
-.founder-slider.reverse-slider .slide-track:hover {
+.founder-slider .slide-tracks:hover,
+.founder-slider.reverse-slider .slide-tracks:hover {
   animation-play-state: paused; /* Pauses the slider on hover */
 }
 /* end - Home page founder member section css */
@@ -1733,10 +1771,9 @@ body {
 
 .founder-card {
   margin: 5px 15px;
-  max-width: 320px;
+  max-width: 320px !important; 
   border-radius: 0.8rem;
   /* background-color: rgba(31, 41, 55, 1); */
-
   padding: 0.8rem;
   box-shadow: 1px 1px 3px black;
 }
@@ -1934,3 +1971,318 @@ body {
 /* /////////////////////////////
 //End - New Details Page Modal
 /////////////////////////// */
+
+
+/* blog page start */
+.blog-news-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.blog-news-card:hover {
+  transform: scale(1.02);
+}
+
+.blog-news-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.blog-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--light-brown);
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.custom-pagination .page-item .page-link {
+  color: #000000;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-pagination .page-item .page-link:hover {
+  background-color:  var(--light-brown);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.custom-pagination .page-item.active .page-link {
+  background-color:  var(--light-brown);
+  color: #fff;
+  border: none;
+}
+
+.custom-pagination .page-item.disabled .page-link {
+  background-color: #e9ecef;
+  color: #000000;
+  pointer-events: none;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+.card-img-top{
+  /* height: 350px !important; */
+  object-fit: cover !important;
+}
+.blog-content {
+  padding: 40px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.blog-content img {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.blog-title-lg {
+  font-size: 35px;
+}
+/* blog page end */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* cart in header start */
+/* Cart icon styling */
+.navbar .fa-shopping-cart {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  color: #fff; /* Color of the cart icon */
+  transition: color 0.3s ease;
+}
+
+.navbar .fa-shopping-cart:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Badge styling for cart (shows item count) */
+.cart-badge {
+  font-size: 0.75rem; /* Size of the badge text */
+  padding: 5px 10px;
+  color: white;
+}
+
+.navbar .cart-badge {
+  background-color: #dc3545; /* Badge color (red by default) */
+  font-size: 0.75rem; /* Adjust badge size */
+  padding: 0.3em 0.5em;
+}
+/* cart in header end*/
+
+
+/* Basic Setup for the Custom Carousel */
+.custom-carousel {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.custom-carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%; /* Slide starts from right, off the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover; /* Ensures the image covers the whole container */
+  background-position: bottom;
+  transition: all 0.8s ease-in-out;
+  background-repeat: no-repeat;
+}
+/* Active Slide */
+.custom-carousel-slide.active {
+    left: 0; /* Move to the center */
+}
+
+/* Animation for outgoing slide (moving left) */
+.custom-carousel-slide.prev {
+    left: -100%; /* Slide out to the left */
+}
+
+.custom-main-heading {
+  color: white;
+  font-size: 4rem; 
+  font-weight: bold;
+  margin-bottom: 15px;
+  animation: slideText 1s ease-out;
+}
+
+
+.custom-sub-heading {
+  color: white;
+  font-size: 1.9rem; /* Default size for large screens */
+  margin-bottom: 20px;
+}
+.box-heading {
+  box-shadow: 0 0 10px rgba(255, 238, 2, 0.5);
+  text-shadow:  0 0 10px rgba(255, 238, 2, 0.5);
+  display: inline-block;
+  padding: 10px 20px;
+  color: white; 
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  border: 1px solid yellow;
+  
+    margin:14px 58px;
+}
+
+.box-heading:hover {
+  background-color: rgba(255, 238, 0, 0.8);
+  color: black;
+  
+}
+.custom-carousel-slide button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Navigation Arrows */
+.custom-carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.arrow-left {
+    left: 20px;
+}
+
+.arrow-right {
+    right: 20px;
+}
+
+/* Slide Animation Keyframe for smooth text sliding */
+@keyframes slideText {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Media Queries for Responsive Text */
+@media (max-width: 1200px) {
+  .custom-main-heading {
+      font-size: 2.5rem; /* Reduce heading size for large tablets */
+  }
+
+  .custom-sub-heading {
+      font-size: 1.3rem;
+  }
+
+  .box-heading {
+      font-size: 1.1rem;
+  }
+}
+/* For tablets (screens between 768px and 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .custom-carousel {
+      height: 70vh; /* Adjust the height for tablets */
+  }
+}
+/* For mobile screens (less than 768px) */
+@media (max-width: 767px) {
+  .custom-carousel {
+      height: 50vh; /* Set a smaller height for mobile devices */
+  }
+}
+@media (max-width: 768px) {
+  .founder-slider::before,
+  .founder-slider::after {
+    display: none;
+  }
+  .custom-main-heading {
+    font-size: 2rem; /* Reduce heading size for tablets */
+}
+
+.custom-sub-heading {
+    font-size: 1.1rem;
+}
+
+.box-heading {
+    font-size: 1rem;
+}
+}
+@media screen and (max-width: 576px) {
+  .custom-main-heading {
+    font-size: 1.4rem; /* Reduce heading size for mobile devices */
+}
+
+.custom-sub-heading {
+    font-size: 0.9rem;
+}
+
+.box-heading {
+    font-size: 0.7rem;
+  
+}
+.custom-carousel {
+  height: 30vh; /* Set a smaller height for mobile devices */
+}
+.custom-carousel .arrow {
+padding: 5px;
+  font-size: 0.8rem;
+
+}
+}

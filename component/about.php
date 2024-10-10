@@ -57,8 +57,6 @@
           </p>
 
           <div class="mt-3 custom-links">
-            <a href="#news" class="text-white custom-link" data-aos="zoom-in" data-aos-delay="100">Read News & Events</a>
-            <br>
             <a href="#portfolio" class="text-white custom-link" data-aos="zoom-in" data-aos-delay="300">Join us</a>
           </div>
         </div>

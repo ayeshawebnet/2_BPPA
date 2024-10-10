@@ -294,50 +294,50 @@ $(document).ready(function () {
     $('.accordion-msg[href="' + targetTab + '"]').click();
   });
 
-$(".goToPay").on("click", function () {
-  document.getElementById("next").click();
+  $(".goToPay").on("click", function () {
+    document.getElementById("next").click();
+  });
+
+  // Click event for sidebar menu items
+  $(".b-menu").on("click", function (e) {
+    e.preventDefault(); // Prevent default link behavior
+
+    var target = $(this).data("target"); // Get the target ID
+
+    // Hide all content rows
+    $(".content-row").hide();
+
+    // Show the targeted content row
+    $("#" + target).show();
+
+    // Remove active class from all menu items
+    $(".b-menu").removeClass("active");
+
+    // Add active class to the clicked menu item
+    $(this).addClass("active");
+  });
+
+  // Handle click event on the "Profile" menu item
+  $('.b-menu[data-target="profile-bppa"]').on("click", function () {
+    // e.preventDefault();
+    $("li.pcoded-hasmenu.b-menu.pcoded-trigger").removeClass(
+      "pcoded-trigger active"
+    );
+    $(".pcoded-submenu").css("display", "none");
+  });
+
+  $(".join-us-btn").click(function () {
+    console.log("clicked");
+    window.location.href = "pages/auth.html";
+  });
 });
-
- // Click event for sidebar menu items
- $('.b-menu').on('click', function(e) {
-  e.preventDefault(); // Prevent default link behavior
-
-  var target = $(this).data('target'); // Get the target ID
-
-  // Hide all content rows
-  $('.content-row').hide();
-
-  // Show the targeted content row
-  $('#' + target).show();
-
-  // Remove active class from all menu items
-  $('.b-menu').removeClass('active');
-
-  // Add active class to the clicked menu item
-  $(this).addClass('active');
-});
-
-// Handle click event on the "Profile" menu item
-$('.b-menu[data-target="profile-bppa"]').on('click', function() {
-  // e.preventDefault(); 
-  $('li.pcoded-hasmenu.b-menu.pcoded-trigger').removeClass('pcoded-trigger active');
-  $('.pcoded-submenu').css('display', 'none');
-});
-
-
-$('.join-us-btn').click(function() {
-  console.log('clicked');
-  window.location.href = 'pages/auth.html';
-});
-});
-
 
 // Initialize first Swiper
 function initializeSwiper(
   containerClass,
   paginationClass,
   nextButtonClass,
-  prevButtonClass,
+  prevButtonClass
 ) {
   return new Swiper(containerClass, {
     slidesPerView: 5,
@@ -346,10 +346,10 @@ function initializeSwiper(
     centerSlide: true,
     fade: true,
     grabCursor: true,
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: true,
-    // },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: true,
+    },
     pagination: {
       el: paginationClass,
       clickable: true,
@@ -367,6 +367,9 @@ function initializeSwiper(
         slidesPerView: 2,
       },
       950: {
+        slidesPerView: 4,
+      },
+      1250: {
         slidesPerView: 5,
       },
     },
@@ -378,19 +381,19 @@ initializeSwiper(
   ".slide-content1",
   ".swiper-pagination1",
   ".swiper1-next",
-  ".swiper1-prev",
+  ".swiper1-prev"
 );
 initializeSwiper(
   ".slide-content2",
   ".swiper-pagination2",
   ".swiper2-next",
-  ".swiper2-prev",
+  ".swiper2-prev"
 );
 initializeSwiper(
   ".slide-content3",
   ".swiper-pagination3",
   ".swiper3-next",
-  ".swiper3-prev",
+  ".swiper3-prev"
 );
 
 var previous = document.getElementById("btnPrevious");
@@ -476,14 +479,22 @@ function showImages() {
       var template = document.createElement("div");
       var title = document.createElement("p");
       var titleText = document.createTextNode(images[i].title);
-      var img = document.createElement("img");
+
+      // Create the <a> element and set its attributes
+      let anchor = document.createElement("a");
+      anchor.setAttribute("data-fancybox", "gallery");
+      anchor.setAttribute("href", images[i].source);
+
+      // Create the <img> element and set its attributes
+      let img = document.createElement("img");
       img.classList.add("gallery-img");
       template.classList.add("template");
       img.setAttribute("src", images[i].source);
       img.setAttribute("alt", images[i].title);
 
       title.appendChild(titleText);
-      template.appendChild(img);
+      anchor.appendChild(img);
+      template.appendChild(anchor);
       // template.appendChild(title);
       gallery.appendChild(template);
     }
@@ -502,53 +513,126 @@ function showImages() {
       item.classList.add("animate");
     };
   }
-
   // Update page indicator
   pageIndicator.textContent = "Page " + page + " of " + pages;
 }
 
 showImages();
 
-$(document).ready(function() {
-  $('.ag-courses_item').on('click', function() {
-      // Remove 'active' class from all slides
-      $('.ag-courses_item').removeClass('active-card');
-      // Add 'active' class to the clicked slide
-      $(this).addClass('active-card');
+$(document).ready(function () {
+  $("#gallery-section .gallery-item").click(function () {
+    $("#gallery-section").hide(); // Hide the gallery section
+    $(".gallery").show(); // Show the gallery
+  });
+
+  // Back button to return to gallery section
+  $("#backButton").click(function () {
+    $(".gallery").hide(); // Hide the gallery
+    $("#gallery-section").show(); // Show the gallery section again
+  });
+
+  $(".ag-courses_item").on("click", function () {
+    // Remove 'active' class from all slides
+    $(".ag-courses_item").removeClass("active-card");
+    // Add 'active' class to the clicked slide
+    $(this).addClass("active-card");
   });
 });
 
 
-// Show the lightbox when an image is clicked
-// gallery.addEventListener('click', function(e) {
-//   if (e.target && e.target.classList.contains('gallery-img')) {
-//       var lightbox = document.getElementById('lightbox');
-//       var lightboxImg = document.getElementById('lightbox-img');
 
-//       // Set the src of the lightbox image to the clicked image
-//       lightboxImg.src = e.target.src;
 
-//       // Display the lightbox
-//       lightbox.style.display = 'block';
-//   }
-// });
-
-// // Close the lightbox when the close button is clicked
-// var lightboxClose = document.querySelector('.lightbox-close');
-// lightboxClose.addEventListener('click', function() {
-//   document.getElementById('lightbox').style.display = 'none';
-// });
-
-// Close the lightbox if the user clicks anywhere outside the image
-// window.addEventListener("click", function (e) {
-//   var lightbox = document.getElementById("lightbox");
-//   if (e.target == lightbox) {
-//     lightbox.style.display = "none";
-//   }
-// });
-
-// $("body").append(
-//   '<div class="fixed-button active"><a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro</a> </div>'
-// );
 var $window = $(window),
   nav = $(".fixed-button");
+
+$(document).ready(function () {
+  // Find all <ul> and <li> inside the element with id 'history'
+  $("#history ul li").each(function () {
+    // Add the icon before the text inside each <li>
+    $(this).prepend(
+      '<i class="icofont icofont-double-right text-success"></i> '
+    );
+  });
+  $("#constitution ul li").each(function () {
+    // Add the icon before the text inside each <li>
+    $(this).prepend(
+      '<i class="icofont icofont-double-right text-success"></i> '
+    );
+  });
+
+  // $('.close-nav').on('click', function() {
+  //   $('#pcoded').attr("vertical-nav-type", "offcanvas");
+    
+  // });
+  $('.close-nav').on('click', function() {
+    var $pcoded = $('#pcoded');
+    console.log($pcoded);
+    if (
+        ($pcoded.attr("pcoded-device-type") === "tablet" || $pcoded.attr("pcoded-device-type") === "phone")
+    ) {
+      $('body').css('overflow', 'auto'); 
+        $pcoded.attr("vertical-nav-type", "offcanvas");
+    }
+});
+});
+
+
+setTimeout(function() {
+  $('[data-fancybox="gallery"]').fancybox({
+    // Core options
+    loop: true, // Allows looping through items
+    buttons: [
+      "zoom",        // Zoom in/out
+      "slideShow",   // Start slideshow
+      "fullScreen",  // Fullscreen mode
+      "download",    // Download image
+      "thumbs",      // Show thumbnails
+      "close"        // Close button
+    ],
+    toolbar: true,      // Show toolbar at the top
+    arrows: true,       // Show navigation arrows
+    protect: true,      // Protect images from being saved by right-click
+    animationEffect: "zoom",  // Animation for opening and closing (zoom, fade, etc.)
+    transitionEffect: "fade", // Transition effect between slides (fade, slide, tube, etc.)
+    transitionDuration: 500,  // Duration of transition effect
+    slideShow: {
+      autoStart: true, // Automatically start slideshow
+      speed: 3000      // Delay between slides (in ms)
+    },
+    thumbs: {
+      autoStart: true  // Show thumbnail sidebar on start
+    },
+    // Customize behavior
+    clickContent: function(current, event) {
+      return current.type === "image" ? "zoom" : false;
+    },
+    clickSlide: function(current, event) {
+      return "close"; // Close on clicking the slide
+    },
+    
+    // Customize appearance
+    infobar: true,         // Show image count ("1 of 3")
+    baseClass: 'custom-class',  // Custom class for styling
+    caption: function(instance, item) {
+      return $(this).attr('data-caption') || '';  // Captions for images
+    },
+  
+    // Customize interactions
+    keyboard: true,         // Allow keyboard navigation
+    touch: {
+      vertical: true,       // Allow vertical swipe to close
+      momentum: true        // Enable swipe momentum
+    },
+    
+    // Enable thumbnails sidebar
+    thumbs: {
+      autoStart: true,      // Display thumbnails sidebar automatically
+      axis: 'x'             // Axis for thumbnail display (x or y)
+    },
+    
+    // Fullscreen behavior
+    fullScreen: {
+      autoStart: false      // Auto-start fullscreen
+    }
+  });
+}, 2000);

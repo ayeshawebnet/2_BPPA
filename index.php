@@ -15,7 +15,8 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet">
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-icons.css" rel="stylesheet">
@@ -29,7 +30,19 @@
   <link rel="stylesheet" href="css/auth.css">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <style>
+    .home-hero-img {
+      background-image: url('images/logoBanner/Portfolio-pathway-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      width: 100%;
+    }
+     
+  </style>
 
 </head>
 
@@ -41,10 +54,52 @@
     <?php include './include/header.php'; ?>
 
     <!-- banner -->
-    <section id="hero">
-      <img class="banner-img" src="images/logoBanner/Portfolio-pathway-banner.jpg" alt="">
-    </section>
 
+    <!-- <section id="hero">
+      <div class="heroText text-center">
+        <div class="hero-main-heading" data-aos="zoom-in" data-aos-delay="300">
+          Join our membership program to
+        </div>
+        <div class="hero-sub-heading" data-aos="zoom-in" data-aos-delay="300">
+          become a part of British Pakistani Psychiatrists Association
+        </div>
+        <div class="hero-box-heading mt-4" data-aos="zoom-in" data-aos-delay="300">
+          Explore our gallery to relive the moments that define our community
+        </div>
+      </div>
+      <img class="banner-img" src="images/logoBanner/Portfolio-pathway-banner.jpg" alt="">
+    </section> -->
+    <!-- <section id="hero"> -->
+    <section class="custom-carousel">
+     <!-- Slide 1 -->
+     <div class="custom-carousel-slide active" id="custom-slide1"
+        style="background-image: url('./images/logoBanner/Portfolio-pathway-banner.jpg');">
+        <div>
+          <div class="custom-main-heading">Join our membership program to</div>
+          <span class="custom-sub-heading">become a part of British Pakistani Psychiatrists Association</span>
+          <a class="box-heading" href="mem.php">Explore our gallery to relive the moments that define our community</a>
+          
+        </div>
+        
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="custom-carousel-slide" id="custom-slide2"
+        style="background-image: url('images/logoBanner/Portfolio-pathway-banner.jpg');">
+        <div>
+          <div  class="custom-main-heading">Another Heading</div>
+          <span class="custom-sub-heading">Another Subheading</span>
+          <a class="box-heading" href="mem.php">Click here</a>
+          <!-- <a class="custom-link text-white" href="mem.php">click here</a> -->
+        </div>
+      </div>
+
+    <!-- Navigation Arrows -->
+    <button class="arrow arrow-left" onclick="prevCustomSlide()">&#10094;</button>
+    <button class="arrow arrow-right" onclick="nextCustomSlide()">&#10095;</button>
+</section>
+
+    <!-- </section> -->
   </div>
 
   <?php include './component/about.php'; ?>
@@ -55,8 +110,10 @@
         <div class="col-12">
           <h2 class="mb-5 text-center" data-aos="fade-up">One in 4 of you are affected. Why do we look away?</h2>
         </div>
-        <div class="col-sm-12 col-md-8 col-12 pb-5">
-          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/biLdKre2HO4" frameborder="0" allowfullscreen></iframe>
+        <div class="col-sm-12 col-md-8 col-12 pb-5 text-center">
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/biLdKre2HO4" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -278,7 +335,8 @@
             <div class="news-bottom w-100">
               <div class="news-text-info">
                 <h5 class="news-title">
-                  <a href="news-detail.php" class="news-title-link">2nd Annual Event - Live Performance by Tanya Wells</a>
+                  <a href="news-detail.php" class="news-title-link">2nd Annual Event - Live Performance by Tanya
+                    Wells</a>
                 </h5>
 
                 <div class="d-flex flex-wrap">
@@ -314,6 +372,9 @@
       </div>
     </div>
   </section>
+  <!-- slick -->
+
+
 
   <!-- Founder Members -->
   <section class=" container-fluid section-padding grey-bg">
@@ -324,7 +385,7 @@
     </div>
     <!-- First Slider (Left to Right) -->
     <div class="founder-slider">
-      <div class="slide-track">
+      <div class="slide-tracks ">
         <?php $founder_members = [
           [
             'name' => 'Dr. Ahmed Khan',
@@ -357,27 +418,31 @@
             'location' => 'Preston, UK',
           ],
         ]; ?>
-         <?php foreach ($founder_members as $member) : ?>
-            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
+        <?php foreach ($founder_members as $member): ?>
+          <?php $background_class = 'founder-bg';
+          include './component/founder-card.php'; ?>
         <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
-        <?php foreach ($founder_members as $member) : ?>
-            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
+        <?php foreach ($founder_members as $member): ?>
+          <?php $background_class = 'founder-bg';
+          include './component/founder-card.php'; ?>
         <?php endforeach; ?>
       </div>
     </div>
 
     <!-- Second Slider (Right to Left) -->
     <div class="founder-slider reverse-slider mt-3">
-      <div class="slide-track">
-      <?php foreach ($founder_members as $member) : ?>
-            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
+      <div class="slide-tracks ">
+        <?php foreach ($founder_members as $member): ?>
+          <?php $background_class = 'founder-bg';
+          include './component/founder-card.php'; ?>
         <?php endforeach; ?>
 
         <!-- Duplicates for smooth looping -->
-        <?php foreach ($founder_members as $member) : ?>
-            <?php $background_class = 'founder-bg'; include './component/founder-card.php';?>
+        <?php foreach ($founder_members as $member): ?>
+          <?php $background_class = 'founder-bg';
+          include './component/founder-card.php'; ?>
         <?php endforeach; ?>
 
       </div>
@@ -393,62 +458,64 @@
       </div>
     </div>
     <div class="regional-executive">
-    <div class="founder-slider">
-      <div class="slide-track">
-        <?php $regional_members = [
-          [
-            'name' => 'Dr. Kamila Haider',
-            'years_of_service' => '25+ years',
-            'photo' => 'images/people/dp3.jpg',
-            'location' => 'East Midlands, UK',
-          ],
-          [
-            'name' => 'Dr. Muhammad Gul',
-            'years_of_service' => '20+ years',
-            'photo' => 'images/people/dp4.jpg',
-            'location' => 'West Midlands, UK',
-          ],
-          [
-            'name' => 'Dr. Ali Mesam Mehdi',
-            'years_of_service' => '15+ years',
-            'photo' => 'images/people/dp5.jpg',
-            'location' => 'South East, UK',
-          ],
-          [
-            'name' => 'Dr. Adnan Hafeez',
-            'years_of_service' => '30+ years',
-            'photo' => 'images/people/dp6.jpg',
-            'location' => 'North West, UK',
-          ],
-          [
-            'name' => 'Dr. Saman Khan',
-            'years_of_service' => '29+ years',
-            'photo' => 'images/people/dp7.jpg',
-            'location' => 'Scotland, UK',
-          ],
-          [
-            'name' => 'Dr. Saima Niaz',
-            'years_of_service' => '29+ years',
-            'photo' => 'images/people/dp7.jpg',
-            'location' => 'London, UK',
-          ],
-          [
-            'name' => 'Dr. Raja Adnan Ahmed',
-            'years_of_service' => '29+ years',
-            'photo' => 'images/people/dp7.jpg',
-            'location' => 'Wales, UK',
-          ],
-        ]; ?>
-         <?php foreach ($regional_members as $member) : ?>
-            <?php $background_class = 'regional-bg'; include './component/founder-card.php';?>
-        <?php endforeach; ?>
+      <div class="founder-slider">
+        <div class="slide-tracks ">
+          <?php $regional_members = [
+            [
+              'name' => 'Dr. Kamila Haider',
+              'years_of_service' => '25+ years',
+              'photo' => 'images/people/dp3.jpg',
+              'location' => 'East Midlands, UK',
+            ],
+            [
+              'name' => 'Dr. Muhammad Gul',
+              'years_of_service' => '20+ years',
+              'photo' => 'images/people/dp4.jpg',
+              'location' => 'West Midlands, UK',
+            ],
+            [
+              'name' => 'Dr. Ali Mesam Mehdi',
+              'years_of_service' => '15+ years',
+              'photo' => 'images/people/dp5.jpg',
+              'location' => 'South East, UK',
+            ],
+            [
+              'name' => 'Dr. Adnan Hafeez',
+              'years_of_service' => '30+ years',
+              'photo' => 'images/people/dp6.jpg',
+              'location' => 'North West, UK',
+            ],
+            [
+              'name' => 'Dr. Saman Khan',
+              'years_of_service' => '29+ years',
+              'photo' => 'images/people/dp7.jpg',
+              'location' => 'Scotland, UK',
+            ],
+            [
+              'name' => 'Dr. Saima Niaz',
+              'years_of_service' => '29+ years',
+              'photo' => 'images/people/dp7.jpg',
+              'location' => 'London, UK',
+            ],
+            [
+              'name' => 'Dr. Raja Adnan Ahmed',
+              'years_of_service' => '29+ years',
+              'photo' => 'images/people/dp7.jpg',
+              'location' => 'Wales, UK',
+            ],
+          ]; ?>
+          <?php foreach ($regional_members as $member): ?>
+            <?php $background_class = 'regional-bg';
+            include './component/founder-card.php'; ?>
+          <?php endforeach; ?>
 
-        <!-- Duplicates for smooth looping -->
-        <?php foreach ($regional_members as $member) : ?>
-            <?php $background_class = 'regional-bg'; include './component/founder-card.php';?>
-        <?php endforeach; ?>
+          <!-- Duplicates for smooth looping -->
+          <?php foreach ($regional_members as $member): ?>
+            <?php $background_class = 'regional-bg';
+            include './component/founder-card.php'; ?>
+          <?php endforeach; ?>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -462,78 +529,80 @@
     </div>
     <div class="regional-executive">
 
-    <div class="founder-slider reverse-slider">
-      <div class="slide-track">
-        <?php $coopted_members = [
-          [
-            'name' => 'Dr. Saadia Muzaffar',
-            'years_of_service' => '25+ years',
-            'photo' => 'images/people/dp3.jpg',
-            'location' => 'East Midlands, UK',
-            'title' => 'Medical Psychotherapy',
-          ],
-          [
-            'name' => 'Dr. Rahat Ghafoor',
-            'years_of_service' => '20+ years',
-            'photo' => 'images/people/dp4.jpg',
-            'location' => 'West Midlands, UK',
-            'title' => 'Consultant Psychiatrist',
-          ],
-          [
-            'name' => 'Dr. Hisham Ul Haq',
-            'years_of_service' => '15+ years',
-            'photo' => 'images/people/dp5.jpg',
-            'location' => 'South East, UK',
-            'title' => 'GP',
-          ],
-          [
-            'name' => 'Prof. Parveen Ali',
-            'years_of_service' => '30+ years',
-            'photo' => 'images/people/dp6.jpg',
-            'location' => 'North West, UK',
-            'title' => 'Nursing',
-          ],
-          [
-            'name' => 'Prof. Zaffer Iqbal',
-            'years_of_service' => '29+ years',
-            'photo' => 'images/people/dp7.jpg',
-            'location' => 'Scotland, UK',
-            'title' => 'Psychology',
-          ],
-          [
-            'name' => 'Dr. Sanaa Moledina',
-            'years_of_service' => '29+ years',
-            'photo' => 'images/people/dp7.jpg',
-            'location' => 'London, UK',
-            'title' => 'SAS Doctors Rep',
-          ],
-          [
-            'name' => 'Dr. Anum Farooqui',
-            'years_of_service' => '29+ years',
-            'photo' => 'images/people/dp7.jpg',
-            'location' => 'Wales, UK',
-            'title' => 'Trainee Rep',
-          ],
-          [
-            'name' => 'Miss. Noor Awan',
-            'years_of_service' => '25+ years',
-            'photo' => 'images/people/dp3.jpg',
-            'location' => 'East Midlands, UK',
-            'title' => 'Medical Student Rep',
-          ]
-        ]; ?>
-         <?php foreach ($coopted_members as $member) : ?>
-            <?php $background_class = 'coopted-bg'; include './component/founder-card.php';?>
-        <?php endforeach; ?>
+      <div class="founder-slider reverse-slider">
+        <div class="slide-tracks ">
+          <?php $coopted_members = [
+            [
+              'name' => 'Dr. Saadia Muzaffar',
+              'years_of_service' => '25+ years',
+              'photo' => 'images/people/dp3.jpg',
+              'location' => 'East Midlands, UK',
+              'title' => 'Medical Psychotherapy',
+            ],
+            [
+              'name' => 'Dr. Rahat Ghafoor',
+              'years_of_service' => '20+ years',
+              'photo' => 'images/people/dp4.jpg',
+              'location' => 'West Midlands, UK',
+              'title' => 'Consultant Psychiatrist',
+            ],
+            [
+              'name' => 'Dr. Hisham Ul Haq',
+              'years_of_service' => '15+ years',
+              'photo' => 'images/people/dp5.jpg',
+              'location' => 'South East, UK',
+              'title' => 'GP',
+            ],
+            [
+              'name' => 'Prof. Parveen Ali',
+              'years_of_service' => '30+ years',
+              'photo' => 'images/people/dp6.jpg',
+              'location' => 'North West, UK',
+              'title' => 'Nursing',
+            ],
+            [
+              'name' => 'Prof. Zaffer Iqbal',
+              'years_of_service' => '29+ years',
+              'photo' => 'images/people/dp7.jpg',
+              'location' => 'Scotland, UK',
+              'title' => 'Psychology',
+            ],
+            [
+              'name' => 'Dr. Sanaa Moledina',
+              'years_of_service' => '29+ years',
+              'photo' => 'images/people/dp7.jpg',
+              'location' => 'London, UK',
+              'title' => 'SAS Doctors Rep',
+            ],
+            [
+              'name' => 'Dr. Anum Farooqui',
+              'years_of_service' => '29+ years',
+              'photo' => 'images/people/dp7.jpg',
+              'location' => 'Wales, UK',
+              'title' => 'Trainee Rep',
+            ],
+            [
+              'name' => 'Miss. Noor Awan',
+              'years_of_service' => '25+ years',
+              'photo' => 'images/people/dp3.jpg',
+              'location' => 'East Midlands, UK',
+              'title' => 'Medical Student Rep',
+            ]
+          ]; ?>
+          <?php foreach ($coopted_members as $member): ?>
+            <?php $background_class = 'coopted-bg';
+            include './component/founder-card.php'; ?>
+          <?php endforeach; ?>
 
-        <!-- Duplicates for smooth looping -->
-        <?php foreach ($coopted_members as $member) : ?>
-            <?php $background_class = 'coopted-bg'; include './component/founder-card.php';?>
-        <?php endforeach; ?>
+          <!-- Duplicates for smooth looping -->
+          <?php foreach ($coopted_members as $member): ?>
+            <?php $background_class = 'coopted-bg';
+            include './component/founder-card.php'; ?>
+          <?php endforeach; ?>
+        </div>
       </div>
     </div>
-    </div>
- 
+
   </section>
 
 
@@ -555,9 +624,14 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/magnific-popup-options.js"></script>
   <script src="js/scrollspy.min.js"></script>
-  <script src="js/custom.js"></script>
-  <script src="js/auth.js"></script>
 
+  <!-- Slick Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <script src="js/custom.js"></script>
+
+
+  <script src="js/auth.js"></script>
 
 </body>
 

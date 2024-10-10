@@ -1,12 +1,12 @@
 <footer class="site-footer">
     <div class="container">
+
         <div class="row">
 
             <div class="col-12">
-                <!-- <h5 class="text-white">
-                    <i class="bi-geo-alt-fill me-2"></i>
-                    BPPA 91C Main Road Cheapside Waltham DN37 0HP
-                </h5> -->
+                <a class="navbar-brand logo-container">
+                    <img src="images/logoBanner/BPPA-white.png" alt="logo" class="img-fluid" style="width: 100%;">
+                </a>
 
                 <a href="mailto:Britishpakistanipsychiatrists@gmail.com" class="custom-link mt-3 mb-5">
                     Britishpakistanipsychiatrists@gmail.com
@@ -29,7 +29,7 @@
                         <li><a href="conference.php">Conferences</a></li>
                         <li><a href="education.php">Educational</a></li>
                         <li><a href="news-detail.php">News and Events</a></li>
-                        <li><a href="membership.php">Gallery</a></li>                        
+                        <li><a href="membership.php">Gallery</a></li>
                     </ul>
                 </div>
             </div>

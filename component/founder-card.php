@@ -1,4 +1,5 @@
-<div class="founder-card <?php echo $background_class; ?>">
+<div>
+<div class="founder-card <?php echo $background_class; ?>" >
     <a href="person.php">
         <div class="infos">
             <div class="image">
@@ -42,4 +43,5 @@
         Read more
     </button> -->
     </a>
+</div>
 </div>

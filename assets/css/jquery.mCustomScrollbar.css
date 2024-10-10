@@ -1268,7 +1268,7 @@ yx-axis
  .mCSB_scrollTools {
     width: 6px;
 }
-/* ._mCS_1 .mCSB_dragger .mCSB_dragger_bar{ background-color: red; }
+._mCS_1 .mCSB_dragger .mCSB_dragger_bar{ background-color: red; }
 
 ._mCS_2 .mCSB_dragger .mCSB_dragger_bar{ background-color: green; }
 
@@ -1278,4 +1278,4 @@ yx-axis
 
 #mCSB_1_scrollbar_horizontal .mCSB_dragger{ width: 100px; }
 
-.mCSB_1_scrollbar .mCSB_dragger .mCSB_draggerRail{ width: 4px; }  */
+.mCSB_1_scrollbar .mCSB_dragger .mCSB_draggerRail{ width: 4px; } 

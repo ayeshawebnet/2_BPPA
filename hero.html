@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Autoplay Carousel</title>
+    <style>
+        /* Basic Setup for the Custom Carousel */
+        .custom-carousel {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .custom-carousel-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%; /* Slide starts from right, off the screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            transition: all 0.8s ease-in-out;
+        }
+
+        /* Active Slide */
+        .custom-carousel-slide.active {
+            left: 0; /* Move to the center */
+        }
+
+        /* Animation for outgoing slide (moving left) */
+        .custom-carousel-slide.prev {
+            left: -100%; /* Slide out to the left */
+        }
+
+        /* Slide Content Styling */
+        .custom-carousel-slide h1 {
+            font-size: 3rem;
+            color: white;
+            margin: 0;
+            animation: slideText 1s ease-out;
+        }
+
+        .custom-carousel-slide p {
+            font-size: 1.5rem;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .custom-carousel-slide .box-heading {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .custom-carousel-slide button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Slide Animation Keyframe for smooth text sliding */
+        @keyframes slideText {
+            from { transform: translateX(50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="custom-carousel">
+    <!-- Slide 1 -->
+    <div class="custom-carousel-slide active" id="custom-slide1" style="background-image: url('https://bppa.webecommbuilder.com/public/storage/photos/1/banners/66f535c7b76d2.jpg');">
+        <div>
+            <h1>Main Heading</h1>
+            <p>Subheading goes here</p>
+            <div class="box-heading">Box Heading</div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="custom-carousel-slide" id="custom-slide2" style="background-image: url('https://bppa.webecommbuilder.com/public/storage/photos/1/banners/66f535c7b76d2.jpg');">
+        <div>
+            <h1>Another Heading</h1>
+            <p>Another Subheading</p>
+            <button>Click Here</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // JavaScript for autoplay custom carousel
+    let currentSlide = 0;
+    const customSlides = document.querySelectorAll('.custom-carousel-slide');
+
+    function showCustomSlide(index) {
+        customSlides.forEach((slide, i) => {
+            slide.classList.remove('active', 'prev');
+            if (i === index) {
+                slide.classList.add('active');
+            } else if (i === currentSlide) {
+                slide.classList.add('prev'); // Previous slide goes left
+            }
+        });
+    }
+
+    function nextCustomSlide() {
+        currentSlide = (currentSlide + 1) % customSlides.length;
+        showCustomSlide(currentSlide);
+    }
+
+    setInterval(nextCustomSlide, 4000); // Change slide every 4 seconds
+</script>
+
+</body>
+</html>
